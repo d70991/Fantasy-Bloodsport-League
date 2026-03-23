@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>2021 Season Standings</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		:root{--bg:#f7f9fc;--card:#fff;--muted:#6b7280;--accent:#0f62fe}
+		body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:24px;color:white}
+		.wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+		@media (max-width:800px){.wrap{grid-template-columns:1fr}}
+		.card{background:rgba(0,0,0,0.75);border-radius:8px;padding:16px;box-shadow:0 1px 3px rgba(16,24,40,.06)}
+		.champion{grid-column:1/-1;text-align:center;background:linear-gradient(135deg,#ffd700,#ffed4e);border:3px solid #b8860b;color:#333;padding:24px;border-radius:12px;margin-bottom:16px}
+		.banner{font-size:28px;font-weight:700;margin:0}
+		h1{font-size:20px;margin:0 0 12px 0}
+		.sub{color:var(--muted);font-size:13px;margin-bottom:12px}
+		table{width:100%;border-collapse:collapse;font-size:14px}
+		th,td{padding:8px 10px;text-align:left;border-bottom:1px solid #eef2f7}
+		th{font-weight:600;color:white;font-size:13px}
+		tr.champion{background:linear-gradient(90deg,rgba(15,98,254,0.06),rgba(15,98,254,0.02))}
+		.rank{width:44px;font-weight:700}
+		.pct{font-feature-settings:"tnum";font-variant-numeric:tabular-nums}
+		.note{margin-top:10px;color:var(--muted);font-size:13px}
+		.team-link{color:#0f62fe;text-decoration:none}
+		.team-link:hover{text-decoration:underline}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+	  <a href="index.html">Home</a>
+	  <a href="Season2026.html">2026 Season</a>
+	  <a href="history.html">League History</a>
+	  <a href="seasons.html">Previous Seasons</a>
+	  <a href="teams.html">Team History</a>
+	  <a href="champions.html">Hall of Champions</a>
+	</nav>
+	<main class="wrap">
+		<section class="card champion" aria-labelledby="champ-title">
+			<div class="banner">🏆 Championship — NFL Week 17 🏆</div>
+			<div class="sub">Final game: winner of Round 2 matches</div>
+			<table role="table" aria-label="Championship Result" style="width:100%;margin-top:8px">
+				<thead><tr><th>Seed</th><th>Team (record)</th><th>Score</th><th>vs</th><th>Seed</th><th>Team (record)</th><th>Score</th></tr></thead>
+				<tbody>
+					<tr class="champion"><td>4</td><td>This Johnson is lamarvelous (8-6-0, 3rd in East Division)</td><td>529.0</td><td>vs</td><td>2</td><td>Team Nelson (9-5-0, 1st in East Division)</td><td>571.0</td></tr>
+				</tbody>
+			</table>
+			<div class="note">Champion: Team Nelson — 571.0</div>
+		</section>
+
+		<section class="card" aria-labelledby="regular-title" style="font-size:14px;padding:12px;grid-column:1/-1;">
+			<h1 id="regular-title">2021 Regular Season Standings</h1>
+			<div class="sub">East and West division standings</div>
+			<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+				<div>
+					<h2 style="margin:0 0 8px 0;font-size:16px;">East Division</h2>
+					<table role="table" aria-label="2021 East Division Standings">
+						<thead><tr><th class="rank">RK</th><th>Team</th><th>W</th><th>L</th><th>T</th><th class="pct">PCT</th></tr></thead>
+						<tbody>
+							<tr><td class="rank">1</td><td><a href="#" class="team-link">Team Nelson</a></td><td>9</td><td>5</td><td>0</td><td class="pct">.643</td></tr>
+							<tr><td class="rank">2</td><td><a href="#" class="team-link">Team Pryor</a></td><td>8</td><td>6</td><td>0</td><td class="pct">.571</td></tr>
+							<tr><td class="rank">3</td><td><a href="#" class="team-link">This Johnson is lamarvelous</a></td><td>8</td><td>6</td><td>0</td><td class="pct">.571</td></tr>
+							<tr><td class="rank">4</td><td><a href="#" class="team-link">Out Da Mudd Jones IIi</a></td><td>7</td><td>7</td><td>0</td><td class="pct">.500</td></tr>
+							<tr><td class="rank">5</td><td><a href="#" class="team-link">The Conqueror</a></td><td>6</td><td>8</td><td>0</td><td class="pct">.429</td></tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<h2 style="margin:0 0 8px 0;font-size:16px;">West Division</h2>
+					<table role="table" aria-label="2021 West Division Standings">
+						<thead><tr><th class="rank">RK</th><th>Team</th><th>W</th><th>L</th><th>T</th><th class="pct">PCT</th></tr></thead>
+						<tbody>
+							<tr><td class="rank">1</td><td><a href="#" class="team-link">The Muse Klan</a></td><td>11</td><td>3</td><td>0</td><td class="pct">.786</td></tr>
+							<tr><td class="rank">2</td><td><a href="#" class="team-link">Where u not Sadie</a></td><td>7</td><td>7</td><td>0</td><td class="pct">.500</td></tr>
+							<tr><td class="rank">3</td><td><a href="#" class="team-link">The GOAT GOAT</a></td><td>5</td><td>9</td><td>0</td><td class="pct">.357</td></tr>
+							<tr><td class="rank">4</td><td><a href="#" class="team-link">Northeast Winners</a></td><td>5</td><td>9</td><td>0</td><td class="pct">.357</td></tr>
+							<tr><td class="rank">5</td><td><a href="#" class="team-link">Moravia RD MMG</a></td><td>4</td><td>10</td><td>0</td><td class="pct">.286</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="card" aria-labelledby="playoffs-title" style="font-size:13px; grid-column:1/-1; display:flex; gap:20px;">
+			<div style="flex:1;">
+				<h2 style="font-size:16px;margin:0 0 8px 0">Round 1 — NFL Week 15</h2>
+				<table role="table" aria-label="Playoffs Round 1" style="width:100%">
+					<thead><tr><th>Seed</th><th>Team (record)</th><th>Score</th><th>vs</th><th>Seed</th><th>Team (record)</th><th>Score</th></tr></thead>
+					<tbody>
+						<tr><td>1</td><td>The Muse Klan (11-3-0, 1st in West Division)</td><td>BYE</td><td>vs</td><td>--</td><td>--</td><td>--</td></tr>
+						<tr><td>5</td><td>Where u not Sadie (7-7-0, 2nd in West Division)</td><td>293.5</td><td>vs</td><td>4</td><td>This Johnson is lamarvelous (8-6-0, 3rd in East Division)</td><td>300.5</td></tr>
+						<tr><td>6</td><td>Out Da Mudd Jones IIi (7-7-0, 4th in East Division)</td><td>358.0</td><td>vs</td><td>3</td><td>Team Pryor (8-6-0, 2nd in East Division)</td><td>550.0</td></tr>
+						<tr><td>2</td><td>Team Nelson (9-5-0, 1st in East Division)</td><td>BYE</td><td>vs</td><td>--</td><td>--</td><td>--</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div style="flex:1;">
+				<h2 style="font-size:16px;margin:0 0 8px 0">Round 2 — NFL Week 16</h2>
+				<table role="table" aria-label="Playoffs Round 2" style="width:100%">
+					<thead><tr><th>Seed</th><th>Team (record)</th><th>Score</th><th>vs</th><th>Seed</th><th>Team (record)</th><th>Score</th></tr></thead>
+					<tbody>
+						<tr><td>4</td><td>This Johnson is lamarvelous (8-6-0, 3rd in East Division)</td><td>412.0</td><td>vs</td><td>1</td><td>The Muse Klan (11-3-0, 1st in West Division)</td><td>292.5</td></tr>
+						<tr><td>3</td><td>Team Pryor (8-6-0, 2nd in East Division)</td><td>373.5</td><td>vs</td><td>2</td><td>Team Nelson (9-5-0, 1st in East Division)</td><td>389.5</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="card" aria-labelledby="champion-title" style="font-size:14px; grid-column:1/-1; margin-top:8px;">
+			<h2 style="margin:0 0 8px 0">Championship — NFL Week 17</h2>
+			<table role="table" aria-label="Championship" style="width:100%">
+				<thead><tr><th>Seed</th><th>Team (record)</th><th>Score</th><th>vs</th><th>Seed</th><th>Team (record)</th><th>Score</th></tr></thead>
+				<tbody>
+					<tr class="champion"><td>4</td><td>This Johnson is lamarvelous (8-6-0, 3rd in East Division)</td><td>529.0</td><td>vs</td><td>2</td><td>Team Nelson (9-5-0, 1st in East Division)</td><td>571.0</td></tr>
+				</tbody>
+			</table>
+			<div class="note">Winner's Bracket champion: Team Nelson</div>
+		</section>
+
+	</main>
+</body>
+</html>

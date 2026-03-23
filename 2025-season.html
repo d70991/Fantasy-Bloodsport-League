@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>2025 Season Standings</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root{--bg:#f7f9fc;--card:#fff;--muted:#6b7280;--accent:#0f62fe}
+        body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:24px;color:white}
+        .wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+        @media (max-width:800px){.wrap{grid-template-columns:1fr}}
+        .card{background:rgba(0,0,0,0.75);border-radius:8px;padding:16px;box-shadow:0 1px 3px rgba(16,24,40,.06)}
+        .champion{grid-column:1/-1;text-align:center;background:linear-gradient(135deg,#ffd700,#ffed4e);border:3px solid #b8860b;color:#333;padding:24px;border-radius:12px;margin-bottom:16px}
+        .banner{font-size:28px;font-weight:700;margin:0}
+        h1{font-size:20px;margin:0 0 12px 0}
+        .sub{color:var(--muted);font-size:13px;margin-bottom:12px}
+        table{width:100%;border-collapse:collapse;font-size:14px}
+        th,td{padding:8px 10px;text-align:left;border-bottom:1px solid #eef2f7}
+        th{font-weight:600;color:white;font-size:13px}
+        tr.champion{background:linear-gradient(90deg,rgba(15,98,254,0.06),rgba(15,98,254,0.02))}
+        .rank{width:44px;font-weight:700}
+        .pct{font-feature-settings:"tnum";font-variant-numeric:tabular-nums}
+        .note{margin-top:10px;color:var(--muted);font-size:13px}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Season2026.html">2026 Season</a>
+      <a href="history.html">League History</a>
+      <a href="seasons.html">Previous Seasons</a>
+      <a href="teams.html">Team History</a>
+      <a href="champions.html">Hall of Champions</a>
+    </nav>
+    <main class="wrap">
+        <section class="card champion" aria-labelledby="champ-title">
+            <div class="banner">🏆 Championship — NFL Week 18 🏆</div>
+            <div class="sub">Final game: winner of R2 matches</div>
+            <table role="table" aria-label="Championship Result" style="width:100%;margin-top:8px">
+                <thead>
+                    <tr>
+                        <th>Seed</th>
+                        <th>Team (record)</th>
+                        <th>Score</th>
+                        <th>vs</th>
+                        <th>Seed</th>
+                        <th>Team (record)</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="champion">
+                        <td>5</td>
+                        <td>Heavy Gewts (8-6-0)</td>
+                        <td>143.5</td>
+                        <td>vs</td>
+                        <td>3</td>
+                        <td>The Conqueror (9-5-0)</td>
+                        <td>152.5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">Champion: The Conqueror — 152.5 to 143.5</div>
+        </section>
+
+        <!-- Divisions: three divisions with five teams each -->
+        <section class="card" aria-labelledby="div1-title" style="font-size:14px;padding:12px;">
+            <h1 id="div1-title">P's Nose Ring</h1>
+            <div class="sub">Division standings (5 teams)</div>
+            <table role="table" aria-label="P's Nose Ring Standings">
+                <thead>
+                    <tr>
+                        <th class="rank">#</th>
+                        <th>Team</th>
+                        <th>W</th>
+                        <th>L</th>
+                        <th class="pct">Pct</th>
+                        <th>GB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="rank">1</td><td>Northeast Winners 🥇</td><td>12</td><td>2</td><td class="pct">.857</td><td>—</td></tr>
+                    <tr><td class="rank">2</td><td>Team Nelson</td><td>8</td><td>6</td><td class="pct">.571</td><td>4.0</td></tr>
+                    <tr><td class="rank">3</td><td>phillip's Perfect Team</td><td>6</td><td>8</td><td class="pct">.429</td><td>6.0</td></tr>
+                    <tr><td class="rank">4</td><td>Say whatttt</td><td>5</td><td>9</td><td class="pct">.357</td><td>7.0</td></tr>
+                    <tr><td class="rank">5</td><td>Tomfootballteam</td><td>5</td><td>9</td><td class="pct">.357</td><td>7.0</td></tr>
+                </tbody>
+            </table>
+            <div class="note">Edit team names and records to match your league.</div>
+        </section>
+
+        <section class="card" aria-labelledby="div2-title" style="font-size:14px;padding:12px;">
+            <h1 id="div2-title">Willie's Bun</h1>
+            <div class="sub">Division standings (5 teams)</div>
+            <table role="table" aria-label="Willie's Bun Standings">
+                <thead>
+                    <tr>
+                        <th class="rank">#</th>
+                        <th>Team</th>
+                        <th>W</th>
+                        <th>L</th>
+                        <th class="pct">Pct</th>
+                        <th>GB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="rank">1</td><td>Moravia RD MMG 🥇</td><td>10</td><td>4</td><td class="pct">.714</td><td>—</td></tr>
+                    <tr><td class="rank">2</td><td>Heavy Gewts</td><td>8</td><td>6</td><td class="pct">.571</td><td>2.0</td></tr>
+                    <tr><td class="rank">3</td><td>Team Ayers</td><td>7</td><td>7</td><td class="pct">.500</td><td>3.0</td></tr>
+                    <tr><td class="rank">4</td><td>The GOAT</td><td>6</td><td>8</td><td class="pct">.429</td><td>4.0</td></tr>
+                    <tr><td class="rank">5</td><td>Lul Daddy 🗑️</td><td>4</td><td>10</td><td class="pct">.286</td><td>6.0</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card" aria-labelledby="div3-title" style="font-size:14px;padding:12px;">
+            <h1 id="div3-title">Leem's Sock</h1>
+            <div class="sub">Division standings (5 teams)</div>
+            <table role="table" aria-label="Leem's Sock Standings">
+                <thead>
+                    <tr>
+                        <th class="rank">#</th>
+                        <th>Team</th>
+                        <th>W</th>
+                        <th>L</th>
+                        <th class="pct">Pct</th>
+                        <th>GB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="rank">1</td><td>The Conqueror 🥇 🏆</td><td>9</td><td>5</td><td class="pct">.643</td><td>—</td></tr>
+                    <tr><td class="rank">2</td><td>Arise</td><td>7</td><td>7</td><td class="pct">.500</td><td>2.0</td></tr>
+                    <tr><td class="rank">3</td><td>Lorde Commish</td><td>7</td><td>7</td><td class="pct">.500</td><td>2.0</td></tr>
+                    <tr><td class="rank">4</td><td>Team epps</td><td>6</td><td>8</td><td class="pct">.429</td><td>3.0</td></tr>
+                    <tr><td class="rank">5</td><td>Yall suck</td><td>5</td><td>9</td><td class="pct">.357</td><td>4.0</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card" aria-labelledby="playoffs-title" style="font-size:13px; grid-column:1/-1; display:flex; gap:20px;">
+            <div style="flex:1;">
+                <h2 style="font-size:16px;margin:0 0 8px 0">Round 1 — NFL Week 16</h2>
+                <table role="table" aria-label="Playoffs Round 1" style="width:100%">
+                    <tbody>
+                        <tr><td class="rank">8</td><td>Lorde Commish (7-7-0, 3rd — Leem's Sock)</td><td>133.5</td><td>vs</td><td>1</td><td>Northeast Winners (12-2-0, 1st — P's Nose Ring)</td><td>180.0</td><td>Northeast Winners</td></tr>
+                        <tr><td class="rank">5</td><td>Heavy Gewts (8-6-0, 2nd — Willie's Bun)</td><td>182.0</td><td>vs</td><td>4</td><td>Team Nelson (8-6-0, 2nd — P's Nose Ring)</td><td>176.5</td><td>Heavy Gewts</td></tr>
+                        <tr><td class="rank">6</td><td>Arise (7-7-0, 2nd — Leem's Sock)</td><td>131.5</td><td>vs</td><td>3</td><td>The Conqueror (9-5-0, 1st — Leem's Sock)</td><td>137.0</td><td>The Conqueror</td></tr>
+                        <tr><td class="rank">7</td><td>Team Ayers (7-7-0, 3rd — Willie's Bun)</td><td>124.0</td><td>vs</td><td>2</td><td>Moravia RD MMG (10-4-0, 1st — Willie's Bun)</td><td>141.5</td><td>Moravia RD MMG</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="flex:1;">
+                <h2 style="font-size:16px;margin:0 0 8px 0">Round 2 — NFL Week 17</h2>
+                <table role="table" aria-label="Playoffs Round 2" style="width:100%">
+                    <tbody>
+                        <tr><td class="rank">5</td><td>Heavy Gewts</td><td>176.0</td><td>vs</td><td>1</td><td>Northeast Winners</td><td>171.0</td><td>Heavy Gewts</td></tr>
+                        <tr><td class="rank">3</td><td>The Conqueror</td><td>127.5</td><td>vs</td><td>2</td><td>Moravia RD MMG</td><td>120.5</td><td>The Conqueror</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>🏆 2025 Champion: The Conqueror</span>
+            <span>🔥 Team Ayers went 14-0 in 2023</span>
+            <span>💀 Tomfootballteam worst season: 3-11</span>
+            <span>👑 Lorde Commish took the 2023 title</span>
+            <span>⚔️ 2022 tied: Nelson & GOAT</span>
+
+            <span>🏆 2025 Champion: The Conqueror</span>
+            <span>🔥 Team Ayers went 14-0 in 2023</span>
+            <span>💀 Tomfootballteam worst season: 3-11</span>
+            <span>👑 Lorde Commish took the 2023 title</span>
+            <span>⚔️ 2022 tied: Nelson & GOAT</span>
+        </div>
+    </div>
+</body>
+</html>

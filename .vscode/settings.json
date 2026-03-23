@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^zsh -c 'echo test'$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

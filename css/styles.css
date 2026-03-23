@@ -1,0 +1,389 @@
+/* ======================================
+   GLOBAL STYLES + BACKGROUND
+====================================== */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    background-image: url("../images/commish-godfather.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* ======================================
+   NAVBAR
+====================================== */
+
+.navbar {
+    background: rgba(0,0,0,0.85);
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+
+/* ======================================
+   MAIN CONTENT CONTAINER (CENTERED)
+====================================== */
+
+.content-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+
+/* ======================================
+   HEADINGS
+====================================== */
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+
+/* ======================================
+   TABLES
+====================================== */
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: gold;
+    font-weight: bold;
+}
+
+
+/* ======================================
+   RECORD CARDS
+====================================== */
+
+.history-card {
+    background: rgba(255,255,255,0.1);
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.history-card p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.team-history-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-history-card:hover,
+.team-history-card:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.team-card-title {
+    text-decoration: none;
+}
+
+.team-card-title:hover {
+    color: gold;
+}
+
+.team-history-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* ======================================
+   LISTS
+====================================== */
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+
+/* ======================================
+   LINKS
+====================================== */
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: gold;
+}
+
+
+/* ======================================
+   ESPN STYLE TICKER (FIXED SMOOTH SCROLL)
+====================================== */
+
+.ticker {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    border-top: 2px solid gold;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.ticker-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.ticker-track span {
+    padding: 10px 40px;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ======================================
+   CHAMPIONSHIP BANNERS (UPGRADED)
+====================================== */
+
+.champion-banner {
+    background: linear-gradient(90deg, gold, #d4af37);
+    color: black;
+    margin: 25px auto;
+    padding: 25px;
+    width: 85%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255,215,0,0.8);
+    transition: transform 0.2s ease;
+}
+
+.champion-banner:hover {
+    transform: scale(1.03);
+}
+
+.champion-banner .year {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.champion-banner .team {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.champion-banner .tagline {
+    font-size: 14px;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+
+/* ======================================
+   DIVISION GRID
+====================================== */
+
+.division-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* ======================================
+   CHAMPION SUBTEXT (PETTY MODE)
+====================================== */
+
+.champion-banner .subtext {
+    font-size: 13px;
+    margin-top: 6px;
+    color: #222;
+    font-style: italic;
+}
+/* ======================================
+   MVP BANNER (UNDEFEATED FLEX)
+====================================== */
+
+.mvp-banner {
+    background: linear-gradient(90deg, gold, #ffcc00);
+    color: black;
+    padding: 12px;
+    margin: 10px auto;
+    width: 70%;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255,215,0,0.8);
+}
+/* ======================================
+   SEASON LINKS
+====================================== */
+
+.season-link {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.season-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ======================================
+   STANDINGS TABLE
+====================================== */
+
+.standings-table {
+    margin-top: 15px;
+}
+
+.standing-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid gold;
+}
+
+.standing-row a {
+    color: white;
+    text-decoration: none;
+}
+
+.playoff-section {
+    margin-top: 20px;
+}/* TAB NAV */
+.tab-nav {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: 1px solid gold;
+}
+
+.tab-button.active {
+    background: gold;
+    color: black;
+}
+
+/* TAB CONTENT */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}.season-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.team-list button {
+  margin: 6px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #111;
+  color: white;
+  transition: 0.2s;
+}
+
+.team-list button:hover {
+  background: #444;
+}
+
+.tabs {
+  margin-top: 15px;
+}
+
+.tabs button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  background: gold;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#teamDisplay {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game {
+  padding: 6px 0;
+  border-bottom: 1px solid #ccc;
+}
