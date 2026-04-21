@@ -2,17 +2,46 @@
 // TEAMS
 // ======================================
 
-import teamsData from '../data/teams.json' assert { type: 'json' };
-import matchupsData from '../data/matchups.json' assert { type: 'json' };
+const teams = [
 
-const teams = teamsData;
+  { id: "team-nelson", name: "Team Nelson", allTimeRecord: "39-30", championships: [2022, 2021], playoffAppearances: 4, badge: "" },
+  { id: "moravia-rd-mmg", name: "Moravia Rd MMG", allTimeRecord: "36-33", championships: [], playoffAppearances: 2, badge: "" },
+  { id: "the-conqueror", name: "The Conqueror", allTimeRecord: "38-31", championships: [2025], playoffAppearances: 3, badge: "" },
+  { id: "northeast-winners", name: "Northeast Winners", allTimeRecord: "36-33", championships: [], playoffAppearances: 3, badge: "" },
+  { id: "heavy-gewts", name: "Heavy Gewts", allTimeRecord: "38-31", championships: [2024], playoffAppearances: 5, badge: "🗑️ Never Beat Team Ayers" },
+  { id: "lorde-commish", name: "Lorde Commish", allTimeRecord: "33-34", championships: [2023], playoffAppearances: 3, badge: "" },
+  { id: "team-ayers", name: "Team Ayers", allTimeRecord: "41-37", championships: [], playoffAppearances: 3, badge: "🏅 Undefeated vs P", mvp: "🏆 League MVP - 2023 (14-0 Undefeated Season)" },
+  { id: "team-epps", name: "Team Epps", allTimeRecord: "32-38", championships: [], playoffAppearances: 1, badge: "" },
+  { id: "the-goat", name: "The Goat", allTimeRecord: "33-37", championships: [2022], playoffAppearances: 2, badge: "" },
+  { id: "yall-suck", name: "Yall Suck", allTimeRecord: "35-35", championships: [], playoffAppearances: 1, badge: "" },
+  { id: "say-whattt", name: "Say Whattt", allTimeRecord: "28-40", championships: [], playoffAppearances: 1, badge: "" },
+  { id: "arise", name: "Arise", allTimeRecord: "14-13", championships: [], playoffAppearances: 1, badge: "" },
+  { id: "tomfootballteam", name: "TomFootballTeam", allTimeRecord: "8-20", championships: [], playoffAppearances: 0, badge: "" },
+  { id: "lul-daddy", name: "Lul Daddy", allTimeRecord: "4-10", championships: [], playoffAppearances: 0, badge: "" },
+  { id: "phils-perfect-team", name: "Phil's Perfect Team", allTimeRecord: "6-8", championships: [], playoffAppearances: 0, badge: "" }
+
+];
 
 
 // ======================================
 // MATCHUPS
 // ======================================
 
-const historicalMatchupGames = matchupsData;
+const historicalMatchupGames = [
+  { season: 2022, teamA: "the-conqueror", teamB: "the-goat", winner: "the-goat" },
+  { season: 2022, teamA: "team-nelson", teamB: "yall-suck", winner: "team-nelson" },
+  { season: 2022, teamA: "team-nelson", teamB: "moravia-rd-mmg", winner: "team-nelson" },
+  { season: 2022, teamA: "team-nelson", teamB: "the-goat", winner: "team-nelson" },
+  { season: 2023, teamA: "heavy-gewts", teamB: "the-goat", winner: "heavy-gewts" },
+  { season: 2023, teamA: "the-conqueror", teamB: "moravia-rd-mmg", winner: "the-conqueror" },
+  { season: 2023, teamA: "heavy-gewts", teamB: "the-conqueror", winner: "heavy-gewts" },
+  { season: 2024, teamA: "team-ayers", teamB: "yall-suck", winner: "team-ayers" },
+  { season: 2024, teamA: "moravia-rd-mmg", teamB: "northeast-winners", winner: "moravia-rd-mmg" },
+  { season: 2024, teamA: "lorde-commish", teamB: "team-nelson", winner: "lorde-commish" },
+  { season: 2024, teamA: "heavy-gewts", teamB: "team-ayers", winner: "heavy-gewts" },
+  { season: 2024, teamA: "moravia-rd-mmg", teamB: "lorde-commish", winner: "moravia-rd-mmg" },
+  { season: 2024, teamA: "heavy-gewts", teamB: "moravia-rd-mmg", winner: "heavy-gewts" }
+];
 
 const teamNameAliases = {
   "team ayers": "team-ayers",

@@ -1,0 +1,15 @@
+[
+  { "season": 2022, "teamA": "the-conqueror", "teamB": "the-goat", "winner": "the-goat" },
+  { "season": 2022, "teamA": "team-nelson", "teamB": "yall-suck", "winner": "team-nelson" },
+  { "season": 2022, "teamA": "team-nelson", "teamB": "moravia-rd-mmg", "winner": "team-nelson" },
+  { "season": 2022, "teamA": "team-nelson", "teamB": "the-goat", "winner": "team-nelson" },
+  { "season": 2023, "teamA": "heavy-gewts", "teamB": "the-goat", "winner": "heavy-gewts" },
+  { "season": 2023, "teamA": "the-conqueror", "teamB": "moravia-rd-mmg", "winner": "the-conqueror" },
+  { "season": 2023, "teamA": "heavy-gewts", "teamB": "the-conqueror", "winner": "heavy-gewts" },
+  { "season": 2024, "teamA": "team-ayers", "teamB": "yall-suck", "winner": "team-ayers" },
+  { "season": 2024, "teamA": "moravia-rd-mmg", "teamB": "northeast-winners", "winner": "moravia-rd-mmg" },
+  { "season": 2024, "teamA": "lorde-commish", "teamB": "team-nelson", "winner": "lorde-commish" },
+  { "season": 2024, "teamA": "heavy-gewts", "teamB": "team-ayers", "winner": "heavy-gewts" },
+  { "season": 2024, "teamA": "moravia-rd-mmg", "teamB": "lorde-commish", "winner": "moravia-rd-mmg" },
+  { "season": 2024, "teamA": "heavy-gewts", "teamB": "moravia-rd-mmg", "winner": "heavy-gewts" }
+]
