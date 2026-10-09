@@ -2,17 +2,16 @@
 // TEAMS
 // ======================================
 
-import teamsData from '../data/teams.json' assert { type: 'json' };
-import matchupsData from '../data/matchups.json' assert { type: 'json' };
-
-const teams = teamsData;
+// Loaded from data/teams.json in loadLeagueData()
+let teams = [];
 
 
 // ======================================
 // MATCHUPS
 // ======================================
 
-const historicalMatchupGames = matchupsData;
+// Loaded from data/matchups.json in loadLeagueData()
+let historicalMatchupGames = [];
 
 const teamNameAliases = {
   "team ayers": "team-ayers",
@@ -502,10 +501,10 @@ const season2025WeeklyGames = [
   createGame(2025, 15, "Tomfootballteam", "Northeast Winners", 153.0, 174.0)
 ].filter(Boolean);
 
-const matchupGames = [...historicalMatchupGames, ...season2021WeeklyGames, ...season2022WeeklyGames, ...season2023WeeklyGames, ...season2024WeeklyGames, ...season2025WeeklyGames];
+const weeklyMatchupGames = [...season2021WeeklyGames, ...season2022WeeklyGames, ...season2023WeeklyGames, ...season2024WeeklyGames, ...season2025WeeklyGames];
 
 
-const teamLookup = new Map(teams.map(team => [team.id, team]));
+let teamLookup = new Map();
 
 
 function buildMatchupRecords(games) {
@@ -543,7 +542,20 @@ function buildMatchupRecords(games) {
 }
 
 
-const matchups = buildMatchupRecords(matchupGames);
+let matchups = [];
+
+
+async function loadLeagueData() {
+  const [teamsResponse, matchupsResponse] = await Promise.all([
+    fetch("data/teams.json"),
+    fetch("data/matchups.json")
+  ]);
+
+  teams = await teamsResponse.json();
+  historicalMatchupGames = await matchupsResponse.json();
+  teamLookup = new Map(teams.map(team => [team.id, team]));
+  matchups = buildMatchupRecords([...historicalMatchupGames, ...weeklyMatchupGames]);
+}
 
 
 function renderTeamPage() {
@@ -784,7 +796,12 @@ function renderTeamHistoryPage() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  if (!document.getElementById("teamName") && !document.getElementById("teamHistoryList")) {
+    return;
+  }
+
+  await loadLeagueData();
   renderTeamPage();
   renderTeamHistoryPage();
 });
