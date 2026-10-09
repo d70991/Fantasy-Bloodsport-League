@@ -114,6 +114,9 @@ function renderPlayoffPicture(container, season) {
 }
 
 
+// Set from js/rivalries.js when it's on the page: (teamIdA, teamIdB) => "Team Nelson leads 6-3"
+let scoreboardSeriesLookup = null;
+
 function renderScoreboard(container, season, week) {
   const teamsById = new Map(season.teams.map(team => [team.id, team]));
   const games = season.matchups.filter(game => game.week === week);
@@ -140,6 +143,7 @@ function renderScoreboard(container, season, week) {
       ${sideHtml(game.away, game)}
       ${sideHtml(game.home, game)}
       <div class="score-status">${game.winner ? "Final" : (game.away.score || game.home.score ? "In progress" : "Upcoming")}</div>
+      ${scoreboardSeriesLookup ? `<a class="score-series" href="rivalries.html?a=${game.away.teamId}&b=${game.home.teamId}">⚔️ ${escapeHtml(scoreboardSeriesLookup(game.away.teamId, game.home.teamId))}</a>` : ""}
     </div>
   `).join("");
 }
@@ -186,6 +190,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   const playoffEl = document.getElementById("playoffPicture");
   if (playoffEl) {
     renderPlayoffPicture(playoffEl, season);
+  }
+
+  if (scoreboardEl && typeof loadSeriesLookup === "function") {
+    scoreboardSeriesLookup = await loadSeriesLookup(season);
   }
 
   const weekSelect = document.getElementById("weekSelect");

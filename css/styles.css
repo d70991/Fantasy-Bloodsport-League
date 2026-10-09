@@ -750,3 +750,198 @@ table.live-table {
         font-size: 16px;
     }
 }
+
+/* ======================================
+   RIVALRY TRACKER
+====================================== */
+
+.rival-pickers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 10px 0 24px;
+}
+
+.rival-pickers label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.rival-pickers select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid gold;
+    background: black;
+    color: white;
+    font-size: 16px;
+    max-width: 280px;
+}
+
+.rival-vs {
+    color: gold;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.series-card {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    padding: 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+.series-score {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.series-side {
+    opacity: 0.75;
+}
+
+.series-side.series-leader {
+    opacity: 1;
+}
+
+.series-team {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.series-wins {
+    font-size: 56px;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+}
+
+.series-leader .series-wins {
+    color: gold;
+}
+
+.series-vs {
+    color: #999;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.series-headline {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0 16px;
+}
+
+.series-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    gap: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.series-stats > div {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-weight: bold;
+}
+
+.series-stats span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.series-stats .series-wide {
+    grid-column: 1 / -1;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.series-next {
+    border: 1px solid gold;
+}
+
+.series-log .log-win {
+    color: gold;
+    font-weight: bold;
+}
+
+.rivalry-boards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 16px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.rivalry-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rivalry-item {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+.rivalry-item:hover {
+    background: rgba(255, 215, 0, 0.15);
+}
+
+.rivalry-item span {
+    display: block;
+    color: #ccc;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.score-series {
+    display: block;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 215, 0, 0.25);
+    font-size: 13px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.score-series:hover {
+    color: gold;
+}
+
+table.live-table.rival-table {
+    table-layout: auto;
+}
+
+.rival-table th:first-child,
+.rival-table th:nth-child(2) {
+    width: auto;
+}
+
+.rival-table td:first-child {
+    white-space: normal;
+}
+
+.rival-note {
+    color: #ccc;
+    font-size: 13px;
+    margin-top: -6px;
+}

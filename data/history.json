@@ -1,0 +1,8318 @@
+{
+  "seasons": {
+    "2021": {
+      "season": 2021,
+      "leagueName": "Da Homies League",
+      "regularSeasonWeeks": 14,
+      "playoffTeamCount": 6,
+      "divisions": [
+        {
+          "id": 0,
+          "name": "East"
+        },
+        {
+          "id": 1,
+          "name": "West"
+        }
+      ],
+      "teams": [
+        {
+          "id": 1,
+          "name": "This Johnson is lamarvelous",
+          "abbrev": "KB24",
+          "divisionId": 0,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 5314.5,
+          "pointsAgainst": 5617.5,
+          "streak": "W1",
+          "playoffSeed": 4,
+          "franchiseId": "1"
+        },
+        {
+          "id": 2,
+          "name": "Where u not Sadie",
+          "abbrev": "SJC",
+          "divisionId": 1,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 5095.5,
+          "pointsAgainst": 5283.5,
+          "streak": "L2",
+          "playoffSeed": 5,
+          "franchiseId": "former-467a1df9ce"
+        },
+        {
+          "id": 3,
+          "name": "Out Da Mudd Jones IIi",
+          "abbrev": "JONE",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 5381.5,
+          "pointsAgainst": 5644,
+          "streak": "L1",
+          "playoffSeed": 6,
+          "franchiseId": "former-2a33b0e287"
+        },
+        {
+          "id": 4,
+          "name": "Northeast Winners",
+          "abbrev": "WIn",
+          "divisionId": 1,
+          "wins": 5,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 5374.5,
+          "pointsAgainst": 5392,
+          "streak": "W1",
+          "playoffSeed": 9,
+          "franchiseId": "4"
+        },
+        {
+          "id": 5,
+          "name": "Team Nelson",
+          "abbrev": "NELS",
+          "divisionId": 0,
+          "wins": 9,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 5510,
+          "pointsAgainst": 5068,
+          "streak": "W1",
+          "playoffSeed": 2,
+          "franchiseId": "11"
+        },
+        {
+          "id": 6,
+          "name": "The GOAT GOAT",
+          "abbrev": "GOAT",
+          "divisionId": 1,
+          "wins": 5,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 5300,
+          "pointsAgainst": 5728.5,
+          "streak": "L1",
+          "playoffSeed": 8,
+          "franchiseId": "6"
+        },
+        {
+          "id": 8,
+          "name": "The Muse Klan",
+          "abbrev": "MK",
+          "divisionId": 1,
+          "wins": 11,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 5538,
+          "pointsAgainst": 4900,
+          "streak": "W2",
+          "playoffSeed": 1,
+          "franchiseId": "former-10731dbdc7"
+        },
+        {
+          "id": 9,
+          "name": "The Conqueror",
+          "abbrev": "WB3",
+          "divisionId": 0,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 5236,
+          "pointsAgainst": 5052.5,
+          "streak": "W2",
+          "playoffSeed": 7,
+          "franchiseId": "9"
+        },
+        {
+          "id": 10,
+          "name": "Moravia RD MMG",
+          "abbrev": "COLB",
+          "divisionId": 1,
+          "wins": 4,
+          "losses": 10,
+          "ties": 0,
+          "pointsFor": 4929,
+          "pointsAgainst": 5343.5,
+          "streak": "L1",
+          "playoffSeed": 10,
+          "franchiseId": "10"
+        },
+        {
+          "id": 11,
+          "name": "Team Pryor",
+          "abbrev": "PVP",
+          "divisionId": 0,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 5686.5,
+          "pointsAgainst": 5336,
+          "streak": "L2",
+          "playoffSeed": 3,
+          "franchiseId": "14"
+        }
+      ],
+      "matchups": [
+        {
+          "week": 1,
+          "home": {
+            "teamId": 5,
+            "score": 387.5
+          },
+          "away": {
+            "teamId": 2,
+            "score": 263
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 1,
+            "score": 491.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 442
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 6,
+            "score": 400.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 405
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 11,
+            "score": 397.5
+          },
+          "away": {
+            "teamId": 3,
+            "score": 421
+          },
+          "winner": 3,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 8,
+            "score": 465.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 413.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 9,
+            "score": 367
+          },
+          "away": {
+            "teamId": 10,
+            "score": 456.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 3,
+            "score": 298.5
+          },
+          "away": {
+            "teamId": 5,
+            "score": 476
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 4,
+            "score": 410
+          },
+          "away": {
+            "teamId": 2,
+            "score": 328
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 11,
+            "score": 453
+          },
+          "away": {
+            "teamId": 1,
+            "score": 379.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 8,
+            "score": 339
+          },
+          "away": {
+            "teamId": 6,
+            "score": 326.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 3,
+            "score": 384.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 386
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 9,
+            "score": 418.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 397
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 10,
+            "score": 304.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 524.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 5,
+            "score": 418.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 426.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 2,
+            "score": 397
+          },
+          "away": {
+            "teamId": 6,
+            "score": 356
+          },
+          "winner": 2,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 11,
+            "score": 450
+          },
+          "away": {
+            "teamId": 8,
+            "score": 379.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 1,
+            "score": 528.5
+          },
+          "away": {
+            "teamId": 3,
+            "score": 433.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 6,
+            "score": 279.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 518.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 5,
+            "score": 364.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 350
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 2,
+            "score": 311.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 303
+          },
+          "winner": 2,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 1,
+            "score": 384
+          },
+          "away": {
+            "teamId": 6,
+            "score": 452
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 11,
+            "score": 429.5
+          },
+          "away": {
+            "teamId": 5,
+            "score": 432.5
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 8,
+            "score": 611
+          },
+          "away": {
+            "teamId": 2,
+            "score": 496
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 3,
+            "score": 422
+          },
+          "away": {
+            "teamId": 9,
+            "score": 409.5
+          },
+          "winner": 3,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 4,
+            "score": 359.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 567.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 2,
+            "score": 338.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 355.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 10,
+            "score": 359
+          },
+          "away": {
+            "teamId": 3,
+            "score": 381
+          },
+          "winner": 3,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 4,
+            "score": 425
+          },
+          "away": {
+            "teamId": 11,
+            "score": 478
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 8,
+            "score": 411
+          },
+          "away": {
+            "teamId": 1,
+            "score": 317.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 6,
+            "score": 317
+          },
+          "away": {
+            "teamId": 5,
+            "score": 482.5
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 3,
+            "score": 298.5
+          },
+          "away": {
+            "teamId": 2,
+            "score": 331.5
+          },
+          "winner": 2,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 11,
+            "score": 365
+          },
+          "away": {
+            "teamId": 10,
+            "score": 317.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 1,
+            "score": 455
+          },
+          "away": {
+            "teamId": 4,
+            "score": 444.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 5,
+            "score": 380
+          },
+          "away": {
+            "teamId": 8,
+            "score": 372.5
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 9,
+            "score": 458
+          },
+          "away": {
+            "teamId": 6,
+            "score": 339
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 2,
+            "score": 328
+          },
+          "away": {
+            "teamId": 11,
+            "score": 296.5
+          },
+          "winner": 2,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 10,
+            "score": 283.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 387
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 4,
+            "score": 416
+          },
+          "away": {
+            "teamId": 5,
+            "score": 328
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 8,
+            "score": 360.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 334
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 6,
+            "score": 366
+          },
+          "away": {
+            "teamId": 3,
+            "score": 463.5
+          },
+          "winner": 3,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 1,
+            "score": 266.5
+          },
+          "away": {
+            "teamId": 2,
+            "score": 430.5
+          },
+          "winner": 2,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 5,
+            "score": 280
+          },
+          "away": {
+            "teamId": 11,
+            "score": 284.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 10,
+            "score": 436
+          },
+          "away": {
+            "teamId": 6,
+            "score": 441
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 9,
+            "score": 312
+          },
+          "away": {
+            "teamId": 3,
+            "score": 324
+          },
+          "winner": 3,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 4,
+            "score": 282.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 296.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 5,
+            "score": 325.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 288
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 9,
+            "score": 302.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 313
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 2,
+            "score": 321
+          },
+          "away": {
+            "teamId": 4,
+            "score": 272
+          },
+          "winner": 2,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 3,
+            "score": 416.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 567
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 6,
+            "score": 282.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 287
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 9,
+            "score": 306
+          },
+          "away": {
+            "teamId": 4,
+            "score": 295
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 5,
+            "score": 507.5
+          },
+          "away": {
+            "teamId": 3,
+            "score": 368.5
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 8,
+            "score": 300
+          },
+          "away": {
+            "teamId": 10,
+            "score": 263
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 1,
+            "score": 243
+          },
+          "away": {
+            "teamId": 11,
+            "score": 441.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 6,
+            "score": 511
+          },
+          "away": {
+            "teamId": 2,
+            "score": 434
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 3,
+            "score": 388.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 298.5
+          },
+          "winner": 3,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 11,
+            "score": 426.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 347
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 4,
+            "score": 311.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 389.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 1,
+            "score": 418.5
+          },
+          "away": {
+            "teamId": 5,
+            "score": 331
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 10,
+            "score": 333
+          },
+          "away": {
+            "teamId": 2,
+            "score": 390.5
+          },
+          "winner": 2,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 11,
+            "score": 357.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 458
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 3,
+            "score": 392.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 249
+          },
+          "winner": 3,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 2,
+            "score": 318.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 402.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 9,
+            "score": 428
+          },
+          "away": {
+            "teamId": 5,
+            "score": 316
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 10,
+            "score": 404
+          },
+          "away": {
+            "teamId": 4,
+            "score": 384.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 2,
+            "score": 407.5
+          },
+          "away": {
+            "teamId": 5,
+            "score": 480.5
+          },
+          "winner": 5,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 10,
+            "score": 208.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 406
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 4,
+            "score": 456
+          },
+          "away": {
+            "teamId": 3,
+            "score": 389
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 8,
+            "score": 490
+          },
+          "away": {
+            "teamId": 11,
+            "score": 343
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 6,
+            "score": 381.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 455
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 1,
+            "score": 300.5
+          },
+          "away": {
+            "teamId": 2,
+            "score": 293.5
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 11,
+            "score": 550
+          },
+          "away": {
+            "teamId": 3,
+            "score": 358
+          },
+          "winner": 11,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 9,
+            "score": 327.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 355
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 4,
+            "score": 260
+          },
+          "away": {
+            "teamId": 10,
+            "score": 129
+          },
+          "winner": 4,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 8,
+            "score": 292.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 412
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 5,
+            "score": 389.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 373.5
+          },
+          "winner": 5,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 2,
+            "score": 680.5
+          },
+          "away": {
+            "teamId": 3,
+            "score": 307.5
+          },
+          "winner": 2,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 6,
+            "score": 363
+          },
+          "away": {
+            "teamId": 4,
+            "score": 63.5
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 9,
+            "score": 273.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 200
+          },
+          "winner": 9,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 5,
+            "score": 571
+          },
+          "away": {
+            "teamId": 1,
+            "score": 529
+          },
+          "winner": 5,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 8,
+            "score": 416
+          },
+          "away": {
+            "teamId": 11,
+            "score": 374.5
+          },
+          "winner": 8,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 2,
+            "score": 519.5
+          },
+          "away": {
+            "teamId": 3,
+            "score": 267
+          },
+          "winner": 2,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 9,
+            "score": 209.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 364
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 4,
+            "score": 58.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 79.5
+          },
+          "winner": 10,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        }
+      ]
+    },
+    "2022": {
+      "season": 2022,
+      "leagueName": "Da Homies League",
+      "regularSeasonWeeks": 14,
+      "playoffTeamCount": 8,
+      "divisions": [
+        {
+          "id": 0,
+          "name": "East"
+        },
+        {
+          "id": 1,
+          "name": "West"
+        }
+      ],
+      "teams": [
+        {
+          "id": 1,
+          "name": "Bigg Daddy Davon",
+          "abbrev": "KB24",
+          "divisionId": 0,
+          "wins": 4,
+          "losses": 10,
+          "ties": 0,
+          "pointsFor": 1582.5,
+          "pointsAgainst": 1729,
+          "streak": "W1",
+          "playoffSeed": 12,
+          "franchiseId": "1"
+        },
+        {
+          "id": 4,
+          "name": "Northeast Winners",
+          "abbrev": "WIn",
+          "divisionId": 1,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1955.5,
+          "pointsAgainst": 1800,
+          "streak": "L1",
+          "playoffSeed": 5,
+          "franchiseId": "4"
+        },
+        {
+          "id": 6,
+          "name": "The GOAT GOAT",
+          "abbrev": "GOAT",
+          "divisionId": 1,
+          "wins": 10,
+          "losses": 4,
+          "ties": 0,
+          "pointsFor": 1811.5,
+          "pointsAgainst": 1674,
+          "streak": "L1",
+          "playoffSeed": 1,
+          "franchiseId": "6"
+        },
+        {
+          "id": 8,
+          "name": "The Muse Klan",
+          "abbrev": "MK",
+          "divisionId": 1,
+          "wins": 5,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 1508,
+          "pointsAgainst": 1698,
+          "streak": "L1",
+          "playoffSeed": 10,
+          "franchiseId": "former-10731dbdc7"
+        },
+        {
+          "id": 9,
+          "name": "The Conqueror",
+          "abbrev": "WB3",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1641,
+          "pointsAgainst": 1674.5,
+          "streak": "W1",
+          "playoffSeed": 8,
+          "franchiseId": "9"
+        },
+        {
+          "id": 10,
+          "name": "Moravia RD MMG",
+          "abbrev": "COLB",
+          "divisionId": 1,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1755.5,
+          "pointsAgainst": 1665,
+          "streak": "W1",
+          "playoffSeed": 6,
+          "franchiseId": "10"
+        },
+        {
+          "id": 11,
+          "name": "Team Nelson",
+          "abbrev": "NELS",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1652,
+          "pointsAgainst": 1690.5,
+          "streak": "W1",
+          "playoffSeed": 7,
+          "franchiseId": "11"
+        },
+        {
+          "id": 12,
+          "name": "Yall Suck",
+          "abbrev": "NERC",
+          "divisionId": 0,
+          "wins": 9,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 1836.5,
+          "pointsAgainst": 1704.5,
+          "streak": "W2",
+          "playoffSeed": 2,
+          "franchiseId": "12"
+        },
+        {
+          "id": 14,
+          "name": "Ova west Pryor",
+          "abbrev": "PVP3",
+          "divisionId": 0,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1734.5,
+          "pointsAgainst": 1649.5,
+          "streak": "W3",
+          "playoffSeed": 4,
+          "franchiseId": "14"
+        },
+        {
+          "id": 15,
+          "name": "The Reaper",
+          "abbrev": "MURP",
+          "divisionId": 1,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1557.5,
+          "pointsAgainst": 1591,
+          "streak": "L1",
+          "playoffSeed": 3,
+          "franchiseId": "15"
+        },
+        {
+          "id": 16,
+          "name": "Team Ayers",
+          "abbrev": "ARS",
+          "divisionId": 0,
+          "wins": 4,
+          "losses": 10,
+          "ties": 0,
+          "pointsFor": 1669,
+          "pointsAgainst": 1824.5,
+          "streak": "L4",
+          "playoffSeed": 11,
+          "franchiseId": "16"
+        },
+        {
+          "id": 18,
+          "name": "Team epps",
+          "abbrev": "EPPS",
+          "divisionId": 1,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1697,
+          "pointsAgainst": 1700,
+          "streak": "L3",
+          "playoffSeed": 9,
+          "franchiseId": "20"
+        }
+      ],
+      "matchups": [
+        {
+          "week": 1,
+          "home": {
+            "teamId": 11,
+            "score": 131
+          },
+          "away": {
+            "teamId": 1,
+            "score": 134
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 9,
+            "score": 80
+          },
+          "away": {
+            "teamId": 14,
+            "score": 129
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 16,
+            "score": 124
+          },
+          "away": {
+            "teamId": 12,
+            "score": 115.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 18,
+            "score": 96
+          },
+          "away": {
+            "teamId": 8,
+            "score": 118
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 6,
+            "score": 124.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 173
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 4,
+            "score": 134.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 134.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 1,
+            "score": 108.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 172.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 12,
+            "score": 135.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 158.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 16,
+            "score": 146.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 165.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 8,
+            "score": 105
+          },
+          "away": {
+            "teamId": 10,
+            "score": 106.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 15,
+            "score": 79
+          },
+          "away": {
+            "teamId": 18,
+            "score": 107.5
+          },
+          "winner": 18,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 4,
+            "score": 144.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 166
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 12,
+            "score": 139.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 136.5
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 14,
+            "score": 86.5
+          },
+          "away": {
+            "teamId": 16,
+            "score": 101
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 11,
+            "score": 115
+          },
+          "away": {
+            "teamId": 9,
+            "score": 131.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 15,
+            "score": 88.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 110.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 10,
+            "score": 152
+          },
+          "away": {
+            "teamId": 4,
+            "score": 113.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 18,
+            "score": 109
+          },
+          "away": {
+            "teamId": 6,
+            "score": 118
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 1,
+            "score": 101
+          },
+          "away": {
+            "teamId": 16,
+            "score": 115
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 9,
+            "score": 86.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 166
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 11,
+            "score": 133.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 110
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 8,
+            "score": 88
+          },
+          "away": {
+            "teamId": 4,
+            "score": 151.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 6,
+            "score": 103.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 121.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 18,
+            "score": 142.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 117
+          },
+          "winner": 18,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 9,
+            "score": 141.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 112
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 16,
+            "score": 95
+          },
+          "away": {
+            "teamId": 11,
+            "score": 140
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 12,
+            "score": 134.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 118
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 6,
+            "score": 132.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 110.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 4,
+            "score": 209
+          },
+          "away": {
+            "teamId": 18,
+            "score": 146.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 15,
+            "score": 146.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 126.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 1,
+            "score": 118.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 86.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 11,
+            "score": 99
+          },
+          "away": {
+            "teamId": 18,
+            "score": 108
+          },
+          "winner": 18,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 14,
+            "score": 97
+          },
+          "away": {
+            "teamId": 10,
+            "score": 137
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 12,
+            "score": 127.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 115.5
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 16,
+            "score": 123
+          },
+          "away": {
+            "teamId": 4,
+            "score": 158
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 9,
+            "score": 77.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 116.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 8,
+            "score": 118
+          },
+          "away": {
+            "teamId": 11,
+            "score": 138
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 18,
+            "score": 107
+          },
+          "away": {
+            "teamId": 14,
+            "score": 111.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 10,
+            "score": 104
+          },
+          "away": {
+            "teamId": 12,
+            "score": 133
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 15,
+            "score": 130
+          },
+          "away": {
+            "teamId": 16,
+            "score": 94.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 4,
+            "score": 132
+          },
+          "away": {
+            "teamId": 9,
+            "score": 115.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 6,
+            "score": 137
+          },
+          "away": {
+            "teamId": 1,
+            "score": 111
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 14,
+            "score": 128
+          },
+          "away": {
+            "teamId": 8,
+            "score": 146
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 12,
+            "score": 140
+          },
+          "away": {
+            "teamId": 18,
+            "score": 161
+          },
+          "winner": 18,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 16,
+            "score": 107.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 152
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 9,
+            "score": 162.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 82.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 1,
+            "score": 127
+          },
+          "away": {
+            "teamId": 4,
+            "score": 142.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 11,
+            "score": 131.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 140.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 8,
+            "score": 85
+          },
+          "away": {
+            "teamId": 12,
+            "score": 127
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 18,
+            "score": 155
+          },
+          "away": {
+            "teamId": 16,
+            "score": 132
+          },
+          "winner": 18,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 10,
+            "score": 112
+          },
+          "away": {
+            "teamId": 9,
+            "score": 131.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 15,
+            "score": 64
+          },
+          "away": {
+            "teamId": 1,
+            "score": 80
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 4,
+            "score": 127.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 97
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 6,
+            "score": 108
+          },
+          "away": {
+            "teamId": 14,
+            "score": 145
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 16,
+            "score": 162
+          },
+          "away": {
+            "teamId": 8,
+            "score": 91
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 9,
+            "score": 96
+          },
+          "away": {
+            "teamId": 18,
+            "score": 120
+          },
+          "winner": 18,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 1,
+            "score": 94.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 118
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 11,
+            "score": 98.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 135.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 14,
+            "score": 136
+          },
+          "away": {
+            "teamId": 4,
+            "score": 109.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 12,
+            "score": 97
+          },
+          "away": {
+            "teamId": 6,
+            "score": 134.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 8,
+            "score": 90.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 153.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 18,
+            "score": 98.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 92.5
+          },
+          "winner": 18,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 10,
+            "score": 107.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 112
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 15,
+            "score": 123.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 114
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 4,
+            "score": 102.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 131.5
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 6,
+            "score": 154
+          },
+          "away": {
+            "teamId": 16,
+            "score": 133.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 8,
+            "score": 113.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 111.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 18,
+            "score": 106
+          },
+          "away": {
+            "teamId": 11,
+            "score": 119
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 10,
+            "score": 117
+          },
+          "away": {
+            "teamId": 14,
+            "score": 128
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 15,
+            "score": 146
+          },
+          "away": {
+            "teamId": 12,
+            "score": 135
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 4,
+            "score": 153
+          },
+          "away": {
+            "teamId": 16,
+            "score": 149.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 6,
+            "score": 138.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 97
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 11,
+            "score": 66
+          },
+          "away": {
+            "teamId": 8,
+            "score": 132.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 14,
+            "score": 140.5
+          },
+          "away": {
+            "teamId": 18,
+            "score": 131
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 12,
+            "score": 126
+          },
+          "away": {
+            "teamId": 10,
+            "score": 123.5
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 16,
+            "score": 82
+          },
+          "away": {
+            "teamId": 15,
+            "score": 113.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 9,
+            "score": 88
+          },
+          "away": {
+            "teamId": 4,
+            "score": 137
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 1,
+            "score": 110
+          },
+          "away": {
+            "teamId": 6,
+            "score": 129
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 8,
+            "score": 113
+          },
+          "away": {
+            "teamId": 14,
+            "score": 118.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 18,
+            "score": 109
+          },
+          "away": {
+            "teamId": 12,
+            "score": 128.5
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 10,
+            "score": 109.5
+          },
+          "away": {
+            "teamId": 16,
+            "score": 103.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 15,
+            "score": 77
+          },
+          "away": {
+            "teamId": 9,
+            "score": 114.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 4,
+            "score": 140.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 145.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 6,
+            "score": 109
+          },
+          "away": {
+            "teamId": 11,
+            "score": 113
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 6,
+            "score": 127.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 110.5
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 14,
+            "score": 155
+          },
+          "away": {
+            "teamId": 4,
+            "score": 101.5
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 15,
+            "score": 99
+          },
+          "away": {
+            "teamId": 10,
+            "score": 164.5
+          },
+          "winner": 10,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 12,
+            "score": 116.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 130
+          },
+          "winner": 11,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 18,
+            "score": 130.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 127.5
+          },
+          "winner": 18,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 16,
+            "score": 125.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 135
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 6,
+            "score": 133.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 104.5
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 10,
+            "score": 121
+          },
+          "away": {
+            "teamId": 11,
+            "score": 130.5
+          },
+          "winner": 11,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 12,
+            "score": 115
+          },
+          "away": {
+            "teamId": 15,
+            "score": 106.5
+          },
+          "winner": 12,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 4,
+            "score": 130
+          },
+          "away": {
+            "teamId": 9,
+            "score": 110.5
+          },
+          "winner": 4,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 18,
+            "score": 106
+          },
+          "away": {
+            "teamId": 1,
+            "score": 127
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 8,
+            "score": 56
+          },
+          "away": {
+            "teamId": 16,
+            "score": 113.5
+          },
+          "winner": 16,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 6,
+            "score": 91
+          },
+          "away": {
+            "teamId": 11,
+            "score": 137
+          },
+          "winner": 11,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 14,
+            "score": 137
+          },
+          "away": {
+            "teamId": 10,
+            "score": 76
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 12,
+            "score": 91.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 97
+          },
+          "winner": 4,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 15,
+            "score": 115
+          },
+          "away": {
+            "teamId": 9,
+            "score": 62
+          },
+          "winner": 15,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 16,
+            "score": 67.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 91
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 18,
+            "score": 156.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 46
+          },
+          "winner": 18,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        }
+      ]
+    },
+    "2023": {
+      "season": 2023,
+      "leagueName": "Da Homies League",
+      "regularSeasonWeeks": 14,
+      "playoffTeamCount": 8,
+      "divisions": [
+        {
+          "id": 0,
+          "name": "The ones"
+        }
+      ],
+      "teams": [
+        {
+          "id": 1,
+          "name": "Coach Roy",
+          "abbrev": "KB24",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1808,
+          "pointsAgainst": 1835.5,
+          "streak": "W2",
+          "playoffSeed": 4,
+          "franchiseId": "1"
+        },
+        {
+          "id": 4,
+          "name": "Northeast Winners",
+          "abbrev": "WIn",
+          "divisionId": 0,
+          "wins": 4,
+          "losses": 10,
+          "ties": 0,
+          "pointsFor": 1634,
+          "pointsAgainst": 1752.5,
+          "streak": "L3",
+          "playoffSeed": 12,
+          "franchiseId": "4"
+        },
+        {
+          "id": 6,
+          "name": "The GOAT GOAT",
+          "abbrev": "GOAT",
+          "divisionId": 0,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1618,
+          "pointsAgainst": 1677,
+          "streak": "W3",
+          "playoffSeed": 3,
+          "franchiseId": "6"
+        },
+        {
+          "id": 8,
+          "name": "Winners Circle",
+          "abbrev": "JAME",
+          "divisionId": 0,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1682.5,
+          "pointsAgainst": 1731.5,
+          "streak": "L2",
+          "playoffSeed": 8,
+          "franchiseId": "former-00bb3b4bdd"
+        },
+        {
+          "id": 9,
+          "name": "The Conqueror",
+          "abbrev": "WB3",
+          "divisionId": 0,
+          "wins": 9,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 1743,
+          "pointsAgainst": 1588,
+          "streak": "L1",
+          "playoffSeed": 2,
+          "franchiseId": "9"
+        },
+        {
+          "id": 10,
+          "name": "Moravia RD MMG",
+          "abbrev": "COLB",
+          "divisionId": 0,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1739.5,
+          "pointsAgainst": 1775,
+          "streak": "L3",
+          "playoffSeed": 7,
+          "franchiseId": "10"
+        },
+        {
+          "id": 11,
+          "name": "Team Nelson",
+          "abbrev": "NELS",
+          "divisionId": 0,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1660,
+          "pointsAgainst": 1542.5,
+          "streak": "W3",
+          "playoffSeed": 10,
+          "franchiseId": "11"
+        },
+        {
+          "id": 12,
+          "name": "Yall Suck",
+          "abbrev": "NERC",
+          "divisionId": 0,
+          "wins": 5,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 1557.5,
+          "pointsAgainst": 1650.5,
+          "streak": "W2",
+          "playoffSeed": 11,
+          "franchiseId": "12"
+        },
+        {
+          "id": 14,
+          "name": "TheWaysOfP",
+          "abbrev": "PVP3",
+          "divisionId": 0,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1774,
+          "pointsAgainst": 1752.5,
+          "streak": "W1",
+          "playoffSeed": 6,
+          "franchiseId": "14"
+        },
+        {
+          "id": 15,
+          "name": "The Reaper",
+          "abbrev": "MURP",
+          "divisionId": 0,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1652,
+          "pointsAgainst": 1770,
+          "streak": "L3",
+          "playoffSeed": 9,
+          "franchiseId": "15"
+        },
+        {
+          "id": 16,
+          "name": "Team Ayers",
+          "abbrev": "ARS",
+          "divisionId": 0,
+          "wins": 14,
+          "losses": 0,
+          "ties": 0,
+          "pointsFor": 1954.5,
+          "pointsAgainst": 1582,
+          "streak": "W14",
+          "playoffSeed": 1,
+          "franchiseId": "16"
+        },
+        {
+          "id": 20,
+          "name": "Team epps",
+          "abbrev": "EPPS",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1572.5,
+          "pointsAgainst": 1738.5,
+          "streak": "L3",
+          "playoffSeed": 5,
+          "franchiseId": "20"
+        }
+      ],
+      "matchups": [
+        {
+          "week": 1,
+          "home": {
+            "teamId": 12,
+            "score": 90
+          },
+          "away": {
+            "teamId": 9,
+            "score": 105
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 14,
+            "score": 104.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 129
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 1,
+            "score": 101.5
+          },
+          "away": {
+            "teamId": 16,
+            "score": 125.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 8,
+            "score": 170.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 108
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 15,
+            "score": 96
+          },
+          "away": {
+            "teamId": 20,
+            "score": 115.5
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 6,
+            "score": 112
+          },
+          "away": {
+            "teamId": 10,
+            "score": 86
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 9,
+            "score": 105
+          },
+          "away": {
+            "teamId": 11,
+            "score": 124.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 16,
+            "score": 147.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 121
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 1,
+            "score": 135.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 120.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 4,
+            "score": 105.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 110.5
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 10,
+            "score": 144.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 101
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 6,
+            "score": 159
+          },
+          "away": {
+            "teamId": 15,
+            "score": 153
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 16,
+            "score": 134
+          },
+          "away": {
+            "teamId": 9,
+            "score": 122
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 11,
+            "score": 131
+          },
+          "away": {
+            "teamId": 1,
+            "score": 139
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 12,
+            "score": 142
+          },
+          "away": {
+            "teamId": 14,
+            "score": 146.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 10,
+            "score": 117.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 79.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 20,
+            "score": 127
+          },
+          "away": {
+            "teamId": 6,
+            "score": 127
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 8,
+            "score": 157.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 159.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 9,
+            "score": 115.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 154
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 14,
+            "score": 97
+          },
+          "away": {
+            "teamId": 16,
+            "score": 155
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 12,
+            "score": 74.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 146.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 4,
+            "score": 125
+          },
+          "away": {
+            "teamId": 6,
+            "score": 131
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 15,
+            "score": 102
+          },
+          "away": {
+            "teamId": 10,
+            "score": 106.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 8,
+            "score": 111
+          },
+          "away": {
+            "teamId": 20,
+            "score": 87
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 14,
+            "score": 103
+          },
+          "away": {
+            "teamId": 9,
+            "score": 148
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 1,
+            "score": 118
+          },
+          "away": {
+            "teamId": 12,
+            "score": 149
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 16,
+            "score": 127.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 102.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 15,
+            "score": 136.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 95.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 6,
+            "score": 99.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 128.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 10,
+            "score": 147.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 162.5
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 9,
+            "score": 75
+          },
+          "away": {
+            "teamId": 4,
+            "score": 117.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 12,
+            "score": 115
+          },
+          "away": {
+            "teamId": 8,
+            "score": 122.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 11,
+            "score": 107.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 112.5
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 16,
+            "score": 141
+          },
+          "away": {
+            "teamId": 10,
+            "score": 127
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 1,
+            "score": 100.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 138.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 14,
+            "score": 114.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 117.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 4,
+            "score": 94.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 100
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 8,
+            "score": 102
+          },
+          "away": {
+            "teamId": 11,
+            "score": 93.5
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 20,
+            "score": 109
+          },
+          "away": {
+            "teamId": 16,
+            "score": 151.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 10,
+            "score": 138.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 162
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 6,
+            "score": 88
+          },
+          "away": {
+            "teamId": 14,
+            "score": 157.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 15,
+            "score": 106
+          },
+          "away": {
+            "teamId": 9,
+            "score": 119.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 11,
+            "score": 116.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 127
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 16,
+            "score": 152
+          },
+          "away": {
+            "teamId": 8,
+            "score": 149
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 1,
+            "score": 135.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 148
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 14,
+            "score": 132
+          },
+          "away": {
+            "teamId": 10,
+            "score": 176.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 9,
+            "score": 127.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 90.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 12,
+            "score": 108
+          },
+          "away": {
+            "teamId": 15,
+            "score": 123
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 4,
+            "score": 141.5
+          },
+          "away": {
+            "teamId": 16,
+            "score": 145
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 8,
+            "score": 112.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 112.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 20,
+            "score": 85
+          },
+          "away": {
+            "teamId": 14,
+            "score": 147.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 10,
+            "score": 84
+          },
+          "away": {
+            "teamId": 9,
+            "score": 144
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 6,
+            "score": 90
+          },
+          "away": {
+            "teamId": 12,
+            "score": 135.5
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 15,
+            "score": 106
+          },
+          "away": {
+            "teamId": 11,
+            "score": 92.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 1,
+            "score": 125.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 150.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 14,
+            "score": 145.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 106
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 9,
+            "score": 140.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 120
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 12,
+            "score": 102
+          },
+          "away": {
+            "teamId": 10,
+            "score": 132.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 11,
+            "score": 78.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 106
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 16,
+            "score": 137
+          },
+          "away": {
+            "teamId": 15,
+            "score": 105.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 4,
+            "score": 124.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 95
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 8,
+            "score": 77
+          },
+          "away": {
+            "teamId": 9,
+            "score": 105
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 20,
+            "score": 131.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 115
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 10,
+            "score": 130.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 124.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 6,
+            "score": 99
+          },
+          "away": {
+            "teamId": 16,
+            "score": 109.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 15,
+            "score": 139.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 134
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 4,
+            "score": 160.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 180.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 8,
+            "score": 117
+          },
+          "away": {
+            "teamId": 12,
+            "score": 106
+          },
+          "winner": 8,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 20,
+            "score": 94
+          },
+          "away": {
+            "teamId": 11,
+            "score": 120
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 10,
+            "score": 112
+          },
+          "away": {
+            "teamId": 16,
+            "score": 145
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 6,
+            "score": 137.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 133.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 15,
+            "score": 118
+          },
+          "away": {
+            "teamId": 14,
+            "score": 170
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 12,
+            "score": 104.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 99.5
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 11,
+            "score": 149
+          },
+          "away": {
+            "teamId": 8,
+            "score": 109
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 16,
+            "score": 129.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 76
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 1,
+            "score": 152
+          },
+          "away": {
+            "teamId": 10,
+            "score": 135
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 14,
+            "score": 125
+          },
+          "away": {
+            "teamId": 6,
+            "score": 126
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 9,
+            "score": 165.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 113
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 4,
+            "score": 105
+          },
+          "away": {
+            "teamId": 11,
+            "score": 144.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 8,
+            "score": 119
+          },
+          "away": {
+            "teamId": 16,
+            "score": 154.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 20,
+            "score": 94
+          },
+          "away": {
+            "teamId": 1,
+            "score": 104.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 10,
+            "score": 101.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 115.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 6,
+            "score": 114
+          },
+          "away": {
+            "teamId": 9,
+            "score": 90
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 15,
+            "score": 76.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 95
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 16,
+            "score": 90
+          },
+          "away": {
+            "teamId": 8,
+            "score": 85.5
+          },
+          "winner": 16,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 1,
+            "score": 141.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 121
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 6,
+            "score": 110.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 135.5
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 9,
+            "score": 140
+          },
+          "away": {
+            "teamId": 10,
+            "score": 133.5
+          },
+          "winner": 9,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 15,
+            "score": 118.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 63
+          },
+          "winner": 15,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 12,
+            "score": 107
+          },
+          "away": {
+            "teamId": 4,
+            "score": 132
+          },
+          "winner": 4,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 16,
+            "score": 113.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 157
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 9,
+            "score": 109
+          },
+          "away": {
+            "teamId": 14,
+            "score": 129.5
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 6,
+            "score": 94
+          },
+          "away": {
+            "teamId": 20,
+            "score": 179
+          },
+          "winner": 20,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 10,
+            "score": 151.5
+          },
+          "away": {
+            "teamId": 8,
+            "score": 111
+          },
+          "winner": 10,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 15,
+            "score": 124
+          },
+          "away": {
+            "teamId": 4,
+            "score": 131
+          },
+          "winner": 4,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 11,
+            "score": 125
+          },
+          "away": {
+            "teamId": 12,
+            "score": 97
+          },
+          "winner": 11,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 1,
+            "score": 128.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 128
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 16,
+            "score": 105
+          },
+          "away": {
+            "teamId": 9,
+            "score": 162
+          },
+          "winner": 9,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 20,
+            "score": 118.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 88
+          },
+          "winner": 20,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 6,
+            "score": 99
+          },
+          "away": {
+            "teamId": 8,
+            "score": 151.5
+          },
+          "winner": 8,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 11,
+            "score": 129.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 150
+          },
+          "winner": 4,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 15,
+            "score": 67
+          },
+          "away": {
+            "teamId": 12,
+            "score": 138.5
+          },
+          "winner": 12,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        }
+      ]
+    },
+    "2024": {
+      "season": 2024,
+      "leagueName": "Da Homies League",
+      "regularSeasonWeeks": 14,
+      "playoffTeamCount": 8,
+      "divisions": [
+        {
+          "id": 0,
+          "name": "The ones"
+        }
+      ],
+      "teams": [
+        {
+          "id": 1,
+          "name": "Defending Champ (I beat P)",
+          "abbrev": "KB24",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 2019.6000000000001,
+          "pointsAgainst": 1821.7,
+          "streak": "W1",
+          "playoffSeed": 7,
+          "franchiseId": "1"
+        },
+        {
+          "id": 4,
+          "name": "Northeast Winners",
+          "abbrev": "WIn",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1819.6000000000001,
+          "pointsAgainst": 1962.1,
+          "streak": "W3",
+          "playoffSeed": 6,
+          "franchiseId": "4"
+        },
+        {
+          "id": 6,
+          "name": "The GOAT",
+          "abbrev": "GOAT",
+          "divisionId": 0,
+          "wins": 4,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 1801.0000000000002,
+          "pointsAgainst": 2031.3000000000002,
+          "streak": "L3",
+          "playoffSeed": 12,
+          "franchiseId": "6"
+        },
+        {
+          "id": 9,
+          "name": "The Conqueror",
+          "abbrev": "WB3",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 2060,
+          "pointsAgainst": 2155.5,
+          "streak": "W1",
+          "playoffSeed": 9,
+          "franchiseId": "9"
+        },
+        {
+          "id": 10,
+          "name": "Moravia RD MMG",
+          "abbrev": "COLB",
+          "divisionId": 0,
+          "wins": 9,
+          "losses": 4,
+          "ties": 0,
+          "pointsFor": 2308.1,
+          "pointsAgainst": 2041.8999999999999,
+          "streak": "W6",
+          "playoffSeed": 3,
+          "franchiseId": "10"
+        },
+        {
+          "id": 11,
+          "name": "Team Nelson",
+          "abbrev": "NELS",
+          "divisionId": 0,
+          "wins": 9,
+          "losses": 4,
+          "ties": 0,
+          "pointsFor": 2126.3999999999996,
+          "pointsAgainst": 1829.4999999999998,
+          "streak": "W1",
+          "playoffSeed": 2,
+          "franchiseId": "11"
+        },
+        {
+          "id": 12,
+          "name": "Yall Suck",
+          "abbrev": "NERC",
+          "divisionId": 0,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 2308.7999999999997,
+          "pointsAgainst": 2158.5,
+          "streak": "L1",
+          "playoffSeed": 4,
+          "franchiseId": "12"
+        },
+        {
+          "id": 14,
+          "name": "TheWaysOfP",
+          "abbrev": "PVP3",
+          "divisionId": 0,
+          "wins": 10,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 2245.3,
+          "pointsAgainst": 1993.8999999999999,
+          "streak": "L1",
+          "playoffSeed": 1,
+          "franchiseId": "14"
+        },
+        {
+          "id": 15,
+          "name": "The Reaper",
+          "abbrev": "MURP",
+          "divisionId": 0,
+          "wins": 4,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 1586.8999999999996,
+          "pointsAgainst": 1861.1999999999998,
+          "streak": "L1",
+          "playoffSeed": 11,
+          "franchiseId": "15"
+        },
+        {
+          "id": 16,
+          "name": "Team Ayers",
+          "abbrev": "ARS",
+          "divisionId": 0,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 2231.5,
+          "pointsAgainst": 2093.2,
+          "streak": "W1",
+          "playoffSeed": 5,
+          "franchiseId": "16"
+        },
+        {
+          "id": 20,
+          "name": "Team epps",
+          "abbrev": "EPPS",
+          "divisionId": 0,
+          "wins": 5,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1932.6999999999998,
+          "pointsAgainst": 2003.0999999999997,
+          "streak": "L1",
+          "playoffSeed": 10,
+          "franchiseId": "20"
+        },
+        {
+          "id": 21,
+          "name": "Friday Night Lights",
+          "abbrev": "FNL",
+          "divisionId": 0,
+          "wins": 7,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1964.1000000000001,
+          "pointsAgainst": 1796.1,
+          "streak": "L2",
+          "playoffSeed": 8,
+          "franchiseId": "21"
+        },
+        {
+          "id": 22,
+          "name": "Tomfootballteam",
+          "abbrev": "TTT",
+          "divisionId": 0,
+          "wins": 3,
+          "losses": 11,
+          "ties": 0,
+          "pointsFor": 1639.4999999999998,
+          "pointsAgainst": 2128.2999999999997,
+          "streak": "L2",
+          "playoffSeed": 13,
+          "franchiseId": "22"
+        },
+        {
+          "id": 23,
+          "name": "Team 23",
+          "abbrev": "TM23",
+          "divisionId": 0,
+          "wins": 1,
+          "losses": 4,
+          "ties": 0,
+          "pointsFor": 528.6,
+          "pointsAgainst": 695.8,
+          "streak": "L3",
+          "playoffSeed": 14,
+          "franchiseId": "former-2024-23"
+        }
+      ],
+      "matchups": [
+        {
+          "week": 1,
+          "home": {
+            "teamId": 1,
+            "score": 151.9
+          },
+          "away": {
+            "teamId": 12,
+            "score": 122.3
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 16,
+            "score": 159.6
+          },
+          "away": {
+            "teamId": 21,
+            "score": 183.8
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 14,
+            "score": 201.4
+          },
+          "away": {
+            "teamId": 10,
+            "score": 166.1
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 4,
+            "score": 137.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 135
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 9,
+            "score": 196.6
+          },
+          "away": {
+            "teamId": 22,
+            "score": 118.4
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 11,
+            "score": 111.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 148.1
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 20,
+            "score": 127.9
+          },
+          "away": {
+            "teamId": 23,
+            "score": 94.6
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 12,
+            "score": 147.1
+          },
+          "away": {
+            "teamId": 21,
+            "score": 96.4
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 10,
+            "score": 185.4
+          },
+          "away": {
+            "teamId": 1,
+            "score": 177.3
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 15,
+            "score": 122.6
+          },
+          "away": {
+            "teamId": 16,
+            "score": 160.2
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 22,
+            "score": 117
+          },
+          "away": {
+            "teamId": 14,
+            "score": 143.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 6,
+            "score": 156.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 133.3
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 23,
+            "score": 210.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 115
+          },
+          "winner": 23,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 20,
+            "score": 135.4
+          },
+          "away": {
+            "teamId": 11,
+            "score": 138
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 10,
+            "score": 183.6
+          },
+          "away": {
+            "teamId": 12,
+            "score": 197
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 21,
+            "score": 110.1
+          },
+          "away": {
+            "teamId": 15,
+            "score": 98.1
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 1,
+            "score": 105.4
+          },
+          "away": {
+            "teamId": 22,
+            "score": 94.8
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 16,
+            "score": 171.6
+          },
+          "away": {
+            "teamId": 6,
+            "score": 178.6
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 14,
+            "score": 188.4
+          },
+          "away": {
+            "teamId": 23,
+            "score": 120.8
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 4,
+            "score": 123.7
+          },
+          "away": {
+            "teamId": 20,
+            "score": 113.8
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 9,
+            "score": 90.7
+          },
+          "away": {
+            "teamId": 11,
+            "score": 139.3
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 12,
+            "score": 143.4
+          },
+          "away": {
+            "teamId": 15,
+            "score": 172.6
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 22,
+            "score": 78.9
+          },
+          "away": {
+            "teamId": 10,
+            "score": 187.4
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 6,
+            "score": 107.5
+          },
+          "away": {
+            "teamId": 21,
+            "score": 181
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 23,
+            "score": 102.7
+          },
+          "away": {
+            "teamId": 1,
+            "score": 122
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 20,
+            "score": 107.7
+          },
+          "away": {
+            "teamId": 16,
+            "score": 157
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 11,
+            "score": 194.1
+          },
+          "away": {
+            "teamId": 14,
+            "score": 152.6
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 9,
+            "score": 187.1
+          },
+          "away": {
+            "teamId": 4,
+            "score": 151.4
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 22,
+            "score": 187.2
+          },
+          "away": {
+            "teamId": 12,
+            "score": 185.9
+          },
+          "winner": 22,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 15,
+            "score": 147.6
+          },
+          "away": {
+            "teamId": 6,
+            "score": 121.9
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 21,
+            "score": 200.8
+          },
+          "away": {
+            "teamId": 20,
+            "score": 150.4
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 1,
+            "score": 201.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 146
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 16,
+            "score": 137.2
+          },
+          "away": {
+            "teamId": 9,
+            "score": 149.7
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 14,
+            "score": 146.8
+          },
+          "away": {
+            "teamId": 4,
+            "score": 122.4
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 12,
+            "score": 157.3
+          },
+          "away": {
+            "teamId": 6,
+            "score": 127
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 15,
+            "score": 126.5
+          },
+          "away": {
+            "teamId": 22,
+            "score": 130
+          },
+          "winner": 22,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 11,
+            "score": 186.4
+          },
+          "away": {
+            "teamId": 10,
+            "score": 131.3
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 9,
+            "score": 140.3
+          },
+          "away": {
+            "teamId": 21,
+            "score": 158.6
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 4,
+            "score": 180.7
+          },
+          "away": {
+            "teamId": 1,
+            "score": 167.9
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 14,
+            "score": 141.9
+          },
+          "away": {
+            "teamId": 16,
+            "score": 154.3
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 16,
+            "score": 166.2
+          },
+          "away": {
+            "teamId": 12,
+            "score": 195.2
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 6,
+            "score": 120.9
+          },
+          "away": {
+            "teamId": 20,
+            "score": 129
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 22,
+            "score": 97.4
+          },
+          "away": {
+            "teamId": 11,
+            "score": 213.4
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 15,
+            "score": 86.3
+          },
+          "away": {
+            "teamId": 9,
+            "score": 105.4
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 10,
+            "score": 168.7
+          },
+          "away": {
+            "teamId": 4,
+            "score": 92.7
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 21,
+            "score": 158
+          },
+          "away": {
+            "teamId": 14,
+            "score": 199.9
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 12,
+            "score": 184.1
+          },
+          "away": {
+            "teamId": 20,
+            "score": 172.1
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 9,
+            "score": 187.4
+          },
+          "away": {
+            "teamId": 6,
+            "score": 119.2
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 4,
+            "score": 168.2
+          },
+          "away": {
+            "teamId": 22,
+            "score": 159.2
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 15,
+            "score": 144.3
+          },
+          "away": {
+            "teamId": 11,
+            "score": 178.6
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 16,
+            "score": 148.9
+          },
+          "away": {
+            "teamId": 10,
+            "score": 144.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 1,
+            "score": 191
+          },
+          "away": {
+            "teamId": 21,
+            "score": 153
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 11,
+            "score": 185.2
+          },
+          "away": {
+            "teamId": 12,
+            "score": 121.1
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 20,
+            "score": 188.3
+          },
+          "away": {
+            "teamId": 9,
+            "score": 175.8
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 6,
+            "score": 147.7
+          },
+          "away": {
+            "teamId": 14,
+            "score": 180.7
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 22,
+            "score": 108.3
+          },
+          "away": {
+            "teamId": 16,
+            "score": 124.8
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 15,
+            "score": 89
+          },
+          "away": {
+            "teamId": 1,
+            "score": 179.7
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 10,
+            "score": 208.1
+          },
+          "away": {
+            "teamId": 21,
+            "score": 162.1
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 12,
+            "score": 216.7
+          },
+          "away": {
+            "teamId": 9,
+            "score": 108.9
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 4,
+            "score": 76.2
+          },
+          "away": {
+            "teamId": 16,
+            "score": 169.2
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 14,
+            "score": 166.8
+          },
+          "away": {
+            "teamId": 20,
+            "score": 153.1
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 1,
+            "score": 147.4
+          },
+          "away": {
+            "teamId": 6,
+            "score": 153.7
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 21,
+            "score": 132.5
+          },
+          "away": {
+            "teamId": 22,
+            "score": 67
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 10,
+            "score": 191.9
+          },
+          "away": {
+            "teamId": 15,
+            "score": 104.1
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 4,
+            "score": 115.9
+          },
+          "away": {
+            "teamId": 12,
+            "score": 158.2
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 9,
+            "score": 171.2
+          },
+          "away": {
+            "teamId": 14,
+            "score": 196.8
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 11,
+            "score": 146
+          },
+          "away": {
+            "teamId": 16,
+            "score": 177.1
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 20,
+            "score": 160.7
+          },
+          "away": {
+            "teamId": 1,
+            "score": 158.8
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 23,
+            "score": 0
+          },
+          "away": {
+            "teamId": 21,
+            "score": 142.5
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 6,
+            "score": 168.2
+          },
+          "away": {
+            "teamId": 10,
+            "score": 181.3
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 22,
+            "score": 87.8
+          },
+          "away": {
+            "teamId": 15,
+            "score": 93.1
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 12,
+            "score": 147.8
+          },
+          "away": {
+            "teamId": 14,
+            "score": 178.7
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 16,
+            "score": 153.8
+          },
+          "away": {
+            "teamId": 4,
+            "score": 212.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 1,
+            "score": 112.9
+          },
+          "away": {
+            "teamId": 9,
+            "score": 127
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 21,
+            "score": 152.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 189.1
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 10,
+            "score": 173.3
+          },
+          "away": {
+            "teamId": 20,
+            "score": 161.1
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 22,
+            "score": 152
+          },
+          "away": {
+            "teamId": 6,
+            "score": 128.8
+          },
+          "winner": 22,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 16,
+            "score": 145.3
+          },
+          "away": {
+            "teamId": 12,
+            "score": 173.6
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 14,
+            "score": 147.3
+          },
+          "away": {
+            "teamId": 1,
+            "score": 136.3
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 4,
+            "score": 138
+          },
+          "away": {
+            "teamId": 21,
+            "score": 132.8
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 9,
+            "score": 163.3
+          },
+          "away": {
+            "teamId": 10,
+            "score": 181.4
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 11,
+            "score": 147.6
+          },
+          "away": {
+            "teamId": 15,
+            "score": 154.6
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 20,
+            "score": 180.6
+          },
+          "away": {
+            "teamId": 22,
+            "score": 103
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 12,
+            "score": 159.1
+          },
+          "away": {
+            "teamId": 1,
+            "score": 167.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 20,
+            "score": 152.6
+          },
+          "away": {
+            "teamId": 16,
+            "score": 206.3
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 10,
+            "score": 205.1
+          },
+          "away": {
+            "teamId": 14,
+            "score": 200.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 15,
+            "score": 113.1
+          },
+          "away": {
+            "teamId": 4,
+            "score": 167.1
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 22,
+            "score": 138.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 141.6
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 6,
+            "score": 122.9
+          },
+          "away": {
+            "teamId": 11,
+            "score": 151.2
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 14,
+            "score": 224.7
+          },
+          "away": {
+            "teamId": 21,
+            "score": 146
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 12,
+            "score": 157.5
+          },
+          "away": {
+            "teamId": 16,
+            "score": 166.8
+          },
+          "winner": 16,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 10,
+            "score": 198.8
+          },
+          "away": {
+            "teamId": 4,
+            "score": 140.2
+          },
+          "winner": 10,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 11,
+            "score": 148.4
+          },
+          "away": {
+            "teamId": 1,
+            "score": 154.7
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 9,
+            "score": 107.3
+          },
+          "away": {
+            "teamId": 20,
+            "score": 190.1
+          },
+          "winner": 20,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 15,
+            "score": 140
+          },
+          "away": {
+            "teamId": 6,
+            "score": 165.2
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 22,
+            "score": 123.2
+          },
+          "away": {
+            "teamId": 23,
+            "score": 0
+          },
+          "winner": 22,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 14,
+            "score": 260.4
+          },
+          "away": {
+            "teamId": 16,
+            "score": 145.3
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 10,
+            "score": 231.2
+          },
+          "away": {
+            "teamId": 1,
+            "score": 169.4
+          },
+          "winner": 10,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 11,
+            "score": 142.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 167.4
+          },
+          "winner": 12,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 4,
+            "score": 137.3
+          },
+          "away": {
+            "teamId": 21,
+            "score": 128.6
+          },
+          "winner": 4,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 20,
+            "score": 117.9
+          },
+          "away": {
+            "teamId": 6,
+            "score": 216.1
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 9,
+            "score": 123
+          },
+          "away": {
+            "teamId": 22,
+            "score": 134.9
+          },
+          "winner": 22,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 15,
+            "score": 126.6
+          },
+          "away": {
+            "teamId": 23,
+            "score": 0
+          },
+          "winner": 15,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 14,
+            "score": 236.6
+          },
+          "away": {
+            "teamId": 10,
+            "score": 174.2
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 16,
+            "score": 165.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 165.3
+          },
+          "winner": 16,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 12,
+            "score": 200.7
+          },
+          "away": {
+            "teamId": 4,
+            "score": 142.7
+          },
+          "winner": 12,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 11,
+            "score": 179.1
+          },
+          "away": {
+            "teamId": 21,
+            "score": 149.9
+          },
+          "winner": 11,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 6,
+            "score": 127.6
+          },
+          "away": {
+            "teamId": 22,
+            "score": 105.6
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 20,
+            "score": 141.8
+          },
+          "away": {
+            "teamId": 15,
+            "score": 157.5
+          },
+          "winner": 15,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 9,
+            "score": 46.7
+          },
+          "away": {
+            "teamId": 23,
+            "score": 0
+          },
+          "winner": 9,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        }
+      ]
+    },
+    "2025": {
+      "season": 2025,
+      "leagueName": "Da Homies League",
+      "regularSeasonWeeks": 15,
+      "playoffTeamCount": 8,
+      "divisions": [
+        {
+          "id": 1,
+          "name": "P's Nose Ring"
+        },
+        {
+          "id": 2,
+          "name": "Willie's Bun"
+        },
+        {
+          "id": 3,
+          "name": "Leem's Sock"
+        }
+      ],
+      "teams": [
+        {
+          "id": 1,
+          "name": "Lorde Commish",
+          "abbrev": "KB24",
+          "divisionId": 3,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1795,
+          "pointsAgainst": 1883,
+          "streak": "L1",
+          "playoffSeed": 8,
+          "franchiseId": "1"
+        },
+        {
+          "id": 4,
+          "name": "Northeast Winners",
+          "abbrev": "WIn",
+          "divisionId": 1,
+          "wins": 12,
+          "losses": 2,
+          "ties": 0,
+          "pointsFor": 2199,
+          "pointsAgainst": 1863,
+          "streak": "W1",
+          "playoffSeed": 1,
+          "franchiseId": "4"
+        },
+        {
+          "id": 6,
+          "name": "The GOAT",
+          "abbrev": "GOAT",
+          "divisionId": 2,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1872,
+          "pointsAgainst": 1987.5,
+          "streak": "L1",
+          "playoffSeed": 10,
+          "franchiseId": "6"
+        },
+        {
+          "id": 9,
+          "name": "The Conqueror",
+          "abbrev": "WB3",
+          "divisionId": 3,
+          "wins": 9,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 2116.5,
+          "pointsAgainst": 1727.5,
+          "streak": "W2",
+          "playoffSeed": 3,
+          "franchiseId": "9"
+        },
+        {
+          "id": 10,
+          "name": "Moravia RD MMG",
+          "abbrev": "COLB",
+          "divisionId": 2,
+          "wins": 10,
+          "losses": 4,
+          "ties": 0,
+          "pointsFor": 2059,
+          "pointsAgainst": 1801.5,
+          "streak": "W4",
+          "playoffSeed": 2,
+          "franchiseId": "10"
+        },
+        {
+          "id": 11,
+          "name": "Team Nelson",
+          "abbrev": "NELS",
+          "divisionId": 1,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1889.5,
+          "pointsAgainst": 2000.5,
+          "streak": "W4",
+          "playoffSeed": 4,
+          "franchiseId": "11"
+        },
+        {
+          "id": 12,
+          "name": "Yall suck",
+          "abbrev": "NERC",
+          "divisionId": 3,
+          "wins": 5,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 1688,
+          "pointsAgainst": 1807,
+          "streak": "L2",
+          "playoffSeed": 14,
+          "franchiseId": "12"
+        },
+        {
+          "id": 14,
+          "name": "Heavy Gewts",
+          "abbrev": "PVP3",
+          "divisionId": 2,
+          "wins": 8,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1972.5,
+          "pointsAgainst": 1928.5,
+          "streak": "L1",
+          "playoffSeed": 5,
+          "franchiseId": "14"
+        },
+        {
+          "id": 15,
+          "name": "Say whatttt",
+          "abbrev": "damn",
+          "divisionId": 1,
+          "wins": 5,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 1804,
+          "pointsAgainst": 1986,
+          "streak": "L1",
+          "playoffSeed": 12,
+          "franchiseId": "15"
+        },
+        {
+          "id": 16,
+          "name": "Team Ayers",
+          "abbrev": "ARS",
+          "divisionId": 2,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1859,
+          "pointsAgainst": 1866,
+          "streak": "W1",
+          "playoffSeed": 7,
+          "franchiseId": "16"
+        },
+        {
+          "id": 20,
+          "name": "Team epps",
+          "abbrev": "EPPS",
+          "divisionId": 3,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1900,
+          "pointsAgainst": 2021,
+          "streak": "L3",
+          "playoffSeed": 9,
+          "franchiseId": "20"
+        },
+        {
+          "id": 21,
+          "name": "Arise",
+          "abbrev": "Woo",
+          "divisionId": 3,
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1989,
+          "pointsAgainst": 1854,
+          "streak": "W1",
+          "playoffSeed": 6,
+          "franchiseId": "21"
+        },
+        {
+          "id": 22,
+          "name": "Tomfootballteam",
+          "abbrev": "TTT",
+          "divisionId": 1,
+          "wins": 5,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 1855,
+          "pointsAgainst": 2052.5,
+          "streak": "L4",
+          "playoffSeed": 13,
+          "franchiseId": "22"
+        },
+        {
+          "id": 23,
+          "name": "phillip's Perfect Team",
+          "abbrev": "PPT",
+          "divisionId": 1,
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1937.5,
+          "pointsAgainst": 1951,
+          "streak": "W2",
+          "playoffSeed": 11,
+          "franchiseId": "23"
+        },
+        {
+          "id": 24,
+          "name": "Lul Daddy",
+          "abbrev": "LULD",
+          "divisionId": 2,
+          "wins": 4,
+          "losses": 10,
+          "ties": 0,
+          "pointsFor": 1722.5,
+          "pointsAgainst": 1929.5,
+          "streak": "L1",
+          "playoffSeed": 15,
+          "franchiseId": "24"
+        }
+      ],
+      "matchups": [
+        {
+          "week": 1,
+          "home": {
+            "teamId": 14,
+            "score": 139.5
+          },
+          "away": {
+            "teamId": 16,
+            "score": 142.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 22,
+            "score": 127
+          },
+          "away": {
+            "teamId": 4,
+            "score": 136.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 15,
+            "score": 114
+          },
+          "away": {
+            "teamId": 11,
+            "score": 151.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 20,
+            "score": 152
+          },
+          "away": {
+            "teamId": 21,
+            "score": 163.5
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 10,
+            "score": 136.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 148
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 12,
+            "score": 91.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 147
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 1,
+          "home": {
+            "teamId": 24,
+            "score": 96
+          },
+          "away": {
+            "teamId": 23,
+            "score": 143
+          },
+          "winner": 23,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 16,
+            "score": 137.5
+          },
+          "away": {
+            "teamId": 21,
+            "score": 134
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 4,
+            "score": 150.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 116
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 22,
+            "score": 109
+          },
+          "away": {
+            "teamId": 24,
+            "score": 107
+          },
+          "winner": 22,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 15,
+            "score": 139.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 164.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 6,
+            "score": 136
+          },
+          "away": {
+            "teamId": 1,
+            "score": 160
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 10,
+            "score": 209.5
+          },
+          "away": {
+            "teamId": 23,
+            "score": 129.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 2,
+          "home": {
+            "teamId": 20,
+            "score": 144.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 143.5
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 6,
+            "score": 170
+          },
+          "away": {
+            "teamId": 22,
+            "score": 119.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 12,
+            "score": 107
+          },
+          "away": {
+            "teamId": 15,
+            "score": 113.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 24,
+            "score": 141
+          },
+          "away": {
+            "teamId": 21,
+            "score": 103.5
+          },
+          "winner": 24,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 20,
+            "score": 134.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 135
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 4,
+            "score": 152
+          },
+          "away": {
+            "teamId": 23,
+            "score": 125.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 9,
+            "score": 163
+          },
+          "away": {
+            "teamId": 11,
+            "score": 98
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 3,
+          "home": {
+            "teamId": 1,
+            "score": 133
+          },
+          "away": {
+            "teamId": 14,
+            "score": 153.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 15,
+            "score": 153
+          },
+          "away": {
+            "teamId": 16,
+            "score": 177.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 6,
+            "score": 158.5
+          },
+          "away": {
+            "teamId": 24,
+            "score": 120.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 20,
+            "score": 165.5
+          },
+          "away": {
+            "teamId": 23,
+            "score": 145.5
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 4,
+            "score": 172
+          },
+          "away": {
+            "teamId": 10,
+            "score": 126.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 12,
+            "score": 84.5
+          },
+          "away": {
+            "teamId": 21,
+            "score": 167
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 22,
+            "score": 103.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 182.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 4,
+          "home": {
+            "teamId": 9,
+            "score": 190.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 130
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 23,
+            "score": 137.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 168.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 12,
+            "score": 109.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 168
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 1,
+            "score": 124.5
+          },
+          "away": {
+            "teamId": 24,
+            "score": 111
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 22,
+            "score": 75.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 185.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 16,
+            "score": 174.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 120
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 9,
+            "score": 169.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 117.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 5,
+          "home": {
+            "teamId": 14,
+            "score": 148
+          },
+          "away": {
+            "teamId": 21,
+            "score": 139
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 21,
+            "score": 173
+          },
+          "away": {
+            "teamId": 15,
+            "score": 86
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 16,
+            "score": 109.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 123.5
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 11,
+            "score": 125
+          },
+          "away": {
+            "teamId": 23,
+            "score": 88
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 9,
+            "score": 145.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 101.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 14,
+            "score": 162.5
+          },
+          "away": {
+            "teamId": 24,
+            "score": 125.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 10,
+            "score": 123
+          },
+          "away": {
+            "teamId": 20,
+            "score": 141.5
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 6,
+          "home": {
+            "teamId": 4,
+            "score": 173
+          },
+          "away": {
+            "teamId": 1,
+            "score": 104.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 16,
+            "score": 165.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 176.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 10,
+            "score": 154.5
+          },
+          "away": {
+            "teamId": 21,
+            "score": 130.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 22,
+            "score": 154.5
+          },
+          "away": {
+            "teamId": 23,
+            "score": 102.5
+          },
+          "winner": 22,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 20,
+            "score": 132
+          },
+          "away": {
+            "teamId": 24,
+            "score": 151
+          },
+          "winner": 24,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 6,
+            "score": 87.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 137
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 11,
+            "score": 107.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 174
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 7,
+          "home": {
+            "teamId": 14,
+            "score": 154
+          },
+          "away": {
+            "teamId": 9,
+            "score": 147.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 23,
+            "score": 148.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 128.5
+          },
+          "winner": 23,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 14,
+            "score": 172.5
+          },
+          "away": {
+            "teamId": 6,
+            "score": 101
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 9,
+            "score": 86
+          },
+          "away": {
+            "teamId": 10,
+            "score": 146.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 20,
+            "score": 149
+          },
+          "away": {
+            "teamId": 22,
+            "score": 157
+          },
+          "winner": 22,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 1,
+            "score": 112.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 80.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 24,
+            "score": 123
+          },
+          "away": {
+            "teamId": 16,
+            "score": 102.5
+          },
+          "winner": 24,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 8,
+          "home": {
+            "teamId": 11,
+            "score": 154
+          },
+          "away": {
+            "teamId": 4,
+            "score": 117.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 23,
+            "score": 156.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 133.5
+          },
+          "winner": 23,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 6,
+            "score": 107
+          },
+          "away": {
+            "teamId": 16,
+            "score": 115
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 24,
+            "score": 114
+          },
+          "away": {
+            "teamId": 10,
+            "score": 134.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 15,
+            "score": 136
+          },
+          "away": {
+            "teamId": 22,
+            "score": 174
+          },
+          "winner": 22,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 12,
+            "score": 122
+          },
+          "away": {
+            "teamId": 21,
+            "score": 128
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 9,
+            "score": 160
+          },
+          "away": {
+            "teamId": 1,
+            "score": 91
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 9,
+          "home": {
+            "teamId": 4,
+            "score": 186
+          },
+          "away": {
+            "teamId": 14,
+            "score": 103.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 11,
+            "score": 158.5
+          },
+          "away": {
+            "teamId": 21,
+            "score": 130
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 12,
+            "score": 191.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 102
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 16,
+            "score": 97.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 184
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 1,
+            "score": 90.5
+          },
+          "away": {
+            "teamId": 23,
+            "score": 179.5
+          },
+          "winner": 23,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 10,
+            "score": 108.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 183
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 4,
+            "score": 163
+          },
+          "away": {
+            "teamId": 22,
+            "score": 149.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 10,
+          "home": {
+            "teamId": 15,
+            "score": 150.5
+          },
+          "away": {
+            "teamId": 24,
+            "score": 87.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 20,
+            "score": 114
+          },
+          "away": {
+            "teamId": 1,
+            "score": 103
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 6,
+            "score": 143.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 115
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 22,
+            "score": 138.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 101
+          },
+          "winner": 22,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 21,
+            "score": 170.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 137
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 24,
+            "score": 120.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 137
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 10,
+            "score": 109
+          },
+          "away": {
+            "teamId": 16,
+            "score": 99.5
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 11,
+          "home": {
+            "teamId": 15,
+            "score": 119.5
+          },
+          "away": {
+            "teamId": 4,
+            "score": 168.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 14,
+            "score": 107.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 166
+          },
+          "winner": 12,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 9,
+            "score": 107
+          },
+          "away": {
+            "teamId": 20,
+            "score": 136
+          },
+          "winner": 20,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 21,
+            "score": 139.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 131
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 6,
+            "score": 93
+          },
+          "away": {
+            "teamId": 16,
+            "score": 147
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 4,
+            "score": 162.5
+          },
+          "away": {
+            "teamId": 23,
+            "score": 159
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 24,
+            "score": 150.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 162.5
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 12,
+          "home": {
+            "teamId": 22,
+            "score": 112.5
+          },
+          "away": {
+            "teamId": 15,
+            "score": 156
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 4,
+            "score": 188.5
+          },
+          "away": {
+            "teamId": 20,
+            "score": 129.5
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 14,
+            "score": 106
+          },
+          "away": {
+            "teamId": 24,
+            "score": 144.5
+          },
+          "winner": 24,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 15,
+            "score": 146
+          },
+          "away": {
+            "teamId": 23,
+            "score": 138.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 6,
+            "score": 114
+          },
+          "away": {
+            "teamId": 10,
+            "score": 166
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 1,
+            "score": 126
+          },
+          "away": {
+            "teamId": 16,
+            "score": 113.5
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 11,
+            "score": 158
+          },
+          "away": {
+            "teamId": 22,
+            "score": 157
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 13,
+          "home": {
+            "teamId": 9,
+            "score": 141
+          },
+          "away": {
+            "teamId": 21,
+            "score": 129.5
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 21,
+            "score": 116.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 143
+          },
+          "winner": 1,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 23,
+            "score": 131.5
+          },
+          "away": {
+            "teamId": 22,
+            "score": 124.5
+          },
+          "winner": 23,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 20,
+            "score": 113.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 138.5
+          },
+          "winner": 14,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 6,
+            "score": 203.5
+          },
+          "away": {
+            "teamId": 24,
+            "score": 130.5
+          },
+          "winner": 6,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 16,
+            "score": 133.5
+          },
+          "away": {
+            "teamId": 10,
+            "score": 139
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 15,
+            "score": 130
+          },
+          "away": {
+            "teamId": 4,
+            "score": 78.5
+          },
+          "winner": 15,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 14,
+          "home": {
+            "teamId": 12,
+            "score": 127.5
+          },
+          "away": {
+            "teamId": 11,
+            "score": 141
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 1,
+            "score": 119.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 195
+          },
+          "winner": 9,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 10,
+            "score": 185
+          },
+          "away": {
+            "teamId": 6,
+            "score": 140
+          },
+          "winner": 10,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 23,
+            "score": 152.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 94.5
+          },
+          "winner": 23,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 20,
+            "score": 118
+          },
+          "away": {
+            "teamId": 21,
+            "score": 164.5
+          },
+          "winner": 21,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 16,
+            "score": 143.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 138.5
+          },
+          "winner": 16,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 15,
+            "score": 114
+          },
+          "away": {
+            "teamId": 11,
+            "score": 135
+          },
+          "winner": 11,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 15,
+          "home": {
+            "teamId": 4,
+            "score": 174
+          },
+          "away": {
+            "teamId": 22,
+            "score": 153
+          },
+          "winner": 4,
+          "playoff": false,
+          "tier": "NONE"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 4,
+            "score": 180
+          },
+          "away": {
+            "teamId": 1,
+            "score": 133.5
+          },
+          "winner": 4,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 11,
+            "score": 176.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 182
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 9,
+            "score": 137
+          },
+          "away": {
+            "teamId": 21,
+            "score": 131.5
+          },
+          "winner": 9,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 10,
+            "score": 141.5
+          },
+          "away": {
+            "teamId": 16,
+            "score": 124
+          },
+          "winner": 10,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 20,
+            "score": 114
+          },
+          "away": {
+            "teamId": 6,
+            "score": 155
+          },
+          "winner": 6,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 23,
+            "score": 177
+          },
+          "away": {
+            "teamId": 15,
+            "score": 157.5
+          },
+          "winner": 23,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 16,
+          "home": {
+            "teamId": 22,
+            "score": 107
+          },
+          "away": {
+            "teamId": 12,
+            "score": 133
+          },
+          "winner": 12,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 4,
+            "score": 171
+          },
+          "away": {
+            "teamId": 14,
+            "score": 176
+          },
+          "winner": 14,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 10,
+            "score": 120.5
+          },
+          "away": {
+            "teamId": 9,
+            "score": 127.5
+          },
+          "winner": 9,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 11,
+            "score": 192
+          },
+          "away": {
+            "teamId": 21,
+            "score": 142.5
+          },
+          "winner": 11,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 16,
+            "score": 151.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 147
+          },
+          "winner": 16,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 6,
+            "score": 159
+          },
+          "away": {
+            "teamId": 23,
+            "score": 176
+          },
+          "winner": 23,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 20,
+            "score": 106
+          },
+          "away": {
+            "teamId": 12,
+            "score": 76
+          },
+          "winner": 20,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 17,
+          "home": {
+            "teamId": 15,
+            "score": 134.5
+          },
+          "away": {
+            "teamId": 24,
+            "score": 85.5
+          },
+          "winner": 15,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 18,
+          "home": {
+            "teamId": 9,
+            "score": 152.5
+          },
+          "away": {
+            "teamId": 14,
+            "score": 143.5
+          },
+          "winner": 9,
+          "playoff": true,
+          "tier": "WINNERS_BRACKET"
+        },
+        {
+          "week": 18,
+          "home": {
+            "teamId": 4,
+            "score": 118
+          },
+          "away": {
+            "teamId": 10,
+            "score": 158
+          },
+          "winner": 10,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 18,
+          "home": {
+            "teamId": 11,
+            "score": 120
+          },
+          "away": {
+            "teamId": 16,
+            "score": 145
+          },
+          "winner": 16,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 18,
+          "home": {
+            "teamId": 21,
+            "score": 52.5
+          },
+          "away": {
+            "teamId": 1,
+            "score": 120.5
+          },
+          "winner": 1,
+          "playoff": true,
+          "tier": "WINNERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 18,
+          "home": {
+            "teamId": 20,
+            "score": 61
+          },
+          "away": {
+            "teamId": 23,
+            "score": 135
+          },
+          "winner": 23,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 18,
+          "home": {
+            "teamId": 6,
+            "score": 84
+          },
+          "away": {
+            "teamId": 15,
+            "score": 117.5
+          },
+          "winner": 15,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        },
+        {
+          "week": 18,
+          "home": {
+            "teamId": 22,
+            "score": 52.5
+          },
+          "away": {
+            "teamId": 12,
+            "score": 82.5
+          },
+          "winner": 12,
+          "playoff": true,
+          "tier": "LOSERS_CONSOLATION_LADDER"
+        }
+      ]
+    }
+  }
+}
