@@ -939,3 +939,9 @@ table.live-table.rival-table {
 .rival-table td:first-child {
     white-space: normal;
 }
+
+.rival-note {
+    color: #ccc;
+    font-size: 13px;
+    margin-top: -6px;
+}

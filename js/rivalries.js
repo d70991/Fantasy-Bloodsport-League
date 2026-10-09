@@ -94,15 +94,17 @@ function seriesBetween(index, teamA, teamB) {
     series.pointsA += game.scoreA;
     series.pointsB += game.scoreB;
     const margin = Math.abs(game.scoreA - game.scoreB);
+    // Rank beatdowns by percentage, not raw points: 2021 used a scoring system with ~3x higher totals
+    const blowout = margin / Math.max(Math.min(game.scoreA, game.scoreB), 1);
 
     if (game.winner === teamA) {
       series.winsA += 1;
       if (game.playoff) series.playoffWinsA += 1;
-      if (!series.biggestWinA || margin > series.biggestWinA.margin) series.biggestWinA = { ...game, margin };
+      if (!series.biggestWinA || blowout > series.biggestWinA.blowout) series.biggestWinA = { ...game, margin, blowout };
     } else if (game.winner === teamB) {
       series.winsB += 1;
       if (game.playoff) series.playoffWinsB += 1;
-      if (!series.biggestWinB || margin > series.biggestWinB.margin) series.biggestWinB = { ...game, margin };
+      if (!series.biggestWinB || blowout > series.biggestWinB.blowout) series.biggestWinB = { ...game, margin, blowout };
     } else {
       series.ties += 1;
     }
