@@ -434,3 +434,217 @@ a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+/* ======================================
+   LIVE SEASON (2026 Season page + home)
+====================================== */
+
+.season-updated {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.season-updated:empty {
+    display: none;
+}
+
+.divisions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    text-align: left;
+}
+
+.divisions-stacked {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.division-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.division-card h3 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+table.live-table {
+    width: 100%;
+    margin: 0;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+.live-table th,
+.live-table td {
+    border: none;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+    padding: 8px 6px;
+    white-space: nowrap;
+}
+
+.live-table th {
+    background: transparent;
+    color: gold;
+}
+
+table.live-table {
+    table-layout: fixed;
+}
+
+.live-table th:first-child {
+    width: 28px;
+}
+
+.live-table th:nth-child(2) {
+    width: 42%;
+}
+
+.live-table .team-cell {
+    text-align: left;
+    white-space: normal;
+    font-weight: bold;
+}
+
+.playoff-picture {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.seed-row {
+    display: grid;
+    grid-template-columns: 36px 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.seed-row.seed-in {
+    border-left: 4px solid gold;
+}
+
+.seed-row.seed-bubble {
+    opacity: 0.75;
+    border-left: 4px solid #777;
+}
+
+.seed {
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+}
+
+.seed-team {
+    font-weight: bold;
+}
+
+.seed-record {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.bubble-label {
+    margin: 14px 0 4px;
+    color: #ccc;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.week-picker select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid gold;
+    background: black;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.scoreboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    text-align: left;
+}
+
+.score-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+.score-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 6px 0;
+    color: #bbb;
+}
+
+.score-side.score-winner {
+    color: white;
+    font-weight: bold;
+}
+
+.score-side.score-winner .score-points {
+    color: gold;
+}
+
+.score-team small {
+    color: #999;
+    font-weight: normal;
+}
+
+.score-points {
+    font-variant-numeric: tabular-nums;
+    font-size: 18px;
+}
+
+.score-status,
+.score-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+.score-tag {
+    color: gold;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+    .content-container {
+        margin: 16px 8px 60px;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .live-table .col-extra {
+        display: none;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 4px 8px;
+    }
+}

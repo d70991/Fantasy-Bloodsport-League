@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>2026 Season</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -25,49 +26,64 @@
 <div class="content-container">
 
   <h1>🔥 2026 Season</h1>
-<h2>🏆 2026 Divisions</h2>
+  <p class="season-updated"></p>
 
-<div class="divisions-container">
-
-  <!-- Division 1 -->
-  <div class="division-card">
-    <h3>🪑 Phil's Lawn Chair</h3>
-    <ul>
-      <li>Lorde Commish</li>
-      <li>The Conqueror</li>
-      <li>Yall Suck</li>
-      <li>Team Epps</li>
-      <li>Arise</li>
-    </ul>
+  <h2>🏆 Playoff Picture</h2>
+  <div id="playoffPicture" class="playoff-picture">
+    <p>Live standings show up here after the first ESPN sync.</p>
   </div>
 
-  <!-- Division 2 -->
-  <div class="division-card">
-    <h3>📱 Ty's Frozen Phone</h3>
-    <ul>
-      <li>The Goat</li>
-      <li>Moravia Rd MMG</li>
-      <li>Heavy Gewts</li>
-      <li>Team Ayers</li>
-      <li>Lul Daddy</li>
-    </ul>
+  <h2>📊 Standings</h2>
+  <div id="liveStandings" class="divisions-container divisions-stacked">
+
+    <!-- Division 1 -->
+    <div class="division-card">
+      <h3>🪑 Phil's Lawn Chair</h3>
+      <ul>
+        <li>Lorde Commish</li>
+        <li>The Conqueror</li>
+        <li>Yall Suck</li>
+        <li>Team Epps</li>
+        <li>Arise</li>
+      </ul>
+    </div>
+
+    <!-- Division 2 -->
+    <div class="division-card">
+      <h3>📱 Ty's Frozen Phone</h3>
+      <ul>
+        <li>The Goat</li>
+        <li>Moravia Rd MMG</li>
+        <li>Heavy Gewts</li>
+        <li>Team Ayers</li>
+        <li>Lul Daddy</li>
+      </ul>
+    </div>
+
+    <!-- Division 3 -->
+    <div class="division-card">
+      <h3>😩 Bryce's Underboob</h3>
+      <ul>
+        
+        <li>Team Nelson</li>
+        <li>Say Whattt</li>
+        <li>TomFootballTeam</li>
+        <li>Phil's Perfect Team</li>
+      </ul>
+    </div>
+
   </div>
 
-  <!-- Division 3 -->
-  <div class="division-card">
-    <h3>😩 Bryce's Underboob</h3>
-    <ul>
-      
-      <li>Team Nelson</li>
-      <li>Say Whattt</li>
-      <li>TomFootballTeam</li>
-      <li>Phil's Perfect Team</li>
-    </ul>
+  <h2>🏈 Scoreboard</h2>
+  <label class="week-picker" hidden>
+    <select id="weekSelect" aria-label="Choose a week"></select>
+  </label>
+  <div id="liveScoreboard" class="scoreboard">
+    <p>Scores show up here after the first ESPN sync.</p>
   </div>
 
 </div>
-  <h2>Draft Countdown</h2>
-  <p id="draftCountdown">Late Summer 2026</p>
+
+<script src="js/season.js"></script>
 </body>
-<script src="js/script.js"></script>
 </html>
