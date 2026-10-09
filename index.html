@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lorde Commish League</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body data-compact-standings="true">
 
   <nav class="navbar">
   <a href="index.html">Home</a>
@@ -34,13 +35,19 @@
     </ul>
 
     <h2>League Standings</h2>
-    <p>Standings coming soon...</p>
+    <p class="season-updated"></p>
+    <div id="liveStandings" class="divisions-container">
+      <p>Standings coming soon...</p>
+    </div>
+    <p><a href="Season2026.html">Full standings, playoff picture and every week's scores →</a></p>
 
     <h2>Power Rankings</h2>
     <p>Rankings coming soon...</p>
 
-    <h2>Matchups</h2>
-    <p>Matchups coming soon...</p>
+    <h2>This Week's Matchups</h2>
+    <div id="liveScoreboard" class="scoreboard">
+      <p>Matchups coming soon...</p>
+    </div>
 
   </div>
 
@@ -65,6 +72,7 @@
     </div>
   </div>
 
+  <script src="js/season.js"></script>
 </body>
 
 </html>
