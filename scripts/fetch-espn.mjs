@@ -23,7 +23,7 @@ async function fetchLeague() {
   }
 
   const views = ["mTeam", "mSettings", "mStandings", "mMatchupScore"].map(view => `view=${view}`).join("&");
-  const url = `https://lm-api-reads.espn.com/apis/v3/games/ffl/seasons/${SEASON}/segments/0/leagues/${LEAGUE_ID}?${views}`;
+  const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/${SEASON}/segments/0/leagues/${LEAGUE_ID}?${views}`;
 
   const response = await fetch(url, {
     headers: {
