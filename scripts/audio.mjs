@@ -17,22 +17,35 @@ export const VOICES = {
 
 export async function speak(speaker, text) {
   const { voice, instructions } = VOICES[speaker];
-  const response = await fetch("https://api.openai.com/v1/audio/speech", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ model: TTS_MODEL, voice, instructions, input: text, response_format: "mp3" })
-  });
 
-  if (response.status === 401) {
-    throw new Error("OpenAI rejected the API key. Make a new key and update the VIDEO_API secret.");
+  for (let attempt = 1; ; attempt += 1) {
+    const response = await fetch("https://api.openai.com/v1/audio/speech", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ model: TTS_MODEL, voice, instructions, input: text, response_format: "mp3" })
+    });
+
+    if (response.ok) {
+      return Buffer.from(await response.arrayBuffer());
+    }
+
+    const body = await response.text();
+    if (response.status === 401) {
+      throw new Error("OpenAI rejected the API key. Make a new key and update the VIDEO_API secret.");
+    }
+    if (body.includes("insufficient_quota")) {
+      throw new Error("The OpenAI account is out of credits. Add credits at https://platform.openai.com/settings/organization/billing/.");
+    }
+    // Short-term rate limits and server hiccups: back off and try again
+    if ((response.status === 429 || response.status >= 500) && attempt < 4) {
+      await new Promise(resolve => setTimeout(resolve, 2000 * attempt));
+      continue;
+    }
+    throw new Error(`OpenAI speech API returned HTTP ${response.status}: ${body.slice(0, 200)}`);
   }
-  if (!response.ok) {
-    throw new Error(`OpenAI speech API returned HTTP ${response.status}: ${(await response.text()).slice(0, 200)}`);
-  }
-  return Buffer.from(await response.arrayBuffer());
 }
 
 

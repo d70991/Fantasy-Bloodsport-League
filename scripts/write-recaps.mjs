@@ -439,6 +439,11 @@ async function main() {
   const client = dryRun ? null : new Anthropic();
   fs.mkdirSync(mediaDir, { recursive: true });
 
+  // Check the voices work before paying for any scripts (costs a fraction of a cent)
+  if (!dryRun) {
+    await speak("mike", "Bloodsport Center.");
+  }
+
   for (const week of weeks) {
     console.log(`Week ${week}:`);
     const facts = await weekFacts(season, history, week);
