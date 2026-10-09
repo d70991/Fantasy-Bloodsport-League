@@ -168,7 +168,7 @@ async function weekFacts(season, history, week) {
         winner: names.get(winnerSide.teamId),
         loser: names.get(loserSide.teamId),
         margin: round(winnerSide.score - loserSide.score),
-        allTimeSeries: series(String(game.away.teamId), String(game.home.teamId), franchiseNames),
+        allTimeSeriesIncludingThisGame: series(String(game.away.teamId), String(game.home.teamId), franchiseNames),
         playoffRound: game.tier === "WINNERS_BRACKET" ? "playoffs" : null,
         away: side(game.away),
         home: side(game.home)
@@ -192,8 +192,16 @@ async function weekFacts(season, history, week) {
     dudOfTheWeek: duds.filter(dud => dud.position !== "K").sort((dudA, dudB) => dudA.points - dudB.points)[0] || null
   };
 
+  const pointsForOrder = [...recordsAfter.values()].map(record => record.pointsFor).sort((pointsA, pointsB) => pointsB - pointsA);
   const standings = [...recordsAfter.entries()]
-    .map(([teamId, record]) => ({ team: names.get(teamId), record: record.text, pointsFor: record.pointsFor, streak: record.streak }))
+    .map(([teamId, record]) => ({
+      team: names.get(teamId),
+      record: record.text,
+      gamesPlayed: record.results.length,
+      pointsFor: record.pointsFor,
+      pointsForRank: pointsForOrder.indexOf(record.pointsFor) + 1,
+      streak: record.streak
+    }))
     .sort((teamA, teamB) => {
       const pct = team => { const [wins, losses] = team.record.split("-").map(Number); return wins / Math.max(wins + losses, 1); };
       return pct(teamB) - pct(teamA) || teamB.pointsFor - teamA.pointsFor;
@@ -204,7 +212,7 @@ async function weekFacts(season, history, week) {
     .map(game => ({
       away: `${names.get(game.away.teamId)} (${recordsAfter.get(game.away.teamId).text})`,
       home: `${names.get(game.home.teamId)} (${recordsAfter.get(game.home.teamId).text})`,
-      allTimeSeries: series(String(game.away.teamId), String(game.home.teamId), franchiseNames)
+      allTimeSeriesBeforeThisGame: series(String(game.away.teamId), String(game.home.teamId), franchiseNames)
     }));
 
   const playing = new Set(sides.map(sideData => sideData.team));
@@ -288,6 +296,8 @@ Ground rules:
 - Use only the facts in the data. Never invent players, scores, stats, injuries, trades, or quotes from managers. If you don't have a fact, don't imply one.
 - Refer to fantasy teams by their team names exactly as given. Real NFL players can be named and their fantasy points cited.
 - Trash talk is the point, but it's about fantasy football decisions and results only: lineups, benchings, scores, records. Nothing about anyone's real life, looks, family, job, or identity, and no slurs. Keep it PG-13.
+- Every number and every superlative ("most", "fewest", "first", "only") must come straight from the data. For points-for comparisons use pointsForRank (1 = most in the league); teams with a bye have played fewer games (gamesPlayed).
+- allTimeSeriesIncludingThisGame already counts this week's result. nextWeek's allTimeSeriesBeforeThisGame is the series going into that game.
 - Round points to one decimal place, as given.`;
 
 async function writeEpisode(client, facts) {
