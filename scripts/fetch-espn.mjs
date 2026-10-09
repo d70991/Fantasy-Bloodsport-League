@@ -16,13 +16,14 @@ const outputPath = path.join(repoRoot, "data", `season-${SEASON}.json`);
 
 
 async function fetchLeague() {
-  const { ESPN_S2, ESPN_SWID } = process.env;
+  const ESPN_S2 = process.env.ESPN_S2?.trim();
+  const ESPN_SWID = process.env.ESPN_SWID?.trim();
   if (!ESPN_S2 || !ESPN_SWID) {
     throw new Error("ESPN_S2 and ESPN_SWID must be set (private league cookies).");
   }
 
   const views = ["mTeam", "mSettings", "mStandings", "mMatchupScore"].map(view => `view=${view}`).join("&");
-  const url = `https://lm-api-reads.espn.com/apis/v3/games/ffl/seasons/${SEASON}/segments/0/leagues/${LEAGUE_ID}?${views}`;
+  const url = `https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/${SEASON}/segments/0/leagues/${LEAGUE_ID}?${views}`;
 
   const response = await fetch(url, {
     headers: {
@@ -134,6 +135,7 @@ async function main() {
 }
 
 main().catch(error => {
-  console.error(error.message);
+  // Node's fetch hides network failures behind "fetch failed"; the real reason is in error.cause
+  console.error(error.cause ? `${error.message}: ${error.cause.code || ""} ${error.cause.message}` : error.message);
   process.exit(1);
 });
