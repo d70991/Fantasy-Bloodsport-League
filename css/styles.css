@@ -566,6 +566,7 @@ table.live-table {
 }
 
 .week-picker select {
+    max-width: 100%;
     padding: 8px 12px;
     border-radius: 8px;
     border: 1px solid gold;
@@ -944,4 +945,175 @@ table.live-table.rival-table {
     color: #ccc;
     font-size: 13px;
     margin-top: -6px;
+}
+
+/* ======================================
+   BLOODSPORT CENTER (weekly recaps)
+====================================== */
+
+.show-brand h1 {
+    margin: 6px 0 4px;
+}
+
+.show-live {
+    display: inline-block;
+    color: #ff3b3b;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.episode {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.episode-header {
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(160, 0, 0, 0.55), rgba(0, 0, 0, 0.6));
+    border: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+.episode-header h2 {
+    margin: 6px 0;
+    font-size: 26px;
+}
+
+.episode-week {
+    color: gold;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.episode-teaser {
+    margin: 0;
+    font-style: italic;
+}
+
+.award-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.award-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 10px 12px;
+    border-left: 4px solid gold;
+}
+
+.award-card span {
+    display: block;
+    font-size: 11px;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.award-card strong {
+    display: block;
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+.award-card small {
+    color: #ccc;
+}
+
+.segment {
+    margin: 22px 0;
+}
+
+.lower-third {
+    display: inline-block;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    margin-bottom: 10px;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+    padding-right: 28px;
+}
+
+.show-line {
+    margin: 8px 0;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    line-height: 1.45;
+}
+
+.show-line .speaker {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.show-mike {
+    border-left: 3px solid #ff5c5c;
+}
+
+.show-mike .speaker {
+    color: #ff7b7b;
+}
+
+.show-tasha {
+    border-left: 3px solid #5cc8ff;
+}
+
+.show-tasha .speaker {
+    color: #7fd4ff;
+}
+
+.episode-credit {
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.episode-teaser-card {
+    display: block;
+    max-width: 760px;
+    margin: 0 auto 10px;
+    padding: 16px 18px;
+    border-radius: 12px;
+    text-align: left;
+    text-decoration: none;
+    background: linear-gradient(135deg, rgba(160, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    border: 1px solid gold;
+}
+
+.episode-teaser-card strong {
+    display: block;
+    font-size: 20px;
+    margin: 4px 0;
+}
+
+.episode-teaser-card .teaser-cta {
+    display: block;
+    color: gold;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.week-picker {
+    display: block;
+    max-width: 100%;
+}
+
+.week-picker[hidden] {
+    display: none;
 }

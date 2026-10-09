@@ -1,0 +1,9 @@
+{
+  "name": "bloodsport-scripts",
+  "private": true,
+  "type": "module",
+  "description": "ESPN sync and weekly recap scripts run by .github/workflows/espn-sync.yml",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0"
+  }
+}

@@ -7,6 +7,10 @@ on:
     - cron: "0 0-4 * * 1,2,5"
     - cron: "0 11 * * *"
   workflow_dispatch:
+    inputs:
+      max_recaps:
+        description: "Most recap episodes to write this run"
+        default: "4"
 
 permissions:
   contents: write
@@ -39,6 +43,20 @@ jobs:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: node scripts/fetch-history.mjs
+
+      - name: Install script dependencies
+        run: npm ci --prefix scripts --no-audit --no-fund
+
+      # AI weekly recaps: only calls Claude for finished weeks that don't have an episode yet.
+      # A missing or expired key skips this step without blocking the weekly data.
+      - name: Write Bloodsport Center recaps
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.DAVON_API }}
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          MAX_RECAPS: ${{ inputs.max_recaps || '4' }}
+        run: node scripts/write-recaps.mjs --max "$MAX_RECAPS"
 
       - name: Commit updated data
         id: commit

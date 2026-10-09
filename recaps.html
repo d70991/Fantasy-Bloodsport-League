@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Previous Seasons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bloodsport Center</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
-<div class="background"></div>
 
 <nav class="navbar">
   <a href="index.html">Home</a>
   <a href="Season2026.html">2026 Season</a>
   <a href="recaps.html">Bloodsport Center</a>
   <a href="rivalries.html">Rivalries</a>
+  <a href="draft-hub.html">Draft Hub</a>
   <a href="history.html">League History</a>
   <a href="seasons.html">Previous Seasons</a>
   <a href="teams.html">Team History</a>
@@ -25,30 +25,23 @@
 
 <div class="content-container">
 
-  <h1>📊 Previous Seasons</h1>
-
-  <div class="season-link">
-    <a href="2025-season.html">🏆 2025 Season</a>
+  <div class="show-brand">
+    <span class="show-live">● LIVE</span>
+    <h1>📺 Bloodsport Center</h1>
+    <p>The weekly highlight show, with Big Mike Malone and Tasha Reid.</p>
   </div>
 
-  <div class="season-link">
-    <a href="2024-season.html">📅 2024 Season</a>
-  </div>
+  <label class="week-picker" hidden>
+    <select id="episodeSelect" aria-label="Choose an episode"></select>
+  </label>
 
-  <div class="season-link">
-    <a href="2023-season.html">📅 2023 Season</a>
-  </div>
-
-  <div class="season-link">
-    <a href="2022-season.html">📅 2022 Season</a>
-  </div>
-
-  <div class="season-link">
-    <a href="2021-season.html">📅 2021 Season</a>
+  <div id="episode">
+    <p>The first episode drops after the next ESPN sync.</p>
   </div>
 
 </div>
 
+<script src="js/season.js"></script>
+<script src="js/recaps.js"></script>
 </body>
-
 </html>
