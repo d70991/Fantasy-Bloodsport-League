@@ -32,6 +32,14 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: node scripts/fetch-espn.mjs
 
+      # Past seasons for the rivalry tracker. A no-op once they're saved; never blocks the weekly data.
+      - name: Pull past seasons from ESPN
+        continue-on-error: true
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: node scripts/fetch-history.mjs
+
       - name: Commit updated data
         id: commit
         run: |
