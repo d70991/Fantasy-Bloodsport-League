@@ -1,21 +1,25 @@
-// Writes "Bloodsport Center" weekly recap episodes into data/recaps-<year>.json.
+// Makes "Bloodsport Center" weekly broadcast episodes: data/recaps-<year>.json + media/recaps/<year>-week-<n>.mp3.
 //
-// For every finished week without a recap: pull the box scores from ESPN, work out the facts
-// (scores, top players, duds, bench blunders, standings, series records), then have Claude
-// write the episode around those facts. Hourly syncs that find nothing new never call Claude.
+// For every finished week without an episode: pull the box scores from ESPN, work out the facts
+// (scores, top players, duds, bench blunders, standings, series records), have Claude write a
+// 60-90 second two-anchor script around those facts, voice each line with OpenAI text-to-speech,
+// and stitch the lines into one MP3 with exact timings so the site can sync graphics and captions.
+// Hourly syncs that find nothing new never call either API.
 //
 // Usage:
-//   ANTHROPIC_API_KEY=... ESPN_S2=... ESPN_SWID=... node scripts/write-recaps.mjs [--max 4] [--week 5 --force] [--dry-run]
+//   ANTHROPIC_API_KEY=... OPENAI_API_KEY=... ESPN_S2=... ESPN_SWID=... node scripts/write-recaps.mjs [--max 4] [--week 5 --force] [--dry-run]
 
 import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
 import path from "path";
+import { mp3Frames, speak } from "./audio.mjs";
 import { CURRENT_SEASON, fetchLeague, logErrorAndExit, repoRoot } from "./espn.mjs";
 
 const MODEL = "claude-opus-5-5";
 const seasonPath = path.join(repoRoot, "data", `season-${CURRENT_SEASON}.json`);
 const historyPath = path.join(repoRoot, "data", "history.json");
 const recapsPath = path.join(repoRoot, "data", `recaps-${CURRENT_SEASON}.json`);
+const mediaDir = path.join(repoRoot, "media", "recaps");
 
 const BENCH_SLOT = 20;
 const IR_SLOT = 21;
@@ -237,27 +241,28 @@ async function weekFacts(season, history, week) {
 // THE SHOW
 // ======================================
 
-const SEGMENT_IDS = ["cold_open", "around_the_league", "game_of_the_week", "beatdown", "player_of_the_week", "bench_blunder", "standings_check", "next_week", "sign_off"];
+// Broadcast order; each segment gets its on-screen graphic from the facts, not from the model
+const SEGMENT_IDS = ["cold_open", "quick_hits", "beatdown", "nail_biter", "player_of_the_week", "bench_blunder", "sign_off"];
 
-const EPISODE_SCHEMA = {
+const SCRIPT_SCHEMA = {
   type: "object",
   properties: {
-    episodeTitle: { type: "string", description: "Punchy episode title, under 60 characters" },
-    teaser: { type: "string", description: "One-sentence hook for the home page, under 30 words" },
+    episodeTitle: { type: "string", description: "Punchy episode title, under 50 characters" },
+    teaser: { type: "string", description: "One-sentence hook for the home page, under 25 words" },
     segments: {
       type: "array",
       items: {
         type: "object",
         properties: {
           id: { type: "string", enum: SEGMENT_IDS },
-          title: { type: "string", description: "On-screen segment title, under 40 characters" },
+          title: { type: "string", description: "On-screen segment title, under 28 characters" },
           lines: {
             type: "array",
             items: {
               type: "object",
               properties: {
                 speaker: { type: "string", enum: Object.keys(ANCHORS) },
-                text: { type: "string" }
+                text: { type: "string", description: "One spoken line, under 25 words" }
               },
               required: ["speaker", "text"],
               additionalProperties: false
@@ -273,34 +278,34 @@ const EPISODE_SCHEMA = {
   additionalProperties: false
 };
 
-const SYSTEM_PROMPT = `You write the script for "Bloodsport Center", the weekly highlight show for the Fantasy Bloodsport League, a 15-team ESPN fantasy football league of friends who talk a lot of trash. The commissioner goes by Lorde Commish. The league has a last-place punishment, so the bottom of the standings matters.
+const SYSTEM_PROMPT = `You write the spoken script for "Bloodsport Center", a 60-90 second weekly video highlight segment for the Fantasy Bloodsport League, a 15-team ESPN fantasy football league of friends who talk a lot of trash. The commissioner goes by Lorde Commish. The league has a last-place punishment.
 
-The show has two anchors:
-- ${ANCHORS.mike} (speaker "mike"): loud, theatrical, lives for blowouts and hot takes, gives out nicknames, overreacts to everything.
-- ${ANCHORS.tasha} (speaker "tasha"): sharp, dry, the numbers person. Undercuts Mike with the stat that ruins his take. Deadpan roasts.
+Two anchors, voiced by text-to-speech:
+- ${ANCHORS.mike} (speaker "mike"): loud, theatrical, hot takes, nicknames, overreacts.
+- ${ANCHORS.tasha} (speaker "tasha"): dry, deadpan, the stat that ruins Mike's take.
 
-Write it like a real sports highlight show: quick back-and-forth, callbacks, catchphrases, the anchors reacting to each other. It should read well on a web page as a transcript, so keep each line to 1-3 sentences.
+This is heard, not read. Write for the ear:
+- 170 to 220 words in total. That is a hard limit; the segment has to fit in 90 seconds.
+- Short, punchy lines, each under 25 words. Quick back-and-forth, never a monologue.
+- Say numbers the way an announcer would ("one eighty-seven five", "fifty-two points"). Don't use symbols, abbreviations like "pts" or "D/ST" (say "defense"), or anything that sounds wrong out loud.
+- Graphics appear on screen with each segment, so you can lean on them ("look at this", "check the bench").
 
 Segments, in this order, each exactly once:
-1. cold_open: open on the biggest storyline of the week.
-2. around_the_league: a quick hit on every game listed, winner, loser and final score.
-3. game_of_the_week: the closest game (awards.nailBiter), with how it was decided.
-4. beatdown: the biggest blowout (awards.beatdown). Be merciless about the loser's lineup.
-5. player_of_the_week: awards.playerOfTheWeek, plus a nod to the dud (awards.dudOfTheWeek).
-6. bench_blunder: awards.benchBlunder, the manager who left points on the bench. If it's null, roast the lowest score instead.
-7. standings_check: who's rolling, who's sliding, and the race to avoid last place. In the playoffs, use it for who's still alive.
-8. next_week: preview the most interesting matchup in nextWeek, using its all-time series. If nextWeek is empty, tease the season ahead.
-9. sign_off: both anchors sign off with a closing jab.
+1. cold_open (1-2 lines): the week's biggest storyline, as a hook.
+2. quick_hits (2-3 lines): rapid-fire through the other notable results. The full scoreboard is on screen, so don't read every score.
+3. beatdown (2 lines): awards.beatdown.
+4. nail_biter (2 lines): awards.nailBiter.
+5. player_of_the_week (2 lines): awards.playerOfTheWeek.
+6. bench_blunder (2-3 lines): awards.benchBlunder. If it's null, roast awards.lowScore instead.
+7. sign_off (2 lines): a jab about the standings or next week's best matchup, then "This has been Bloodsport Center."
 
 Ground rules:
-- Use only the facts in the data. Never invent players, scores, stats, injuries, trades, or quotes from managers. If you don't have a fact, don't imply one.
-- Refer to fantasy teams by their team names exactly as given. Real NFL players can be named and their fantasy points cited.
-- Trash talk is the point, but it's about fantasy football decisions and results only: lineups, benchings, scores, records. Nothing about anyone's real life, looks, family, job, or identity, and no slurs. Keep it PG-13.
-- Every number and every superlative ("most", "fewest", "first", "only") must come straight from the data. For points-for comparisons use pointsForRank (1 = most in the league); teams with a bye have played fewer games (gamesPlayed).
-- allTimeSeriesIncludingThisGame already counts this week's result. nextWeek's allTimeSeriesBeforeThisGame is the series going into that game.
-- Round points to one decimal place, as given.`;
+- Use only the facts in the data. Never invent players, scores, stats, injuries, trades, or quotes from managers. Every number and superlative ("most", "fewest", "only") must come straight from the data; for points-for comparisons use pointsForRank (1 = most), and teams with a bye have played fewer games.
+- allTimeSeriesIncludingThisGame already counts this week's result; nextWeek's allTimeSeriesBeforeThisGame is the series going into that game.
+- Refer to fantasy teams by their team names. Real NFL players can be named and their fantasy points cited.
+- Trash talk is about fantasy decisions and results only: lineups, benchings, scores, records. Nothing about anyone's real life, looks, family, job, or identity, and no slurs. PG-13.`;
 
-async function writeEpisode(client, facts) {
+async function writeScript(client, facts) {
   const response = await client.beta.messages.create({
     model: MODEL,
     max_tokens: 16000,
@@ -308,12 +313,12 @@ async function writeEpisode(client, facts) {
     fallbacks: "default",
     output_config: {
       effort: "medium",
-      format: { type: "json_schema", schema: EPISODE_SCHEMA }
+      format: { type: "json_schema", schema: SCRIPT_SCHEMA }
     },
     system: SYSTEM_PROMPT,
     messages: [{
       role: "user",
-      content: `Write the Bloodsport Center episode for ${facts.isPlayoffs ? "the playoff round in" : ""} Week ${facts.week} of the ${facts.season} season.\n\nThis week's data:\n${JSON.stringify(facts, null, 1)}`
+      content: `Write the Bloodsport Center script for ${facts.isPlayoffs ? "the playoff round in " : ""}Week ${facts.week} of the ${facts.season} season.\n\nThis week's data:\n${JSON.stringify(facts, null, 1)}`
     }]
   });
 
@@ -321,13 +326,79 @@ async function writeEpisode(client, facts) {
     throw new Error(`Claude declined Week ${facts.week} (${response.stop_details?.category || "no category"}).`);
   }
   if (response.stop_reason === "max_tokens") {
-    throw new Error(`Week ${facts.week} episode ran past max_tokens.`);
+    throw new Error(`Week ${facts.week} script ran past max_tokens.`);
   }
 
-  const text = response.content.filter(block => block.type === "text").map(block => block.text).join("");
-  const episode = JSON.parse(text);
+  const script = JSON.parse(response.content.filter(block => block.type === "text").map(block => block.text).join(""));
   console.log(`  ${response.model}: ${response.usage.input_tokens} in / ${response.usage.output_tokens} out`);
-  return { episode, model: response.model };
+
+  // Keep one of each segment, in broadcast order, whatever order the model used
+  script.segments = SEGMENT_IDS
+    .map(id => script.segments.find(segment => segment.id === id))
+    .filter(segment => segment && segment.lines.length > 0);
+  return { script, model: response.model };
+}
+
+
+function segmentGraphic(id, facts, script) {
+  const { awards } = facts;
+  const scoreOf = (winner, loser) => {
+    const game = facts.games.find(item => item.winner === winner && item.loser === loser);
+    const sideOf = team => game && (game.away.team === team ? game.away : game.home);
+    return game ? { winnerScore: sideOf(winner).score, loserScore: sideOf(loser).score } : {};
+  };
+
+  switch (id) {
+    case "cold_open":
+      return { type: "title", title: script.episodeTitle, week: facts.week };
+    case "quick_hits":
+      return {
+        type: "scores",
+        games: facts.games.map(game => ({ away: game.away.team, awayScore: game.away.score, home: game.home.team, homeScore: game.home.score, winner: game.winner }))
+      };
+    case "beatdown":
+    case "nail_biter": {
+      const result = id === "beatdown" ? awards.beatdown : awards.nailBiter;
+      return result ? { type: "matchup", label: id === "beatdown" ? "Beatdown of the Week" : "Nail-Biter", ...result, ...scoreOf(result.winner, result.loser) } : null;
+    }
+    case "player_of_the_week":
+      return awards.playerOfTheWeek ? { type: "player", ...awards.playerOfTheWeek } : null;
+    case "bench_blunder":
+      return awards.benchBlunder
+        ? { type: "blunder", ...awards.benchBlunder }
+        : (awards.lowScore ? { type: "stat", label: "Low Score of the Week", team: awards.lowScore.team, value: awards.lowScore.score } : null);
+    case "sign_off":
+      return facts.standingsAfterWeek.length
+        ? { type: "standings", top: facts.standingsAfterWeek.slice(0, 3), bottom: facts.standingsAfterWeek.slice(-2) }
+        : { type: "title", title: "Bloodsport Center", week: facts.week };
+    default:
+      return null;
+  }
+}
+
+// Voice every line, join them into one MP3, and record when each line and segment starts
+async function produceBroadcast(script, facts) {
+  const frames = [];
+  const beats = [];
+  const segments = [];
+  let clock = 0;
+
+  for (const segment of script.segments) {
+    const segmentStart = clock;
+    for (const line of segment.lines) {
+      const clip = mp3Frames(await speak(line.speaker, line.text));
+      beats.push({ segment: segment.id, speaker: line.speaker, text: line.text, start: round2(clock), end: round2(clock + clip.seconds) });
+      frames.push(...clip.frames);
+      clock += clip.seconds;
+    }
+    segments.push({ id: segment.id, title: segment.title, start: round2(segmentStart), end: round2(clock), graphic: segmentGraphic(segment.id, facts, script) });
+  }
+
+  return { audio: Buffer.concat(frames), beats, segments, duration: round2(clock) };
+}
+
+function round2(seconds) {
+  return Math.round(seconds * 100) / 100;
 }
 
 
@@ -339,7 +410,8 @@ async function main() {
   const season = readJson(seasonPath, null);
   if (!season) throw new Error(`Missing ${path.relative(repoRoot, seasonPath)}; run fetch-espn.mjs first.`);
   const history = readJson(historyPath, { seasons: {} });
-  const recaps = readJson(recapsPath, { season: CURRENT_SEASON, anchors: ANCHORS, weeks: {} });
+  const recaps = readJson(recapsPath, { season: CURRENT_SEASON, weeks: {} });
+  recaps.anchors = ANCHORS;
 
   const dryRun = process.argv.includes("--dry-run");
   const force = process.argv.includes("--force");
@@ -348,7 +420,8 @@ async function main() {
 
   const weeks = finishedWeeks(season)
     .filter(week => onlyWeek === null || week === onlyWeek)
-    .filter(week => force || !recaps.weeks[week])
+    // Older text-only recaps count as missing so they get remade as broadcasts
+    .filter(week => force || recaps.weeks[week]?.format !== "broadcast")
     // Newest first, so a backlog never delays this week's episode
     .reverse()
     .slice(0, maxEpisodes);
@@ -358,12 +431,13 @@ async function main() {
     return;
   }
 
-  if (!dryRun && !process.env.ANTHROPIC_API_KEY) {
-    console.log("ANTHROPIC_API_KEY isn't set; skipping recaps.");
+  if (!dryRun && (!process.env.ANTHROPIC_API_KEY || !process.env.OPENAI_API_KEY)) {
+    console.log("ANTHROPIC_API_KEY or OPENAI_API_KEY isn't set; skipping recaps.");
     return;
   }
 
   const client = dryRun ? null : new Anthropic();
+  fs.mkdirSync(mediaDir, { recursive: true });
 
   for (const week of weeks) {
     console.log(`Week ${week}:`);
@@ -374,12 +448,24 @@ async function main() {
       continue;
     }
 
-    const { episode, model } = await writeEpisode(client, facts);
+    const { script, model } = await writeScript(client, facts);
+    const words = script.segments.flatMap(segment => segment.lines).reduce((sum, line) => sum + line.text.split(/\s+/).length, 0);
+    const broadcast = await produceBroadcast(script, facts);
+
+    const audioFile = `${CURRENT_SEASON}-week-${week}.mp3`;
+    fs.writeFileSync(path.join(mediaDir, audioFile), broadcast.audio);
+
     recaps.weeks[week] = {
       week,
+      format: "broadcast",
       generatedAt: new Date().toISOString(),
       model,
-      ...episode,
+      episodeTitle: script.episodeTitle,
+      teaser: script.teaser,
+      audio: `media/recaps/${audioFile}`,
+      duration: broadcast.duration,
+      segments: broadcast.segments,
+      beats: broadcast.beats,
       awards: facts.awards,
       scores: facts.games.map(game => ({
         away: { team: game.away.team, score: game.away.score },
@@ -389,7 +475,7 @@ async function main() {
     };
     // Save after each episode so a later failure keeps the earlier ones
     fs.writeFileSync(recapsPath, JSON.stringify(recaps, null, 2) + "\n");
-    console.log(`  Saved "${episode.episodeTitle}"`);
+    console.log(`  Saved "${script.episodeTitle}": ${words} words, ${broadcast.duration}s, ${Math.round(broadcast.audio.length / 1024)} KB`);
   }
 }
 

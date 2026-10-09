@@ -1,6 +1,8 @@
 // ======================================
-// BLOODSPORT CENTER (weekly recap episodes)
-// Episodes come from data/recaps-2026.json, written by scripts/write-recaps.mjs.
+// BLOODSPORT CENTER (weekly broadcast episodes)
+// Episodes come from data/recaps-2026.json + media/recaps/*.mp3, made by scripts/write-recaps.mjs.
+// The audio drives everything: each line and segment has start/end times, so the anchor glow,
+// captions, lower third and on-screen graphic follow audio.currentTime.
 // Uses escapeHtml / formatPoints from js/season.js.
 // ======================================
 
@@ -17,118 +19,258 @@ async function loadRecaps() {
   }
 }
 
-function sortedEpisodes(recaps) {
-  return Object.values(recaps?.weeks || {}).sort((episodeA, episodeB) => episodeB.week - episodeA.week);
+function broadcastEpisodes(recaps) {
+  return Object.values(recaps?.weeks || {})
+    .filter(episode => episode.format === "broadcast")
+    .sort((episodeA, episodeB) => episodeB.week - episodeA.week);
+}
+
+function clockText(seconds) {
+  const whole = Math.max(0, Math.floor(seconds || 0));
+  return `${Math.floor(whole / 60)}:${String(whole % 60).padStart(2, "0")}`;
 }
 
 
-function awardCards(awards) {
-  const card = (label, main, detail) => main
-    ? `<div class="award-card"><span>${label}</span><strong>${main}</strong>${detail ? `<small>${detail}</small>` : ""}</div>`
-    : "";
+// ======================================
+// GRAPHICS (one per segment)
+// ======================================
 
-  const player = awards.playerOfTheWeek;
-  const blunder = awards.benchBlunder;
-  const dud = awards.dudOfTheWeek;
+function graphicHtml(graphic) {
+  if (!graphic) return "";
+  const name = text => escapeHtml(text);
 
-  return [
-    card("🏆 Player of the Week", player && escapeHtml(player.name), player && `${formatPoints(player.points)} pts · ${escapeHtml(player.team)}`),
-    card("🔨 Beatdown", awards.beatdown && escapeHtml(awards.beatdown.winner), awards.beatdown && `over ${escapeHtml(awards.beatdown.loser)} by ${formatPoints(awards.beatdown.margin)}`),
-    card("😰 Nail-Biter", awards.nailBiter && escapeHtml(awards.nailBiter.winner), awards.nailBiter && `over ${escapeHtml(awards.nailBiter.loser)} by ${formatPoints(awards.nailBiter.margin)}`),
-    card("🪑 Bench Blunder", blunder && escapeHtml(blunder.team), blunder && `Benched ${escapeHtml(blunder.benched)} (${formatPoints(blunder.benchedPoints)}) for ${escapeHtml(blunder.started)} (${formatPoints(blunder.startedPoints)})`),
-    card("📈 High Score", awards.highScore && escapeHtml(awards.highScore.team), awards.highScore && formatPoints(awards.highScore.score)),
-    card("💀 Dud of the Week", dud && escapeHtml(dud.name), dud && `${formatPoints(dud.points)} pts · ${escapeHtml(dud.team)}`)
-  ].join("");
-}
+  switch (graphic.type) {
+    case "title":
+      return `
+        <div class="gfx gfx-title">
+          <div class="gfx-kicker">Week ${graphic.week}</div>
+          <div class="gfx-headline">${name(graphic.title)}</div>
+        </div>`;
 
-function renderEpisode(container, recaps, episode) {
-  const anchors = recaps.anchors || {};
-
-  container.innerHTML = `
-    <article class="episode">
-      <div class="episode-header">
-        <div class="episode-week">Week ${episode.week}</div>
-        <h2>${escapeHtml(episode.episodeTitle)}</h2>
-        <p class="episode-teaser">${escapeHtml(episode.teaser)}</p>
-      </div>
-
-      <div class="award-grid">${awardCards(episode.awards || {})}</div>
-
-      ${episode.segments.map(segment => `
-        <section class="segment">
-          <div class="lower-third">${escapeHtml(segment.title)}</div>
-          ${segment.lines.map(line => `
-            <p class="show-line show-${escapeHtml(line.speaker)}">
-              <span class="speaker">${escapeHtml(anchors[line.speaker] || line.speaker)}</span>
-              ${escapeHtml(line.text)}
-            </p>
-          `).join("")}
-        </section>
-      `).join("")}
-
-      <div class="segment final-scores">
-        <div class="lower-third">Final Scores</div>
-        <div class="scoreboard">
-          ${(episode.scores || []).map(game => `
-            <div class="score-card">
-              ${[game.away, game.home].map(side => `
-                <div class="score-side ${side.team === game.winner ? "score-winner" : ""}">
-                  <span class="score-team">${escapeHtml(side.team)}</span>
-                  <span class="score-points">${formatPoints(side.score)}</span>
-                </div>`).join("")}
+    case "scores":
+      return `
+        <div class="gfx gfx-scores">
+          ${graphic.games.map(game => `
+            <div class="gfx-mini-score">
+              <span class="${game.away === game.winner ? "won" : ""}">${name(game.away)} <b>${formatPoints(game.awayScore)}</b></span>
+              <span class="${game.home === game.winner ? "won" : ""}">${name(game.home)} <b>${formatPoints(game.homeScore)}</b></span>
             </div>`).join("")}
-        </div>
-      </div>
+        </div>`;
 
-      <p class="episode-credit">Written by AI (Claude) from ESPN box scores. Every score and stat is real; the opinions are not.</p>
-    </article>
-  `;
+    case "matchup":
+      return `
+        <div class="gfx gfx-matchup">
+          <div class="gfx-kicker">${name(graphic.label)}</div>
+          <div class="gfx-score-row won"><span>${name(graphic.winner)}</span><b>${formatPoints(graphic.winnerScore)}</b></div>
+          <div class="gfx-score-row"><span>${name(graphic.loser)}</span><b>${formatPoints(graphic.loserScore)}</b></div>
+          <div class="gfx-foot">Won by ${formatPoints(graphic.margin)}</div>
+        </div>`;
+
+    case "player":
+      return `
+        <div class="gfx gfx-player">
+          <div class="gfx-kicker">Player of the Week</div>
+          <div class="gfx-big-number">${formatPoints(graphic.points)}</div>
+          <div class="gfx-headline">${name(graphic.name)}</div>
+          <div class="gfx-foot">${name(graphic.position)} · ${name(graphic.team)}</div>
+        </div>`;
+
+    case "blunder":
+      return `
+        <div class="gfx gfx-blunder">
+          <div class="gfx-kicker">Bench Blunder · ${name(graphic.team)}</div>
+          <div class="gfx-swap">
+            <div class="gfx-swap-side bad"><small>Started</small><span>${name(graphic.started)}</span><b>${formatPoints(graphic.startedPoints)}</b></div>
+            <div class="gfx-swap-vs">vs</div>
+            <div class="gfx-swap-side good"><small>Benched</small><span>${name(graphic.benched)}</span><b>${formatPoints(graphic.benchedPoints)}</b></div>
+          </div>
+          <div class="gfx-foot">${formatPoints(graphic.pointsLost)} points left on the bench</div>
+        </div>`;
+
+    case "stat":
+      return `
+        <div class="gfx gfx-player">
+          <div class="gfx-kicker">${name(graphic.label)}</div>
+          <div class="gfx-big-number">${formatPoints(graphic.value)}</div>
+          <div class="gfx-headline">${name(graphic.team)}</div>
+        </div>`;
+
+    case "standings": {
+      const row = team => `<div class="gfx-standing"><span>${name(team.team)}</span><b>${name(team.record)}</b></div>`;
+      return `
+        <div class="gfx gfx-standings">
+          <div class="gfx-kicker">Top of the league</div>
+          ${graphic.top.map(row).join("")}
+          <div class="gfx-kicker gfx-danger">Last-place watch</div>
+          ${graphic.bottom.map(row).join("")}
+        </div>`;
+    }
+
+    default:
+      return "";
+  }
 }
 
 
-// Home page teaser for the newest episode
-function renderLatestTeaser(container, recaps) {
-  const latest = sortedEpisodes(recaps)[0];
-  if (!latest) return;
+// ======================================
+// PLAYER
+// ======================================
+
+function setupPlayer(episodes, anchors) {
+  const audio = document.getElementById("audio");
+  const graphicEl = document.getElementById("graphic");
+  const lowerThirdEl = document.getElementById("lowerThird");
+  const captionEl = document.getElementById("caption");
+  const bigPlay = document.getElementById("bigPlay");
+  const playPause = document.getElementById("playPause");
+  const seek = document.getElementById("seek");
+  const timeEl = document.getElementById("time");
+  const anchorEls = [...document.querySelectorAll(".anchor")];
+
+  let episode = null;
+  let shownSegment = null;
+  let frame = null;
+
+  const showSegment = segment => {
+    if (segment === shownSegment) return;
+    shownSegment = segment;
+    graphicEl.innerHTML = segment ? graphicHtml(segment.graphic) : "";
+    lowerThirdEl.textContent = segment ? segment.title : "";
+    lowerThirdEl.classList.toggle("visible", Boolean(segment));
+    // Restart the entrance animations
+    [graphicEl, lowerThirdEl].forEach(element => {
+      element.classList.remove("enter");
+      void element.offsetWidth;
+      element.classList.add("enter");
+    });
+  };
+
+  const render = () => {
+    const now = audio.currentTime;
+    const beat = episode.beats.find(item => now >= item.start && now < item.end) || null;
+    const segment = episode.segments.find(item => now >= item.start && now < item.end) || (now >= episode.duration ? episode.segments.at(-1) : episode.segments[0]);
+
+    showSegment(segment);
+    const speaking = beat && !audio.paused ? beat.speaker : null;
+    anchorEls.forEach(element => element.classList.toggle("speaking", element.dataset.speaker === speaking));
+    captionEl.textContent = beat ? beat.text : "";
+
+    seek.value = episode.duration ? (now / episode.duration) * 100 : 0;
+    timeEl.textContent = `${clockText(now)} / ${clockText(episode.duration)}`;
+  };
+
+  const loop = () => {
+    render();
+    if (!audio.paused) frame = requestAnimationFrame(loop);
+  };
+
+  const setPlaying = playing => {
+    playPause.textContent = playing ? "❚❚" : "▶";
+    playPause.setAttribute("aria-label", playing ? "Pause" : "Play");
+    bigPlay.hidden = playing;
+  };
+
+  const toggle = () => {
+    if (audio.paused) {
+      if (audio.currentTime >= episode.duration - 0.05) audio.currentTime = 0;
+      audio.play().catch(error => console.error("Playback failed:", error));
+    } else {
+      audio.pause();
+    }
+  };
+
+  audio.addEventListener("play", () => {
+    bigPlay.textContent = "▶";
+    bigPlay.setAttribute("aria-label", "Play episode");
+    setPlaying(true);
+    cancelAnimationFrame(frame);
+    loop();
+  });
+  // Seeking while paused still moves the graphics and captions
+  audio.addEventListener("seeked", render);
+  audio.addEventListener("pause", () => { setPlaying(false); render(); });
+  audio.addEventListener("ended", () => {
+    setPlaying(false);
+    bigPlay.textContent = "↻";
+    bigPlay.setAttribute("aria-label", "Replay episode");
+    render();
+  });
+  bigPlay.addEventListener("click", toggle);
+  playPause.addEventListener("click", toggle);
+  document.querySelector(".stage").addEventListener("click", event => {
+    if (!event.target.closest(".big-play")) toggle();
+  });
+  seek.addEventListener("input", () => {
+    audio.currentTime = (Number(seek.value) / 100) * episode.duration;
+    render();
+  });
+
+  return function load(next) {
+    episode = next;
+    shownSegment = null;
+    audio.pause();
+    audio.src = episode.audio;
+    audio.currentTime = 0;
+    bigPlay.textContent = "▶";
+    bigPlay.setAttribute("aria-label", "Play episode");
+    setPlaying(false);
+    document.getElementById("stageWeek").textContent = `WEEK ${episode.week}`;
+    render();
+
+    document.getElementById("transcriptLines").innerHTML = episode.beats.map(beat =>
+      `<p><b>${escapeHtml(anchors[beat.speaker] || beat.speaker)}:</b> ${escapeHtml(beat.text)}</p>`
+    ).join("");
+  };
+}
+
+
+// Home page card for the newest episode
+function renderLatestTeaser(container, episode) {
   container.innerHTML = `
-    <a class="episode-teaser-card" href="recaps.html?week=${latest.week}">
-      <span class="show-live">● NEW EPISODE · WEEK ${latest.week}</span>
-      <strong>${escapeHtml(latest.episodeTitle)}</strong>
-      <span>${escapeHtml(latest.teaser)}</span>
-      <span class="teaser-cta">Watch the recap →</span>
+    <a class="episode-teaser-card" href="recaps.html?week=${episode.week}">
+      <span class="teaser-play">▶</span>
+      <span class="teaser-text">
+        <span class="show-live">● NEW · WEEK ${episode.week} · ${clockText(episode.duration)}</span>
+        <strong>${escapeHtml(episode.episodeTitle)}</strong>
+        <span>${escapeHtml(episode.teaser)}</span>
+      </span>
     </a>
   `;
 }
 
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const episodeEl = document.getElementById("episode");
+  const broadcastEl = document.getElementById("broadcast");
   const teaserEl = document.getElementById("latestRecap");
-  if (!episodeEl && !teaserEl) return;
+  if (!broadcastEl && !teaserEl) return;
 
   const recaps = await loadRecaps();
-  const episodes = sortedEpisodes(recaps);
+  const episodes = broadcastEpisodes(recaps);
   if (episodes.length === 0) return;
 
   if (teaserEl) {
-    renderLatestTeaser(teaserEl, recaps);
+    renderLatestTeaser(teaserEl, episodes[0]);
   }
+  if (!broadcastEl) return;
 
-  if (episodeEl) {
-    const select = document.getElementById("episodeSelect");
-    const requested = Number(new URLSearchParams(window.location.search).get("week"));
-    const start = episodes.find(episode => episode.week === requested) || episodes[0];
+  document.getElementById("noEpisodes").hidden = true;
+  broadcastEl.hidden = false;
+  document.getElementById("transcript").hidden = false;
 
-    select.innerHTML = episodes.map(episode =>
-      `<option value="${episode.week}" ${episode === start ? "selected" : ""}>Week ${episode.week}: ${escapeHtml(episode.episodeTitle)}</option>`
-    ).join("");
-    select.closest(".week-picker").removeAttribute("hidden");
+  const load = setupPlayer(episodes, recaps.anchors || {});
+  const select = document.getElementById("episodeSelect");
+  const requested = Number(new URLSearchParams(window.location.search).get("week"));
+  const start = episodes.find(episode => episode.week === requested) || episodes[0];
 
-    const show = week => {
-      renderEpisode(episodeEl, recaps, episodes.find(episode => episode.week === week));
-      window.history.replaceState(null, "", `?week=${week}`);
-    };
-    select.addEventListener("change", () => show(Number(select.value)));
-    show(start.week);
-  }
+  select.innerHTML = episodes.map(episode =>
+    `<option value="${episode.week}" ${episode === start ? "selected" : ""}>Week ${episode.week}: ${escapeHtml(episode.episodeTitle)}</option>`
+  ).join("");
+  select.closest(".week-picker").removeAttribute("hidden");
+
+  const show = week => {
+    load(episodes.find(episode => episode.week === week));
+    window.history.replaceState(null, "", `?week=${week}`);
+  };
+  select.addEventListener("change", () => show(Number(select.value)));
+  show(start.week);
 });

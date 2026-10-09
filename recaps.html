@@ -25,19 +25,57 @@
 
 <div class="content-container">
 
-  <div class="show-brand">
-    <span class="show-live">● LIVE</span>
-    <h1>📺 Bloodsport Center</h1>
-    <p>The weekly highlight show, with Big Mike Malone and Tasha Reid.</p>
+  <h1>📺 Bloodsport Center</h1>
+  <p>Your weekly 90-second highlight show, with Big Mike Malone and Tasha Reid.</p>
+
+  <div id="broadcast" class="broadcast" hidden>
+    <div class="stage">
+      <div class="stage-top">
+        <span class="show-live">● LIVE</span>
+        <span class="stage-brand">BLOODSPORT CENTER</span>
+        <span id="stageWeek" class="stage-week"></span>
+      </div>
+
+      <div class="stage-anchors">
+        <div class="anchor" data-speaker="mike">
+          <div class="anchor-avatar">BM<span class="sound-bars"><i></i><i></i><i></i></span></div>
+          <div class="anchor-name">Big Mike</div>
+        </div>
+        <div class="anchor" data-speaker="tasha">
+          <div class="anchor-avatar">TR<span class="sound-bars"><i></i><i></i><i></i></span></div>
+          <div class="anchor-name">Tasha</div>
+        </div>
+      </div>
+
+      <div id="graphic" class="graphic-slot"></div>
+
+      <div id="lowerThird" class="stage-lower-third"></div>
+      <div id="caption" class="stage-caption" aria-live="polite"></div>
+
+      <button id="bigPlay" class="big-play" type="button" aria-label="Play episode">▶</button>
+    </div>
+
+    <div class="player-controls">
+      <button id="playPause" class="control-button" type="button" aria-label="Play">▶</button>
+      <input id="seek" class="seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Seek">
+      <span id="time" class="time">0:00 / 0:00</span>
+    </div>
+
+    <audio id="audio" preload="metadata"></audio>
   </div>
 
   <label class="week-picker" hidden>
     <select id="episodeSelect" aria-label="Choose an episode"></select>
   </label>
 
-  <div id="episode">
+  <div id="noEpisodes">
     <p>The first episode drops after the next ESPN sync.</p>
   </div>
+
+  <details id="transcript" class="transcript" hidden>
+    <summary>Read the transcript</summary>
+    <div id="transcriptLines"></div>
+  </details>
 
 </div>
 

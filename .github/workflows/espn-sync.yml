@@ -47,12 +47,13 @@ jobs:
       - name: Install script dependencies
         run: npm ci --prefix scripts --no-audit --no-fund
 
-      # AI weekly recaps: only calls Claude for finished weeks that don't have an episode yet.
-      # A missing or expired key skips this step without blocking the weekly data.
+      # Bloodsport Center: Claude writes the script, OpenAI voices it. Only runs for finished weeks
+      # without an episode. A missing or expired key skips this step without blocking the weekly data.
       - name: Write Bloodsport Center recaps
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.DAVON_API }}
+          OPENAI_API_KEY: ${{ secrets.VIDEO_API }}
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
           MAX_RECAPS: ${{ inputs.max_recaps || '4' }}
@@ -61,7 +62,7 @@ jobs:
       - name: Commit updated data
         id: commit
         run: |
-          git add data/
+          git add data/ media/
           if git diff --cached --quiet; then
             echo "changed=no" >> "$GITHUB_OUTPUT"
             exit 0
