@@ -566,6 +566,7 @@ table.live-table {
 }
 
 .week-picker select {
+    max-width: 100%;
     padding: 8px 12px;
     border-radius: 8px;
     border: 1px solid gold;
@@ -1106,4 +1107,13 @@ table.live-table.rival-table {
     color: gold;
     font-weight: bold;
     margin-top: 8px;
+}
+
+.week-picker {
+    display: block;
+    max-width: 100%;
+}
+
+.week-picker[hidden] {
+    display: none;
 }
