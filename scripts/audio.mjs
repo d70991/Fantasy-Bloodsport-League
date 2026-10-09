@@ -34,7 +34,7 @@ export async function speak(speaker, text) {
 
     const body = await response.text();
     if (response.status === 401) {
-      throw new Error("OpenAI rejected the API key. Make a new key and update the VIDEO_API secret.");
+      throw new Error("OpenAI rejected the API key. Make a new key and update the OPENAI_API_KEY secret.");
     }
     if (body.includes("insufficient_quota")) {
       throw new Error("The OpenAI account is out of credits. Add credits at https://platform.openai.com/settings/organization/billing/.");
