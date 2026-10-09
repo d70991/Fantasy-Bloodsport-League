@@ -162,7 +162,8 @@ function setupWeekPicker(select, scoreboard, season) {
 document.addEventListener("DOMContentLoaded", async () => {
   const standingsEl = document.getElementById("liveStandings");
   const scoreboardEl = document.getElementById("liveScoreboard");
-  if (!standingsEl && !scoreboardEl) {
+  const powerEl = document.getElementById("powerRankings");
+  if (!standingsEl && !scoreboardEl && !powerEl) {
     return;
   }
 
@@ -176,6 +177,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (standingsEl) {
     renderStandings(standingsEl, season, { compact });
+  }
+
+  if (powerEl && typeof renderPowerRankings === "function") {
+    renderPowerRankings(powerEl, season, { compact });
   }
 
   const playoffEl = document.getElementById("playoffPicture");
