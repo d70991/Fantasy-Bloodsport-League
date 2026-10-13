@@ -1,8 +1,8 @@
 {
   "season": 2026,
   "leagueName": "Fantasy Bloodsport League",
-  "updatedAt": "2026-10-13T06:23:46.818Z",
-  "currentWeek": 5,
+  "updatedAt": "2026-10-13T18:04:00.403Z",
+  "currentWeek": 6,
   "regularSeasonWeeks": 14,
   "playoffTeamCount": 8,
   "divisions": [
@@ -25,13 +25,13 @@
       "name": "Lorde Commish",
       "abbrev": "KB24",
       "divisionId": 3,
-      "wins": 1,
+      "wins": 2,
       "losses": 3,
       "ties": 0,
-      "pointsFor": 473,
-      "pointsAgainst": 491,
-      "streak": "W1",
-      "playoffSeed": 12
+      "pointsFor": 625,
+      "pointsAgainst": 641.5,
+      "streak": "W2",
+      "playoffSeed": 9
     },
     {
       "id": 4,
@@ -39,12 +39,12 @@
       "abbrev": "WIn",
       "divisionId": 1,
       "wins": 1,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "pointsFor": 398.5,
-      "pointsAgainst": 448.5,
-      "streak": "L1",
-      "playoffSeed": 9
+      "pointsFor": 479,
+      "pointsAgainst": 555.5,
+      "streak": "L2",
+      "playoffSeed": 11
     },
     {
       "id": 6,
@@ -52,12 +52,12 @@
       "abbrev": "GOAT",
       "divisionId": 2,
       "wins": 1,
-      "losses": 3,
+      "losses": 4,
       "ties": 0,
-      "pointsFor": 553,
-      "pointsAgainst": 572,
-      "streak": "L3",
-      "playoffSeed": 13
+      "pointsFor": 689,
+      "pointsAgainst": 739,
+      "streak": "L4",
+      "playoffSeed": 14
     },
     {
       "id": 9,
@@ -65,12 +65,12 @@
       "abbrev": "WB3",
       "divisionId": 3,
       "wins": 3,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "pointsFor": 661,
-      "pointsAgainst": 467,
-      "streak": "W2",
-      "playoffSeed": 3
+      "pointsFor": 816,
+      "pointsAgainst": 646,
+      "streak": "L1",
+      "playoffSeed": 5
     },
     {
       "id": 10,
@@ -78,24 +78,24 @@
       "abbrev": "COLB",
       "divisionId": 2,
       "wins": 3,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "pointsFor": 535,
-      "pointsAgainst": 496,
-      "streak": "W3",
-      "playoffSeed": 5
+      "pointsFor": 677.5,
+      "pointsAgainst": 658.5,
+      "streak": "L1",
+      "playoffSeed": 6
     },
     {
       "id": 11,
       "name": "Team Nelson",
       "abbrev": "NELS",
       "divisionId": 2,
-      "wins": 4,
+      "wins": 5,
       "losses": 0,
       "ties": 0,
-      "pointsFor": 686,
-      "pointsAgainst": 552,
-      "streak": "W4",
+      "pointsFor": 853,
+      "pointsAgainst": 688,
+      "streak": "W5",
       "playoffSeed": 1
     },
     {
@@ -103,38 +103,38 @@
       "name": "Yall suck",
       "abbrev": "NERC",
       "divisionId": 3,
-      "wins": 3,
+      "wins": 4,
       "losses": 1,
       "ties": 0,
-      "pointsFor": 558.5,
-      "pointsAgainst": 552.5,
-      "streak": "W2",
-      "playoffSeed": 4
+      "pointsFor": 737.5,
+      "pointsAgainst": 707.5,
+      "streak": "W3",
+      "playoffSeed": 3
     },
     {
       "id": 14,
       "name": "Heavy Gewts",
       "abbrev": "PVP3",
       "divisionId": 2,
-      "wins": 2,
+      "wins": 3,
       "losses": 2,
       "ties": 0,
-      "pointsFor": 567,
-      "pointsAgainst": 548,
-      "streak": "L1",
-      "playoffSeed": 6
+      "pointsFor": 729.5,
+      "pointsAgainst": 690.5,
+      "streak": "W1",
+      "playoffSeed": 4
     },
     {
       "id": 15,
       "name": "Say whatttt",
       "abbrev": "damn",
       "divisionId": 1,
-      "wins": 4,
+      "wins": 5,
       "losses": 0,
       "ties": 0,
-      "pointsFor": 576.5,
-      "pointsAgainst": 464.5,
-      "streak": "W4",
+      "pointsFor": 739,
+      "pointsAgainst": 580,
+      "streak": "W5",
       "playoffSeed": 2
     },
     {
@@ -142,13 +142,13 @@
       "name": "Team Ayers",
       "abbrev": "ARS",
       "divisionId": 2,
-      "wins": 0,
+      "wins": 1,
       "losses": 3,
       "ties": 0,
-      "pointsFor": 395,
-      "pointsAgainst": 485,
-      "streak": "L3",
-      "playoffSeed": 15
+      "pointsFor": 502,
+      "pointsAgainst": 565.5,
+      "streak": "W1",
+      "playoffSeed": 12
     },
     {
       "id": 20,
@@ -156,12 +156,12 @@
       "abbrev": "EPPS",
       "divisionId": 3,
       "wins": 2,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "pointsFor": 560.5,
-      "pointsAgainst": 575,
-      "streak": "W1",
-      "playoffSeed": 8
+      "pointsFor": 711,
+      "pointsAgainst": 727,
+      "streak": "L1",
+      "playoffSeed": 10
     },
     {
       "id": 21,
@@ -169,25 +169,25 @@
       "abbrev": "Gbg ",
       "divisionId": 3,
       "wins": 0,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
-      "pointsFor": 403.5,
-      "pointsAgainst": 601,
-      "streak": "L4",
-      "playoffSeed": 14
+      "pointsFor": 554,
+      "pointsAgainst": 755,
+      "streak": "L5",
+      "playoffSeed": 15
     },
     {
       "id": 22,
       "name": "Tomfootballteam",
       "abbrev": "TTT",
       "divisionId": 1,
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
       "ties": 0,
-      "pointsFor": 404.5,
-      "pointsAgainst": 461,
-      "streak": "L1",
-      "playoffSeed": 10
+      "pointsFor": 558.5,
+      "pointsAgainst": 611.5,
+      "streak": "W1",
+      "playoffSeed": 8
     },
     {
       "id": 23,
@@ -208,12 +208,12 @@
       "abbrev": "LULD",
       "divisionId": 1,
       "wins": 1,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "pointsFor": 346,
-      "pointsAgainst": 381,
-      "streak": "L1",
-      "playoffSeed": 11
+      "pointsFor": 461.5,
+      "pointsAgainst": 543.5,
+      "streak": "L2",
+      "playoffSeed": 13
     }
   ],
   "matchups": [
@@ -619,7 +619,7 @@
         "teamId": 24,
         "score": 115.5
       },
-      "winner": null,
+      "winner": 15,
       "playoff": false,
       "tier": "NONE"
     },
@@ -633,7 +633,7 @@
         "teamId": 6,
         "score": 136
       },
-      "winner": null,
+      "winner": 11,
       "playoff": false,
       "tier": "NONE"
     },
@@ -647,7 +647,7 @@
         "teamId": 14,
         "score": 162.5
       },
-      "winner": null,
+      "winner": 14,
       "playoff": false,
       "tier": "NONE"
     },
@@ -661,7 +661,7 @@
         "teamId": 20,
         "score": 150.5
       },
-      "winner": null,
+      "winner": 1,
       "playoff": false,
       "tier": "NONE"
     },
@@ -675,7 +675,7 @@
         "teamId": 16,
         "score": 107
       },
-      "winner": null,
+      "winner": 16,
       "playoff": false,
       "tier": "NONE"
     },
@@ -689,7 +689,7 @@
         "teamId": 22,
         "score": 154
       },
-      "winner": null,
+      "winner": 22,
       "playoff": false,
       "tier": "NONE"
     },
@@ -703,7 +703,7 @@
         "teamId": 12,
         "score": 179
       },
-      "winner": null,
+      "winner": 12,
       "playoff": false,
       "tier": "NONE"
     },
