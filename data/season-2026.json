@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "leagueName": "Fantasy Bloodsport League",
-  "updatedAt": "2026-10-18T21:58:57.886Z",
+  "updatedAt": "2026-10-18T23:55:19.013Z",
   "currentWeek": 6,
   "regularSeasonWeeks": 14,
   "playoffTeamCount": 8,
@@ -711,11 +711,11 @@
       "week": 6,
       "home": {
         "teamId": 1,
-        "score": 63
+        "score": 87
       },
       "away": {
         "teamId": 11,
-        "score": 148
+        "score": 171
       },
       "winner": null,
       "playoff": false,
@@ -725,11 +725,11 @@
       "week": 6,
       "home": {
         "teamId": 14,
-        "score": 116
+        "score": 132
       },
       "away": {
         "teamId": 6,
-        "score": 108.5
+        "score": 143.5
       },
       "winner": null,
       "playoff": false,
@@ -739,11 +739,11 @@
       "week": 6,
       "home": {
         "teamId": 15,
-        "score": 107.5
+        "score": 110
       },
       "away": {
         "teamId": 23,
-        "score": 122
+        "score": 132.5
       },
       "winner": null,
       "playoff": false,
@@ -757,7 +757,7 @@
       },
       "away": {
         "teamId": 22,
-        "score": 71
+        "score": 68
       },
       "winner": null,
       "playoff": false,
@@ -767,11 +767,11 @@
       "week": 6,
       "home": {
         "teamId": 21,
-        "score": 136.5
+        "score": 151.5
       },
       "away": {
         "teamId": 4,
-        "score": 82
+        "score": 86
       },
       "winner": null,
       "playoff": false,
@@ -781,11 +781,11 @@
       "week": 6,
       "home": {
         "teamId": 16,
-        "score": 65
+        "score": 62
       },
       "away": {
         "teamId": 10,
-        "score": 85
+        "score": 104
       },
       "winner": null,
       "playoff": false,
@@ -795,11 +795,11 @@
       "week": 6,
       "home": {
         "teamId": 9,
-        "score": 136.5
+        "score": 150
       },
       "away": {
         "teamId": 24,
-        "score": 99
+        "score": 126
       },
       "winner": null,
       "playoff": false,
