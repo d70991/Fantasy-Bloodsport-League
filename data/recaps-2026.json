@@ -2115,6 +2115,405 @@
           "winner": "Yall suck"
         }
       ]
+    },
+    "6": {
+      "week": 6,
+      "generatedAt": "2026-10-20T15:36:27.037Z",
+      "model": "claude-opus-5-5",
+      "episodeTitle": "Six and Oh: Team Nelson Dethrones the Commish",
+      "teaser": "Team Nelson drops 171 on Lorde Commish to stay perfect, Trevor Lawrence goes for 52.5, and Team Ayers loses by one point.",
+      "segments": [
+        {
+          "id": "cold_open",
+          "title": "The Commish Gets Served",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Welcome to Bloodsport Center! I'm Big Mike Malone, and the commissioner just got DETHRONED in his own league!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "I'm Tasha Reid. Team Nelson beat Lorde Commish 171 to 131.5, the highest score of the week, and moved to 6-0."
+            },
+            {
+              "speaker": "mike",
+              "text": "Six and oh! The only unbeaten team left! I'm calling them the Nelson Express, and the Commish just got run over on the tracks!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Small context. Lorde Commish still leads the all-time series 7-2. He just picked a bad week to remember he has an opponent."
+            }
+          ]
+        },
+        {
+          "id": "around_the_league",
+          "title": "Around the League",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Let's ride! Team Nelson 171, Lorde Commish 131.5. The Express rolls on!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "The GOAT beat Heavy Gewts 143.5 to 132. Josh Allen put up 39, and Heavy Gewts still lead that series 6-4."
+            },
+            {
+              "speaker": "mike",
+              "text": "phillip's Perfect Team takes down Say whatttt 136.5 to 110! The 5-1 squad finally blinks!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Despite C.J. Stroud scoring 45 for Say whatttt. Meanwhile they left the Bears D/ST and 14 points on the bench and started the Giants D/ST for zero."
+            },
+            {
+              "speaker": "mike",
+              "text": "Tomfootballteam 129.5, Yall suck 95.5! Tomfootballteam goes up 2-0 all time!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Drake Maye scored 45.5 for Yall suck, and they still posted the lowest score of the week. That takes teamwork."
+            },
+            {
+              "speaker": "mike",
+              "text": "GetBackGang over Northeast Winners, 151.5 to 120.5! The GetBackGang actually got back!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "For one week. Series now tied 1-1."
+            },
+            {
+              "speaker": "mike",
+              "text": "Moravia RD MMG edges Team Ayers 110.5 to 109.5, and The Conqueror crushes Lul Daddy 160.5 to 126!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "And Team epps was on bye, which means they had the only week in the league with zero bad decisions."
+            }
+          ]
+        },
+        {
+          "id": "game_of_the_week",
+          "title": "Nail-Biter: Decided by One",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Game of the Week! Moravia RD MMG 110.5, Team Ayers 109.5! ONE POINT! My heart can't take this!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Here's how it was decided. Team Ayers started the Bills D/ST for negative 2 while the Lions D/ST sat on the bench with 0."
+            },
+            {
+              "speaker": "mike",
+              "text": "Wait. Wait. Play the Lions and it's 111.5 to 110.5?"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Correct. Team Ayers lost a one-point game by picking the defense that went negative."
+            },
+            {
+              "speaker": "mike",
+              "text": "And Moravia wasn't clean either! They benched DeMario Douglas for 16.5 and started Terry McLaurin for 2.5!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Fourteen points lost and they still won, thanks to Aaron Rodgers with 35 and James Cook III with 33. Moravia now leads the series 7-3."
+            },
+            {
+              "speaker": "mike",
+              "text": "Sometimes it's better to be lucky than good, and Moravia was neither and STILL won!"
+            }
+          ]
+        },
+        {
+          "id": "beatdown",
+          "title": "Beatdown: Nelson Over the Commish",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Beatdown of the week! Team Nelson over Lorde Commish by 39.5! Bring out the gavel, because the Commish just got sentenced!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Kirk Cousins scored 38.5, Chuba Hubbard 33.5, Isaiah Likely 25. Team Nelson outscored the Commish while starting a defense that went negative 4."
+            },
+            {
+              "speaker": "mike",
+              "text": "The Commish's lineup had Jordan Love at 36, Tre Tucker at 24.5, Germie Bernard at 19.5, and then the kicker shows up for ONE point!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Brandon Aubrey, 1 point. That's not a kicker, that's an extra point attempt."
+            },
+            {
+              "speaker": "mike",
+              "text": "And to be fair, 131.5 isn't a bad score!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "It was the fifth-highest losing score of the week out of seven. Not bad. Just not enough. Now 2-4 with the league watching him enforce the last-place punishment from a little closer than he'd like."
+            }
+          ]
+        },
+        {
+          "id": "player_of_the_week",
+          "title": "Player of the Week",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Player of the Week! Trevor Lawrence! 52.5 points for GetBackGang! The man went NUCLEAR!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Top individual score of the week, and it powered GetBackGang to their first win of the season at 1-5."
+            },
+            {
+              "speaker": "mike",
+              "text": "And the Dud of the Week goes to the Jaguars D/ST, negative 4 for Team Nelson!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "With the Jets D/ST on the bench scoring 4. Eight points lost, and Team Nelson won by 39.5 anyway."
+            },
+            {
+              "speaker": "mike",
+              "text": "When you're 6-0, the dud doesn't even hurt! That's the Nelson Express, baby!"
+            }
+          ]
+        },
+        {
+          "id": "bench_blunder",
+          "title": "Bench Blunder",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Bench Blunder time! Northeast Winners, come on down!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "They benched Bam Knight, who scored 16.5, and started Cam Skattebo, who scored 0. That's 16.5 points lost, the biggest blunder of the week."
+            },
+            {
+              "speaker": "mike",
+              "text": "A goose egg! A donut! The Northeast Winners started a bagel at running back!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "In fairness, they lost by 31, so the right lineup still loses. Which is somehow worse."
+            },
+            {
+              "speaker": "mike",
+              "text": "Honorable mention: Tomfootballteam left Jayden Daniels on the bench with 43.5!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "And started Brock Purdy for 34.5, lost 9 points, and won by 34. Some people get to make mistakes."
+            }
+          ]
+        },
+        {
+          "id": "standings_check",
+          "title": "Standings Check",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Standings! Team Nelson at 6-0, riding a W6, and first in the league in points with 1,024!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Say whatttt sits second at 5-1, but they're fourth in points. The Conqueror is 4-2 and second in points with 976.5, so watch out."
+            },
+            {
+              "speaker": "mike",
+              "text": "Yall suck and Moravia RD MMG also at 4-2! Moravia is seventh in points, living on one-point miracles!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "phillip's Perfect Team and Tomfootballteam are 3-2 with a game in hand. Heavy Gewts hold the eighth and final playoff spot at 3-3 despite being third in points."
+            },
+            {
+              "speaker": "mike",
+              "text": "Now the basement! The race nobody wants to win!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "GetBackGang is last at 1-5. Team Ayers, Northeast Winners and Lul Daddy are all 1-4 with a game in hand."
+            },
+            {
+              "speaker": "mike",
+              "text": "Lul Daddy and Northeast Winners are both on L3 skids!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "And Lul Daddy is fifteenth in points, dead last in the league at 587.5. The punishment is starting to learn their name."
+            }
+          ]
+        },
+        {
+          "id": "next_week",
+          "title": "Next Week: Express vs. Kryptonite",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Next week! The 6-0 Nelson Express rolls into town against 1-4 Team Ayers! Easy win, right?"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Team Ayers leads the all-time series 3-1. Team Nelson's one win in that series is all they've got."
+            },
+            {
+              "speaker": "mike",
+              "text": "Kryptonite! Team Ayers is the Express's kryptonite! I'm calling the upset of the year!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "You called Team Nelson a lock thirty seconds ago."
+            },
+            {
+              "speaker": "mike",
+              "text": "Also watch Tomfootballteam at Northeast Winners. Northeast Winners lead that one 4-0!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "And Team epps visits Lorde Commish, with epps up 4-3 all time. The Commish needs that one more than he'd like to admit."
+            }
+          ]
+        },
+        {
+          "id": "sign_off",
+          "title": "Sign Off",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "That's the show! Big Mike Malone saying: set your lineups, and for the love of the game, check your D/ST!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "I'm Tasha Reid. Team Ayers, the Lions D/ST scored zero, and that still would've won you the game. Goodnight."
+            }
+          ]
+        }
+      ],
+      "awards": {
+        "playerOfTheWeek": {
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "points": 52.5,
+          "team": "GetBackGang"
+        },
+        "highScore": {
+          "team": "Team Nelson",
+          "score": 171
+        },
+        "lowScore": {
+          "team": "Yall suck",
+          "score": 95.5
+        },
+        "beatdown": {
+          "winner": "Team Nelson",
+          "loser": "Lorde Commish",
+          "margin": 39.5
+        },
+        "nailBiter": {
+          "winner": "Moravia RD MMG",
+          "loser": "Team Ayers",
+          "margin": 1
+        },
+        "benchBlunder": {
+          "team": "Northeast Winners",
+          "benched": "Bam Knight",
+          "benchedPoints": 16.5,
+          "started": "Cam Skattebo",
+          "startedPoints": 0,
+          "position": "RB",
+          "pointsLost": 16.5
+        },
+        "dudOfTheWeek": {
+          "team": "Team Nelson",
+          "name": "Jaguars D/ST",
+          "position": "D/ST",
+          "points": -4
+        }
+      },
+      "scores": [
+        {
+          "away": {
+            "team": "Team Nelson",
+            "score": 171
+          },
+          "home": {
+            "team": "Lorde Commish",
+            "score": 131.5
+          },
+          "winner": "Team Nelson"
+        },
+        {
+          "away": {
+            "team": "The GOAT",
+            "score": 143.5
+          },
+          "home": {
+            "team": "Heavy Gewts",
+            "score": 132
+          },
+          "winner": "The GOAT"
+        },
+        {
+          "away": {
+            "team": "phillip's Perfect Team",
+            "score": 136.5
+          },
+          "home": {
+            "team": "Say whatttt",
+            "score": 110
+          },
+          "winner": "phillip's Perfect Team"
+        },
+        {
+          "away": {
+            "team": "Tomfootballteam",
+            "score": 129.5
+          },
+          "home": {
+            "team": "Yall suck",
+            "score": 95.5
+          },
+          "winner": "Tomfootballteam"
+        },
+        {
+          "away": {
+            "team": "Northeast Winners",
+            "score": 120.5
+          },
+          "home": {
+            "team": "GetBackGang",
+            "score": 151.5
+          },
+          "winner": "GetBackGang"
+        },
+        {
+          "away": {
+            "team": "Moravia RD MMG",
+            "score": 110.5
+          },
+          "home": {
+            "team": "Team Ayers",
+            "score": 109.5
+          },
+          "winner": "Moravia RD MMG"
+        },
+        {
+          "away": {
+            "team": "Lul Daddy",
+            "score": 126
+          },
+          "home": {
+            "team": "The Conqueror",
+            "score": 160.5
+          },
+          "winner": "The Conqueror"
+        }
+      ]
     }
   }
 }
