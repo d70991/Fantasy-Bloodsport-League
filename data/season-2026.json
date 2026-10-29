@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "leagueName": "Fantasy Bloodsport League",
-  "updatedAt": "2026-10-27T16:18:10.027Z",
+  "updatedAt": "2026-10-29T17:21:40.786Z",
   "currentWeek": 8,
   "regularSeasonWeeks": 14,
   "playoffTeamCount": 8,
@@ -28,7 +28,7 @@
       "wins": 2,
       "losses": 5,
       "ties": 0,
-      "pointsFor": 913.5,
+      "pointsFor": 914.5,
       "pointsAgainst": 1001.5,
       "streak": "L2",
       "playoffSeed": 11
@@ -120,7 +120,7 @@
       "losses": 4,
       "ties": 0,
       "pointsFor": 967,
-      "pointsAgainst": 948.5,
+      "pointsAgainst": 949,
       "streak": "L2",
       "playoffSeed": 9
     },
@@ -132,7 +132,7 @@
       "wins": 6,
       "losses": 1,
       "ties": 0,
-      "pointsFor": 963.5,
+      "pointsFor": 964,
       "pointsAgainst": 822,
       "streak": "W1",
       "playoffSeed": 1
@@ -159,7 +159,7 @@
       "losses": 3,
       "ties": 0,
       "pointsFor": 900,
-      "pointsAgainst": 884,
+      "pointsAgainst": 885,
       "streak": "W1",
       "playoffSeed": 8
     },
@@ -197,7 +197,7 @@
       "wins": 4,
       "losses": 2,
       "ties": 0,
-      "pointsFor": 869.5,
+      "pointsFor": 871.5,
       "pointsAgainst": 839.5,
       "streak": "W2",
       "playoffSeed": 6
@@ -211,7 +211,7 @@
       "losses": 5,
       "ties": 0,
       "pointsFor": 717,
-      "pointsAgainst": 860.5,
+      "pointsAgainst": 862.5,
       "streak": "L4",
       "playoffSeed": 14
     }
@@ -813,7 +813,7 @@
       },
       "away": {
         "teamId": 23,
-        "score": 156.5
+        "score": 158.5
       },
       "winner": 23,
       "playoff": false,
@@ -837,7 +837,7 @@
       "week": 7,
       "home": {
         "teamId": 15,
-        "score": 114.5
+        "score": 115
       },
       "away": {
         "teamId": 14,
@@ -893,7 +893,7 @@
       "week": 7,
       "home": {
         "teamId": 1,
-        "score": 157
+        "score": 158
       },
       "away": {
         "teamId": 20,
