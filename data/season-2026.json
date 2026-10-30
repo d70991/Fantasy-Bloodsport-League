@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "leagueName": "Fantasy Bloodsport League",
-  "updatedAt": "2026-10-30T05:16:30.789Z",
+  "updatedAt": "2026-10-30T16:58:17.649Z",
   "currentWeek": 8,
   "regularSeasonWeeks": 14,
   "playoffTeamCount": 8,
@@ -198,7 +198,7 @@
       "losses": 2,
       "ties": 0,
       "pointsFor": 871.5,
-      "pointsAgainst": 839.5,
+      "pointsAgainst": 838.5,
       "streak": "W2",
       "playoffSeed": 6
     },
@@ -210,7 +210,7 @@
       "wins": 1,
       "losses": 5,
       "ties": 0,
-      "pointsFor": 717,
+      "pointsFor": 716,
       "pointsAgainst": 862.5,
       "streak": "L4",
       "playoffSeed": 14
@@ -809,7 +809,7 @@
       "week": 7,
       "home": {
         "teamId": 24,
-        "score": 129.5
+        "score": 128.5
       },
       "away": {
         "teamId": 23,
