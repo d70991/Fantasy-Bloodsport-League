@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "leagueName": "Fantasy Bloodsport League",
-  "updatedAt": "2026-11-01T23:59:26.205Z",
+  "updatedAt": "2026-11-02T05:28:07.031Z",
   "currentWeek": 8,
   "regularSeasonWeeks": 14,
   "playoffTeamCount": 8,
@@ -907,11 +907,11 @@
       "week": 8,
       "home": {
         "teamId": 1,
-        "score": 75
+        "score": 98.5
       },
       "away": {
         "teamId": 12,
-        "score": 211
+        "score": 211.5
       },
       "winner": null,
       "playoff": false,
@@ -921,11 +921,11 @@
       "week": 8,
       "home": {
         "teamId": 16,
-        "score": 91
+        "score": 119.5
       },
       "away": {
         "teamId": 21,
-        "score": 102
+        "score": 108
       },
       "winner": null,
       "playoff": false,
@@ -935,11 +935,11 @@
       "week": 8,
       "home": {
         "teamId": 6,
-        "score": 126.5
+        "score": 136.5
       },
       "away": {
         "teamId": 11,
-        "score": 170
+        "score": 171.5
       },
       "winner": null,
       "playoff": false,
@@ -949,11 +949,11 @@
       "week": 8,
       "home": {
         "teamId": 10,
-        "score": 115.5
+        "score": 123.5
       },
       "away": {
         "teamId": 14,
-        "score": 132
+        "score": 154.5
       },
       "winner": null,
       "playoff": false,
@@ -963,7 +963,7 @@
       "week": 8,
       "home": {
         "teamId": 9,
-        "score": 96.5
+        "score": 105.5
       },
       "away": {
         "teamId": 20,
@@ -977,11 +977,11 @@
       "week": 8,
       "home": {
         "teamId": 24,
-        "score": 97
+        "score": 97.5
       },
       "away": {
         "teamId": 22,
-        "score": 69
+        "score": 103.5
       },
       "winner": null,
       "playoff": false,
@@ -991,11 +991,11 @@
       "week": 8,
       "home": {
         "teamId": 23,
-        "score": 124.5
+        "score": 117.5
       },
       "away": {
         "teamId": 4,
-        "score": 54
+        "score": 70.5
       },
       "winner": null,
       "playoff": false,
