@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "leagueName": "Fantasy Bloodsport League",
-  "updatedAt": "2026-11-05T18:36:39.657Z",
+  "updatedAt": "2026-11-06T05:59:08.521Z",
   "currentWeek": 9,
   "regularSeasonWeeks": 14,
   "playoffTeamCount": 8,
@@ -1009,7 +1009,7 @@
       },
       "away": {
         "teamId": 11,
-        "score": 0
+        "score": 29.5
       },
       "winner": null,
       "playoff": false,
@@ -1019,7 +1019,7 @@
       "week": 9,
       "home": {
         "teamId": 6,
-        "score": 0
+        "score": 4
       },
       "away": {
         "teamId": 16,
@@ -1033,11 +1033,11 @@
       "week": 9,
       "home": {
         "teamId": 22,
-        "score": 0
+        "score": 17
       },
       "away": {
         "teamId": 15,
-        "score": 0
+        "score": 27
       },
       "winner": null,
       "playoff": false,
@@ -1061,7 +1061,7 @@
       "week": 9,
       "home": {
         "teamId": 9,
-        "score": 0
+        "score": 21
       },
       "away": {
         "teamId": 1,
@@ -1089,11 +1089,11 @@
       "week": 9,
       "home": {
         "teamId": 24,
-        "score": 0
+        "score": 2.5
       },
       "away": {
         "teamId": 4,
-        "score": 0
+        "score": 14.5
       },
       "winner": null,
       "playoff": false,
