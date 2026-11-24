@@ -4182,6 +4182,409 @@
           "winner": "Tomfootballteam"
         }
       ]
+    },
+    "11": {
+      "week": 11,
+      "generatedAt": "2026-11-24T09:25:07.081Z",
+      "model": "claude-opus-5-5",
+      "episodeTitle": "Dak Outscores a Whole Team: Week 11 Carnage",
+      "teaser": "Dak Prescott drops 66, Lul Daddy manages 36, and Northeast Winners hand out the beating of the season. Bloodsport Center has the tape.",
+      "segments": [
+        {
+          "id": "cold_open",
+          "title": "66 vs. 36",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "WELCOME TO BLOODSPORT CENTER! Week 11, and I need everybody sitting down, because one man outscored an entire fantasy team!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "He's not exaggerating, which is new. Dak Prescott scored 66 for Team epps. Lul Daddy scored 36. As a team."
+            },
+            {
+              "speaker": "mike",
+              "text": "Dak by THIRTY! One quarterback against a full starting lineup, and it's not close! Somebody check on Lul Daddy!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Somebody did. Northeast Winners, a 2-8 team, checked on them to the tune of 88.5 points."
+            },
+            {
+              "speaker": "mike",
+              "text": "Ohhh, we'll get there. We will DEFINITELY get there. Let's go around the league!"
+            }
+          ]
+        },
+        {
+          "id": "around_the_league",
+          "title": "Around the League",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Team epps hangs 188 on Team Ayers, who score 126. A 62-point win and the week's high score! Team Ayers still leads that series 4-2, but nobody's bragging about that this week."
+            },
+            {
+              "speaker": "tasha",
+              "text": "Yall suck beats Moravia RD MMG 162.5 to 110.5. Yall suck now leads the series 4-1, and the team name continues to work as a scouting report on opponents."
+            },
+            {
+              "speaker": "mike",
+              "text": "Lorde Commish takes down GetBackGang 143.5 to 81! A 62.5-point margin, and the Commish moves to 4-1 all-time in that series. Running the league AND running up the score!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Say whatttt slips past The GOAT, 123.5 to 117. The 6.5-point game of the week, and we'll break it down."
+            },
+            {
+              "speaker": "mike",
+              "text": "Northeast Winners 124.5, Lul Daddy 36. That's all I'll say for now. My doctor says I can't get this worked up twice in one segment."
+            },
+            {
+              "speaker": "tasha",
+              "text": "Team Nelson beats The Conqueror 162 to 118. A 44-point win, and the all-time series is now tied 4-4."
+            },
+            {
+              "speaker": "mike",
+              "text": "And Tomfootballteam handles phillip's Perfect Team 146 to 91! A 55-point win, and Tomfootballteam takes a 2-1 series lead."
+            },
+            {
+              "speaker": "tasha",
+              "text": "Heavy Gewts were on bye. Undefeated this week, technically."
+            }
+          ]
+        },
+        {
+          "id": "game_of_the_week",
+          "title": "Game of the Week: 6.5 Points",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Our nail-biter! Say whatttt 123.5, The GOAT 117! C.J. Stroud goes for 40.5 and carries Say whatttt to 9-1! That team just FINDS a way!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "They found a way despite leaving Aaron Jones Sr. on the bench with 14.5 while Rico Dowdle started and scored 7. That's 7.5 points left on the pine."
+            },
+            {
+              "speaker": "mike",
+              "text": "And they STILL won! That's a champion's swagger, Tasha!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Or it's The GOAT's blunder being worse. The GOAT benched Baker Mayfield and his 34 points to start Josh Allen, who scored 26.5. That's 7.5 points lost in a 6.5-point game."
+            },
+            {
+              "speaker": "mike",
+              "text": "Wait. Wait wait wait. You're telling me..."
+            },
+            {
+              "speaker": "tasha",
+              "text": "Start Mayfield and The GOAT scores 124.5. That beats 123.5. They lost this one in the lineup screen."
+            },
+            {
+              "speaker": "mike",
+              "text": "The GOAT, now 3-8, benched the right answer! You can't call yourself The GOAT and lose a 6.5-point game to your own bench! Say whatttt leads the series 3-1."
+            }
+          ]
+        },
+        {
+          "id": "beatdown",
+          "title": "Beatdown: 88.5 Points of Pain",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Now. NOW. Biggest blowout of the week. Northeast Winners 124.5, Lul Daddy 36. An 88.5-point MASSACRE!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Lul Daddy's top scorer was their kicker. Tyler Bass, 13 points. When the kicker is your offensive MVP, the offense didn't show up."
+            },
+            {
+              "speaker": "mike",
+              "text": "After Bass it's Rashee Rice with 8 and the Ravens D/ST with 8! And Blake Corum? A big, beautiful ZERO!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "And before you ask about a bench blunder, there isn't one. Lul Daddy's bench scored 7. There was no rescue coming."
+            },
+            {
+              "speaker": "mike",
+              "text": "The whole cupboard was bare! Meanwhile Jacoby Brissett throws up 33 by himself, Christian McCaffrey adds 18.5, and kicker Dominic Zvada puts up 13.5!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "So Northeast Winners' kicker outscored Lul Daddy's kicker, and Brissett alone came within 3 points of Lul Daddy's whole team."
+            },
+            {
+              "speaker": "mike",
+              "text": "From now on I'm calling them Lul Daddy Long Legs, because that lineup crawled! The series is tied 1-1, and Northeast Winners earned every bit of that one."
+            }
+          ]
+        },
+        {
+          "id": "player_of_the_week",
+          "title": "Player of the Week: Dak Attack",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Player of the Week! Dak Prescott, SIXTY-SIX POINTS for Team epps! That's not a stat line, that's a ZIP code!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "66 points, the top individual score of the week, powering the week's top team score of 188. Javonte Williams chipped in 31, and Tony Pollard added 22.5."
+            },
+            {
+              "speaker": "mike",
+              "text": "Team epps is on a W5 heater, the longest active streak in the league! I'm calling them the Epps-plosion!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Please don't. And now the Dud of the Week: Vikings D/ST, negative 2 points for Moravia RD MMG."
+            },
+            {
+              "speaker": "mike",
+              "text": "Negative! They took points OFF the board! That defense owes Moravia a refund!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "The Rams D/ST sat on the bench with 0. Doing literally nothing would have been 2 points better."
+            }
+          ]
+        },
+        {
+          "id": "bench_blunder",
+          "title": "Bench Blunder: Imperfect Team",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Bench Blunder of the Week goes to... phillip's Perfect Team! Oh, the IRONY!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Ladd McConkey scored 16.5 on the bench. Adonai Mitchell started at WR and scored 4. That's 12.5 points left behind, the most of any blunder this week."
+            },
+            {
+              "speaker": "mike",
+              "text": "Perfect Team! PERFECT! Unless by perfect you mean perfectly wrong!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "To be fair, they lost by 55, so McConkey wouldn't have saved them. It just made a 55-point loss feel like a choice."
+            },
+            {
+              "speaker": "mike",
+              "text": "Honorable mention to GetBackGang, who benched Geno Smith's 36.5 for Trevor Lawrence's 25.5! And the Commish left 11 points on the bench too, starting Panthers D/ST over 49ers D/ST!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "The Commish won by 62.5, so it didn't matter. GetBackGang lost by 62.5, so it also didn't matter. Different vibes, same math."
+            }
+          ]
+        },
+        {
+          "id": "standings_check",
+          "title": "Standings Check",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Top of the mountain: Team Nelson at 10-1, W4, and number 1 in points for! Chuba Hubbard put up 40.5 this week! Mister Nelson is BUILT DIFFERENT!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Say whatttt is right behind at 9-1 on a W4, despite ranking 9th in points for. Some teams win with firepower. They win with schedule-adjacent wizardry."
+            },
+            {
+              "speaker": "mike",
+              "text": "Who's sliding? The Conqueror! L4! Hanging onto the 8th and final playoff spot at 4-6!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "The Conqueror is 3rd in points for and sitting at 4-6. Heavy Gewts and Team Ayers are also 4-6, so that last spot is a three-way staredown."
+            },
+            {
+              "speaker": "mike",
+              "text": "And phillip's Perfect Team has dropped three straight, down to 5-5 in 7th! Perfectly mediocre!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Now the important race. The punishment race. GetBackGang is 1-9 on an L4 and dead last in points for."
+            },
+            {
+              "speaker": "mike",
+              "text": "GetBackGang has to get back in the race before they get the PUNISHMENT! Northeast Winners at 2-8 just bought themselves some breathing room with that W!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Behind them, The GOAT is 3-8 and Lul Daddy is 3-7. Lul Daddy is 14th in points for, so that 36 wasn't totally out of character. Three regular-season weeks left."
+            }
+          ]
+        },
+        {
+          "id": "next_week",
+          "title": "Next Week: 7-3 Showdown",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "Week 12, the main event! Yall suck at Team epps! Both 7-3! The Epps-plosion against the team that tells everybody they suck!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Team epps leads the all-time series 4-3. Team epps has won five straight. Yall suck just dropped 162.5 on Moravia RD MMG."
+            },
+            {
+              "speaker": "mike",
+              "text": "Can Dak do it AGAIN? Somebody's getting told they suck, and for once it might be Yall suck!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "Also watch Northeast Winners at Say whatttt. Say whatttt leads that series just 4-3, and Northeast Winners is coming off an 88.5-point win."
+            },
+            {
+              "speaker": "mike",
+              "text": "And the basement bowl-adjacent special: The Conqueror at GetBackGang! The Conqueror leads 3-2, and somebody's losing streak is ending, or somebody's getting closer to the punishment!"
+            }
+          ]
+        },
+        {
+          "id": "sign_off",
+          "title": "Sign Off",
+          "lines": [
+            {
+              "speaker": "mike",
+              "text": "That's the show! Set your lineups, start your studs, and for the love of everything, Lul Daddy, find a fourth guy who scores more than your kicker!"
+            },
+            {
+              "speaker": "tasha",
+              "text": "And The GOAT, Baker Mayfield is still on your bench. He'd like a word. I'm Tasha Reid."
+            },
+            {
+              "speaker": "mike",
+              "text": "I'm Big Mike Malone, and THIS has been BLOODSPORT CENTER!"
+            }
+          ]
+        }
+      ],
+      "awards": {
+        "playerOfTheWeek": {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "points": 66,
+          "team": "Team epps"
+        },
+        "highScore": {
+          "team": "Team epps",
+          "score": 188
+        },
+        "lowScore": {
+          "team": "Lul Daddy",
+          "score": 36
+        },
+        "beatdown": {
+          "winner": "Northeast Winners",
+          "loser": "Lul Daddy",
+          "margin": 88.5
+        },
+        "nailBiter": {
+          "winner": "Say whatttt",
+          "loser": "The GOAT",
+          "margin": 6.5
+        },
+        "benchBlunder": {
+          "team": "phillip's Perfect Team",
+          "benched": "Ladd McConkey",
+          "benchedPoints": 16.5,
+          "started": "Adonai Mitchell",
+          "startedPoints": 4,
+          "position": "WR",
+          "pointsLost": 12.5
+        },
+        "dudOfTheWeek": {
+          "team": "Moravia RD MMG",
+          "name": "Vikings D/ST",
+          "position": "D/ST",
+          "points": -2
+        }
+      },
+      "scores": [
+        {
+          "away": {
+            "team": "Team epps",
+            "score": 188
+          },
+          "home": {
+            "team": "Team Ayers",
+            "score": 126
+          },
+          "winner": "Team epps"
+        },
+        {
+          "away": {
+            "team": "Yall suck",
+            "score": 162.5
+          },
+          "home": {
+            "team": "Moravia RD MMG",
+            "score": 110.5
+          },
+          "winner": "Yall suck"
+        },
+        {
+          "away": {
+            "team": "GetBackGang",
+            "score": 81
+          },
+          "home": {
+            "team": "Lorde Commish",
+            "score": 143.5
+          },
+          "winner": "Lorde Commish"
+        },
+        {
+          "away": {
+            "team": "Say whatttt",
+            "score": 123.5
+          },
+          "home": {
+            "team": "The GOAT",
+            "score": 117
+          },
+          "winner": "Say whatttt"
+        },
+        {
+          "away": {
+            "team": "Northeast Winners",
+            "score": 124.5
+          },
+          "home": {
+            "team": "Lul Daddy",
+            "score": 36
+          },
+          "winner": "Northeast Winners"
+        },
+        {
+          "away": {
+            "team": "The Conqueror",
+            "score": 118
+          },
+          "home": {
+            "team": "Team Nelson",
+            "score": 162
+          },
+          "winner": "Team Nelson"
+        },
+        {
+          "away": {
+            "team": "phillip's Perfect Team",
+            "score": 91
+          },
+          "home": {
+            "team": "Tomfootballteam",
+            "score": 146
+          },
+          "winner": "Tomfootballteam"
+        }
+      ]
     }
   }
 }
