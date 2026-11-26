@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "leagueName": "Fantasy Bloodsport League",
-  "updatedAt": "2026-11-24T09:24:11.826Z",
+  "updatedAt": "2026-11-26T20:01:58.211Z",
   "currentWeek": 12,
   "regularSeasonWeeks": 14,
   "playoffTeamCount": 8,
@@ -185,7 +185,7 @@
       "losses": 3,
       "ties": 0,
       "pointsFor": 1444.5,
-      "pointsAgainst": 1351.5,
+      "pointsAgainst": 1345.5,
       "streak": "W2",
       "playoffSeed": 4
     },
@@ -197,7 +197,7 @@
       "wins": 5,
       "losses": 5,
       "ties": 0,
-      "pointsFor": 1312.5,
+      "pointsFor": 1306.5,
       "pointsAgainst": 1358.5,
       "streak": "L3",
       "playoffSeed": 7
@@ -1289,7 +1289,7 @@
       },
       "away": {
         "teamId": 23,
-        "score": 91
+        "score": 85
       },
       "winner": 22,
       "playoff": false,
@@ -1299,11 +1299,11 @@
       "week": 12,
       "home": {
         "teamId": 20,
-        "score": 0
+        "score": 3.5
       },
       "away": {
         "teamId": 12,
-        "score": 0
+        "score": 23.5
       },
       "winner": null,
       "playoff": false,
@@ -1313,11 +1313,11 @@
       "week": 12,
       "home": {
         "teamId": 6,
-        "score": 0
+        "score": 24.5
       },
       "away": {
         "teamId": 16,
-        "score": 0
+        "score": 41
       },
       "winner": null,
       "playoff": false,
@@ -1331,7 +1331,7 @@
       },
       "away": {
         "teamId": 9,
-        "score": 0
+        "score": 10
       },
       "winner": null,
       "playoff": false,
@@ -1345,7 +1345,7 @@
       },
       "away": {
         "teamId": 14,
-        "score": 0
+        "score": 11
       },
       "winner": null,
       "playoff": false,
@@ -1355,11 +1355,11 @@
       "week": 12,
       "home": {
         "teamId": 23,
-        "score": 0
+        "score": 22.5
       },
       "away": {
         "teamId": 1,
-        "score": 0
+        "score": 31
       },
       "winner": null,
       "playoff": false,
@@ -1373,7 +1373,7 @@
       },
       "away": {
         "teamId": 24,
-        "score": 0
+        "score": 54
       },
       "winner": null,
       "playoff": false,
@@ -1383,11 +1383,11 @@
       "week": 12,
       "home": {
         "teamId": 15,
-        "score": 0
+        "score": 8.5
       },
       "away": {
         "teamId": 4,
-        "score": 0
+        "score": -0.5
       },
       "winner": null,
       "playoff": false,
